@@ -1,1 +1,1 @@
-pnpm format && pnpm lint && git add . 
+pnpm format && pnpm lint && pnpm build-registry && git add . 

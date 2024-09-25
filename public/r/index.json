@@ -41,5 +41,38 @@
         }
       }
     }
+  },
+  {
+    "name": "badge-theme",
+    "type": "registry:ui",
+    "dependencies": [
+      "class-variance-authority"
+    ],
+    "files": [
+      {
+        "path": "ui/badge-theme.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  {
+    "name": "card-theme",
+    "type": "registry:ui",
+    "files": [
+      {
+        "path": "ui/card-theme.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  {
+    "name": "typography",
+    "type": "registry:ui",
+    "files": [
+      {
+        "path": "ui/typography.tsx",
+        "type": "registry:ui"
+      }
+    ]
   }
 ]
