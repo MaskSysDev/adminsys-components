@@ -1,0 +1,15 @@
+cache
+.cache
+package.json
+package-lock.json
+pnpm-lock.yaml
+public
+CHANGELOG.md
+.yarn
+yarn.lock
+dist
+node_modules
+.next
+next-env-.d.ts
+build
+.contentlayer
