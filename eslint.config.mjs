@@ -27,6 +27,8 @@ const config = [
       "**/public",
       "**/node_modules",
       "**/*.esm.js",
+      "__registry__",
+      "scripts/build-registry.mts",
     ],
   },
   ...fixupConfigRules(

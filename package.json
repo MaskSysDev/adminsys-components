@@ -13,6 +13,8 @@
     "lint:fix": "eslint --fix .",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,md,mdx}\" --cache",
     "format:check": "prettier --check \"**/*.{js,jsx,ts,tsx,md,mdx}\" --cache",
+    "build-registry": "tsx ./scripts/build-registry.mts",
+    "dev:server": "http-server",
     "prepare": "husky"
   },
   "dependencies": {
@@ -36,15 +38,18 @@
     "class-variance-authority": "0.7.0",
     "clsx": "2.1.1",
     "input-otp": "1.2.4",
+    "lodash.template": "4.5.0",
     "lucide-react": "0.445.0",
     "next": "14.2.13",
     "next-themes": "0.3.0",
     "react": "^18",
     "react-dom": "^18",
     "react-hook-form": "7.53.0",
+    "rimraf": "6.0.1",
     "sonner": "1.5.0",
     "tailwind-merge": "2.5.2",
     "tailwindcss-animate": "1.0.7",
+    "ts-morph": "23.0.0",
     "vaul": "0.9.4",
     "zod": "3.23.8"
   },
@@ -58,6 +63,7 @@
     "@types/react-dom": "^18",
     "@typescript-eslint/eslint-plugin": "8.7.0",
     "@typescript-eslint/parser": "8.7.0",
+    "dotenv": "16.4.5",
     "eslint": "^9.11.1",
     "eslint-config-next": "14.2.13",
     "eslint-config-prettier": "9.1.0",
@@ -66,11 +72,13 @@
     "eslint-plugin-react": "7.36.1",
     "eslint-plugin-react-hooks": "4.6.2",
     "eslint-plugin-tailwindcss": "3.17.4",
+    "http-server": "14.1.1",
     "husky": "9.1.6",
     "postcss": "^8",
     "prettier": "3.3.3",
     "prettier-plugin-tailwindcss": "0.6.6",
     "tailwindcss": "^3.4.1",
+    "tsx": "4.19.1",
     "typescript": "^5"
   }
 }
