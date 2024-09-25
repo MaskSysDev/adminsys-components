@@ -9,12 +9,10 @@ export const metadata: Metadata = {
 
 export default function DocsPage() {
   return (
-    <div className="flex flex-1 justify-center">
-      <section className="container p-2">
-        <Typography.H1 className="text-2xl font-semibold lg:text-3xl">
-          Docs
-        </Typography.H1>
-      </section>
+    <div className="container mx-auto p-6">
+      <Typography.H1 className="text-2xl font-semibold lg:text-3xl">
+        Docs
+      </Typography.H1>
     </div>
   );
 }

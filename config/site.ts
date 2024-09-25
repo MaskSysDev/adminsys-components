@@ -207,8 +207,22 @@ export const siteConfig = {
             items: [
               {
                 id: "1",
-                label: "Button",
-                href: "/docs/components/ui/button",
+                label: "BadgeTheme",
+                href: "/docs/components/ui/badge-theme",
+                path: "",
+                items: [],
+              },
+              {
+                id: "2",
+                label: "CardTheme",
+                href: "/docs/components/ui/card-theme",
+                path: "",
+                items: [],
+              },
+              {
+                id: "3",
+                label: "Typography",
+                href: "/docs/components/ui/typography",
                 path: "",
                 items: [],
               },

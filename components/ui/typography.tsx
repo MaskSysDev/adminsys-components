@@ -10,7 +10,7 @@ function TypographyH1({
   return (
     <h1
       className={cn(
-        "scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl",
+        "mb-4 scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl",
         className,
       )}
     >
@@ -29,7 +29,7 @@ function TypographyH2({
   return (
     <h2
       className={cn(
-        "scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0",
+        "mb-4 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0",
         className,
       )}
     >
@@ -48,7 +48,7 @@ function TypographyH3({
   return (
     <h3
       className={cn(
-        "scroll-m-20 text-2xl font-semibold tracking-tight",
+        "mb-4 scroll-m-20 text-2xl font-semibold tracking-tight",
         className,
       )}
     >
@@ -67,7 +67,7 @@ function TypographyH4({
   return (
     <h4
       className={cn(
-        "scroll-m-20 text-xl font-semibold tracking-tight",
+        "mb-4 scroll-m-20 text-xl font-semibold tracking-tight",
         className,
       )}
     >
@@ -84,7 +84,7 @@ function TypographyP({
   className?: string;
 }) {
   return (
-    <p className={cn("leading-7 [&:not(:first-child)]:mt-6", className)}>
+    <p className={cn("mb-4 leading-7 [&:not(:first-child)]:mt-6", className)}>
       {children}
     </p>
   );
@@ -98,7 +98,7 @@ function TypographyBlockquote({
   className?: string;
 }) {
   return (
-    <blockquote className={cn("mt-6 border-l-2 pl-6 italic", className)}>
+    <blockquote className={cn("my-6 border-l-2 pl-6 italic", className)}>
       {children}
     </blockquote>
   );
@@ -131,7 +131,9 @@ function TypographyLead({
   className?: string;
 }) {
   return (
-    <p className={cn("text-xl text-muted-foreground", className)}>{children}</p>
+    <p className={cn("mb-4 text-xl text-muted-foreground", className)}>
+      {children}
+    </p>
   );
 }
 
@@ -143,7 +145,9 @@ function TypographyLarge({
   className?: string;
 }) {
   return (
-    <div className={cn("text-lg font-semibold", className)}>{children}</div>
+    <div className={cn("mb-4 text-lg font-semibold", className)}>
+      {children}
+    </div>
   );
 }
 
@@ -155,7 +159,7 @@ function TypographySmall({
   className?: string;
 }) {
   return (
-    <small className={cn("text-sm font-medium leading-none", className)}>
+    <small className={cn("mb-2 text-sm font-medium leading-none", className)}>
       {children}
     </small>
   );
@@ -169,7 +173,9 @@ function TypographyMuted({
   className?: string;
 }) {
   return (
-    <p className={cn("text-sm text-muted-foreground", className)}>{children}</p>
+    <p className={cn("mb-2 text-sm text-muted-foreground", className)}>
+      {children}
+    </p>
   );
 }
 
