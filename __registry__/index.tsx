@@ -27,6 +27,17 @@ export const Index: Record<string, any> = {
       subcategory: "undefined",
       chunks: []
     },
+    "drawer-menu": {
+      name: "drawer-menu",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: ["registry/new-york/ui/drawer-menu.tsx"],
+      component: React.lazy(() => import("@/registry/new-york/ui/drawer-menu.tsx")),
+      source: "",
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
     "typography": {
       name: "typography",
       type: "registry:ui",
@@ -58,6 +69,17 @@ export const Index: Record<string, any> = {
       source: "__registry__/new-york/block/hero-01/page.tsx",
       category: "Banner",
       subcategory: "Hero",
+      chunks: []
+    },
+    "home-page": {
+      name: "home-page",
+      type: "registry:block",
+      registryDependencies: ["button","navigation-menu","scroll-area","sonner","toaster","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/typography.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/drawer-menu.json"],
+      files: ["registry/new-york/block/home-page/layout.tsx","registry/new-york/block/home-page/page.tsx","registry/new-york/block/home-page/components/theme-provider.tsx","registry/new-york/block/home-page/components/toggle-theme.tsx","registry/new-york/block/home-page/components/site-header.tsx","registry/new-york/block/home-page/components/nav-main.tsx","registry/new-york/block/home-page/components/nav-link.tsx","registry/new-york/block/home-page/components/nav-mobile.tsx","registry/new-york/block/home-page/components/site.ts"],
+      component: React.lazy(() => import("@/registry/new-york/block/home-page/layout.tsx")),
+      source: "__registry__/new-york/block/home-page/layout.tsx",
+      category: "Web",
+      subcategory: "Layout",
       chunks: []
     },
     "utils": {
@@ -105,6 +127,17 @@ export const Index: Record<string, any> = {
       subcategory: "undefined",
       chunks: []
     },
+    "drawer-menu": {
+      name: "drawer-menu",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: ["registry/default/ui/drawer-menu.tsx"],
+      component: React.lazy(() => import("@/registry/default/ui/drawer-menu.tsx")),
+      source: "",
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
     "typography": {
       name: "typography",
       type: "registry:ui",
@@ -136,6 +169,17 @@ export const Index: Record<string, any> = {
       source: "__registry__/default/block/hero-01/page.tsx",
       category: "Banner",
       subcategory: "Hero",
+      chunks: []
+    },
+    "home-page": {
+      name: "home-page",
+      type: "registry:block",
+      registryDependencies: ["button","navigation-menu","scroll-area","sonner","toaster","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/typography.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/drawer-menu.json"],
+      files: ["registry/default/block/home-page/layout.tsx","registry/default/block/home-page/page.tsx","registry/default/block/home-page/components/theme-provider.tsx","registry/default/block/home-page/components/toggle-theme.tsx","registry/default/block/home-page/components/site-header.tsx","registry/default/block/home-page/components/nav-main.tsx","registry/default/block/home-page/components/nav-link.tsx","registry/default/block/home-page/components/nav-mobile.tsx","registry/default/block/home-page/components/site.ts"],
+      component: React.lazy(() => import("@/registry/default/block/home-page/layout.tsx")),
+      source: "__registry__/default/block/home-page/layout.tsx",
+      category: "Web",
+      subcategory: "Layout",
       chunks: []
     },
     "utils": {

@@ -13,6 +13,12 @@ export const ui: Registry = [
     files: ["ui/card-theme.tsx"],
   },
   {
+    name: "drawer-menu",
+    type: "registry:ui",
+    dependencies: ["vaul"],
+    files: ["ui/drawer-menu.tsx"],
+  },
+  {
     name: "typography",
     type: "registry:ui",
     files: ["ui/typography.tsx"],

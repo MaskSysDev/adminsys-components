@@ -4,7 +4,7 @@ import localFont from "next/font/local";
 import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
 
-import { FooterSimple } from "@/components/layout/footer/footer-simple";
+import { FooterSimple } from "@/components/layout/footer/site-footer";
 import { SiteHeader } from "@/components/layout/header/site-header";
 
 import { ThemeProvider } from "@/components/provider/theme-provider";

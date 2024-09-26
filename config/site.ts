@@ -75,11 +75,6 @@ export const siteConfig = {
   },
 
   /* Pages */
-  homePage: {
-    title: "Title Home Page",
-    description: "Description Home Page.",
-  },
-
   aboutPage: {
     title: "About",
     description: "About page, description of this page.",

@@ -23,6 +23,19 @@
     ]
   },
   {
+    "name": "drawer-menu",
+    "type": "registry:ui",
+    "dependencies": [
+      "vaul"
+    ],
+    "files": [
+      {
+        "path": "ui/drawer-menu.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  {
     "name": "typography",
     "type": "registry:ui",
     "files": [
