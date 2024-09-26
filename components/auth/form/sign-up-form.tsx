@@ -21,7 +21,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import { PasswordInput } from "@/components/ui/input/password-input";
+import { PasswordInput } from "@/components/ui/password-input";
 
 export const SignUpForm = () => {
   const [error, setError] = useState<string | undefined>("");

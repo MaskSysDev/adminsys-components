@@ -38,6 +38,17 @@ export const Index: Record<string, any> = {
       subcategory: "undefined",
       chunks: []
     },
+    "password-input": {
+      name: "password-input",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: ["registry/new-york/ui/password-input.tsx"],
+      component: React.lazy(() => import("@/registry/new-york/ui/password-input.tsx")),
+      source: "",
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
     "typography": {
       name: "typography",
       type: "registry:ui",
@@ -133,6 +144,17 @@ export const Index: Record<string, any> = {
       registryDependencies: undefined,
       files: ["registry/default/ui/drawer-menu.tsx"],
       component: React.lazy(() => import("@/registry/default/ui/drawer-menu.tsx")),
+      source: "",
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "password-input": {
+      name: "password-input",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: ["registry/default/ui/password-input.tsx"],
+      component: React.lazy(() => import("@/registry/default/ui/password-input.tsx")),
       source: "",
       category: "undefined",
       subcategory: "undefined",

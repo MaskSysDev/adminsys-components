@@ -19,6 +19,12 @@ export const ui: Registry = [
     files: ["ui/drawer-menu.tsx"],
   },
   {
+    name: "password-input",
+    type: "registry:ui",
+    dependencies: ["input", "button"],
+    files: ["ui/password-input.tsx"],
+  },
+  {
     name: "typography",
     type: "registry:ui",
     files: ["ui/typography.tsx"],

@@ -36,6 +36,20 @@
     ]
   },
   {
+    "name": "password-input",
+    "type": "registry:ui",
+    "dependencies": [
+      "input",
+      "button"
+    ],
+    "files": [
+      {
+        "path": "ui/password-input.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  {
     "name": "typography",
     "type": "registry:ui",
     "files": [

@@ -9,7 +9,7 @@ import { cn } from "@/lib/utils";
 
 import { Button } from "@/components/ui/button";
 
-import { DrawerMenu } from "../drawer";
+import { DrawerMenu } from "./drawer-menu";
 
 export const SIDEBAR_STATE_COOKIE = "sidebar:state";
 

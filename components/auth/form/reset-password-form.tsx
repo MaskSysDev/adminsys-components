@@ -23,7 +23,7 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
-import { PasswordInput } from "@/components/ui/input/password-input";
+import { PasswordInput } from "@/components/ui/password-input";
 
 export const ResetPasswordForm = () => {
   const [error, setError] = useState<string | undefined>("");
