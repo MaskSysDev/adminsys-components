@@ -49,6 +49,17 @@ export const Index: Record<string, any> = {
       subcategory: "undefined",
       chunks: []
     },
+    "sidebar": {
+      name: "sidebar",
+      type: "registry:ui",
+      registryDependencies: ["button","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/drawer-menu.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/use-mobile.json"],
+      files: ["registry/new-york/ui/sidebar.tsx"],
+      component: React.lazy(() => import("@/registry/new-york/ui/sidebar.tsx")),
+      source: "",
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
     "typography": {
       name: "typography",
       type: "registry:ui",
@@ -155,6 +166,17 @@ export const Index: Record<string, any> = {
       registryDependencies: ["input","button"],
       files: ["registry/default/ui/password-input.tsx"],
       component: React.lazy(() => import("@/registry/default/ui/password-input.tsx")),
+      source: "",
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "sidebar": {
+      name: "sidebar",
+      type: "registry:ui",
+      registryDependencies: ["button","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/drawer-menu.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/use-mobile.json"],
+      files: ["registry/default/ui/sidebar.tsx"],
+      component: React.lazy(() => import("@/registry/default/ui/sidebar.tsx")),
       source: "",
       category: "undefined",
       subcategory: "undefined",

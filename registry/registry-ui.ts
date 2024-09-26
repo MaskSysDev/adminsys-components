@@ -25,6 +25,16 @@ export const ui: Registry = [
     files: ["ui/password-input.tsx"],
   },
   {
+    name: "sidebar",
+    type: "registry:ui",
+    registryDependencies: [
+      "button",
+      "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/drawer-menu.json",
+      "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/use-mobile.json",
+    ],
+    files: ["ui/sidebar.tsx"],
+  },
+  {
     name: "typography",
     type: "registry:ui",
     files: ["ui/typography.tsx"],
