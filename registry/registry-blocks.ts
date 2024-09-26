@@ -250,7 +250,7 @@ export const blocks: Registry = [
       },
       {
         path: "block/adminsys/components/dropdown-user.tsx",
-        target: "components/layout/dropdown/dropdown-user.tsx",
+        target: "components/auth/dropdown/dropdown-user.tsx",
         type: "registry:component",
       },
       {
