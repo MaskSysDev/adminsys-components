@@ -38,7 +38,8 @@ export const blocks: Registry = [
         type: "registry:page",
       },
       {
-        path: "block/hero-01/components/layout/hero/hero-01.tsx",
+        path: "block/hero-01/components/hero-01.tsx",
+        target: "components/layout/hero/hero-01.tsx",
         type: "registry:component",
       },
     ],

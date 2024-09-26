@@ -1,4 +1,4 @@
-import { Hero01 } from "@/components/layout/hero/hero-01";
+import { Hero01 } from "@/components/hero-01";
 
 export default function Hero01Page() {
   return (

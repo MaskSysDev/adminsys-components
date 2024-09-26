@@ -7,14 +7,15 @@
   "files": [
     {
       "path": "block/hero-01/page.tsx",
-      "content": "import { Hero01 } from \"@/components/layout/hero/hero-01\";\n\nexport default function Hero01Page() {\n  return (\n    <div\n      className=\"flex flex-1\n     flex-col\"\n    >\n      <Hero01\n        title=\"Hero 01 Title\"\n        description=\"Description Hero 01.\"\n        label=\"Hero Label\"\n        href=\"/\"\n      />\n    </div>\n  );\n}\n",
+      "content": "import { Hero01 } from \"@/components/hero-01\";\n\nexport default function Hero01Page() {\n  return (\n    <div\n      className=\"flex flex-1\n     flex-col\"\n    >\n      <Hero01\n        title=\"Hero 01 Title\"\n        description=\"Description Hero 01.\"\n        label=\"Hero Label\"\n        href=\"/\"\n      />\n    </div>\n  );\n}\n",
       "type": "registry:page",
       "target": "app/hero-01/page.tsx"
     },
     {
-      "path": "block/hero-01/components/layout/hero/hero-01.tsx",
+      "path": "block/hero-01/components/hero-01.tsx",
       "content": "import { ChevronRight } from \"lucide-react\";\n\nimport { Button } from \"@/components/ui/button\";\n\ntype Hero01Props = {\n  title: string;\n  description?: string;\n  label?: string;\n  href?: string;\n};\n\nexport const Hero01 = ({ title, description, label, href }: Hero01Props) => {\n  return (\n    <section className=\"bg-gradient-to-b from-primary/10 to-background py-12 text-foreground \">\n      <div className=\"container mx-auto flex flex-col items-center justify-between px-4 sm:px-6 lg:flex-row lg:px-8\">\n        <div className=\"mb-8 lg:mb-0 lg:w-1/2\">\n          <h1 className=\"mb-4 text-center text-4xl font-bold lg:text-start\">\n            {title}\n          </h1>\n          <p className=\"mb-6 text-center text-xl lg:text-start\">\n            {description}\n          </p>\n          <div className=\"flex justify-center lg:justify-start\">\n            <Button asChild size=\"lg\">\n              <a href={href} target=\"_blank\" rel=\"noopener noreferrer\">\n                {label}\n                <ChevronRight className=\"ml-2 size-4\" />\n              </a>\n            </Button>\n          </div>\n        </div>\n        <div className=\"lg:w-1/2\">\n          <img\n            src=\"/placeholder.svg?height=400&width=600\"\n            alt=\"Produtos em destaque\"\n            className=\"rounded-lg shadow-lg\"\n            width={600}\n            height={400}\n          />\n        </div>\n      </div>\n    </section>\n  );\n};\n",
-      "type": "registry:component"
+      "type": "registry:component",
+      "target": "components/layout/hero/hero-01.tsx"
     }
   ]
 }
