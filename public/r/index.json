@@ -38,7 +38,7 @@
   {
     "name": "password-input",
     "type": "registry:ui",
-    "dependencies": [
+    "registryDependencies": [
       "input",
       "button"
     ],

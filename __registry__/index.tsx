@@ -41,7 +41,7 @@ export const Index: Record<string, any> = {
     "password-input": {
       name: "password-input",
       type: "registry:ui",
-      registryDependencies: undefined,
+      registryDependencies: ["input","button"],
       files: ["registry/new-york/ui/password-input.tsx"],
       component: React.lazy(() => import("@/registry/new-york/ui/password-input.tsx")),
       source: "",
@@ -152,7 +152,7 @@ export const Index: Record<string, any> = {
     "password-input": {
       name: "password-input",
       type: "registry:ui",
-      registryDependencies: undefined,
+      registryDependencies: ["input","button"],
       files: ["registry/default/ui/password-input.tsx"],
       component: React.lazy(() => import("@/registry/default/ui/password-input.tsx")),
       source: "",

@@ -21,7 +21,7 @@ export const ui: Registry = [
   {
     name: "password-input",
     type: "registry:ui",
-    dependencies: ["input", "button"],
+    registryDependencies: ["input", "button"],
     files: ["ui/password-input.tsx"],
   },
   {
