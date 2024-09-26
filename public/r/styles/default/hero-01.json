@@ -2,7 +2,7 @@
   "name": "hero-01",
   "type": "registry:block",
   "registryDependencies": [
-    "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/button.json"
+    "button"
   ],
   "files": [
     {

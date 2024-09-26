@@ -2,10 +2,10 @@
   "name": "login-01",
   "type": "registry:block",
   "registryDependencies": [
-    "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/button.json",
-    "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/card.json",
-    "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/input.json",
-    "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/label.json"
+    "button",
+    "card",
+    "input",
+    "label"
   ],
   "files": [
     {
