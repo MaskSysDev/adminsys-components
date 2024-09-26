@@ -2,7 +2,7 @@ export type SiteConfig = typeof siteConfig;
 
 const name = "AdminSys";
 
-const description =
+const siteDescription =
   "Nextjs App with Typescript, Tailwind CSS, Shadcn/ui, ESLint, Prettier, and more.";
 
 const emailContact = "contact@email.com";
@@ -37,7 +37,7 @@ const projectUrl = "https://github.com/MaskSysDev/adminsys-boilerplate";
 export const siteConfig = {
   /* Global */
   name,
-  description,
+  siteDescription,
   emailContact,
   emailSupport,
   url,

@@ -1,13 +1,10 @@
 import { Metadata } from "next";
 
-import { siteConfig } from "@/config/site";
-
 import { Typography } from "@/components/ui/typography";
 
 export const metadata: Metadata = {
-  title: siteConfig.aboutPage.title,
-  description: siteConfig.aboutPage.description,
-  keywords: siteConfig.aboutPage.keywords,
+  title: "About",
+  description: "Description About.",
 };
 
 export default function AboutPage() {

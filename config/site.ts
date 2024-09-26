@@ -1,7 +1,8 @@
 export type SiteConfig = typeof siteConfig;
 
 const name = "AdminSys";
-const description =
+
+const siteDescription =
   "Nextjs App with Typescript, Tailwind CSS, Shadcn/ui, ESLint, Prettier, and more.";
 
 const emailContact = "contact@email.com";
@@ -36,7 +37,7 @@ const projectUrl = "https://github.com/MaskSysDev/adminsys-boilerplate";
 export const siteConfig = {
   /* Global */
   name,
-  description,
+  siteDescription,
   emailContact,
   emailSupport,
   url,
@@ -72,13 +73,6 @@ export const siteConfig = {
     facebook,
     instagram,
     youtube,
-  },
-
-  /* Pages */
-  aboutPage: {
-    title: "About",
-    description: "About page, description of this page.",
-    keywords: "About, React, Next.js, TypeScript",
   },
 
   /* Components Layout */
@@ -258,7 +252,7 @@ export const siteConfig = {
     title: name,
     subtitle: "Template ",
     subtitleColor: "Admin",
-    description: description,
+    description: siteDescription,
     labelLink1: "Get Started",
     link1: "/",
     labelLink2: "GitHub",

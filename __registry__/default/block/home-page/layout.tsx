@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     default: siteConfig.name,
     template: `%s - ${siteConfig.name}`,
   },
-  description: siteConfig.description,
+  description: siteConfig.siteDescription,
 
   robots: {
     follow: false,
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     type: "website",
     title: siteConfig.name,
     locale: siteConfig.locale,
-    description: siteConfig.description,
+    description: siteConfig.siteDescription,
     url: siteConfig.url,
     siteName: siteConfig.name,
     images: [
@@ -85,7 +85,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: siteConfig.name,
-    description: siteConfig.description,
+    description: siteConfig.siteDescription,
     images: [siteConfig.favicon512x512],
     creator: siteConfig.creator,
   },
