@@ -24,13 +24,13 @@
       "target": "app/(web)/page.tsx"
     },
     {
-      "path": "block/home-page/components/theme-provider.tsx",
+      "path": "block/next-themes/components/theme-provider.tsx",
       "content": "\"use client\";\n\nimport * as React from \"react\";\n\nimport { ThemeProvider as NextThemesProvider } from \"next-themes\";\nimport type { ThemeProviderProps } from \"next-themes/dist/types\";\n\nexport function ThemeProvider({\n  children,\n  ...props\n}: Readonly<ThemeProviderProps>) {\n  return <NextThemesProvider {...props}>{children}</NextThemesProvider>;\n}\n",
       "type": "registry:component",
       "target": "components/provider/theme-provider.tsx"
     },
     {
-      "path": "block/home-page/components/toggle-theme.tsx",
+      "path": "block/next-themes/components/toggle-theme.tsx",
       "content": "\"use client\";\nimport { useTheme } from \"next-themes\";\n\nimport { Moon, Sun } from \"lucide-react\";\n\nimport { cn } from \"@/lib/utils\";\n\nimport { Button } from \"@/components/ui/button\";\n\ntype ToggleThemeProps = {\n  className?: string;\n};\n\nexport function ToggleTheme({ className }: ToggleThemeProps) {\n  const { setTheme, theme } = useTheme();\n\n  return (\n    <Button\n      variant=\"ghost\"\n      size=\"icon\"\n      onClick={() => setTheme(theme === \"light\" ? \"dark\" : \"light\")}\n      type=\"button\"\n      className={cn(\"size-9 text-muted-foreground\", className)}\n    >\n      <Sun className=\"h-6 w-[1.3rem] dark:hidden\" />\n      <Moon className=\"hidden size-5 dark:block\" />\n      <span className=\"sr-only\">Toggle theme</span>\n    </Button>\n  );\n}\n",
       "type": "registry:component",
       "target": "components/layout/toggle/toggle-theme.tsx"

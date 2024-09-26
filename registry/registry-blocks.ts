@@ -44,12 +44,12 @@ export const blocks: Registry = [
         type: "registry:page",
       },
       {
-        path: "block/home-page/components/theme-provider.tsx",
+        path: "block/next-themes/components/theme-provider.tsx",
         target: "components/provider/theme-provider.tsx",
         type: "registry:component",
       },
       {
-        path: "block/home-page/components/toggle-theme.tsx",
+        path: "block/next-themes/components/toggle-theme.tsx",
         target: "components/layout/toggle/toggle-theme.tsx",
         type: "registry:component",
       },
@@ -86,5 +86,30 @@ export const blocks: Registry = [
     ],
     category: "Web",
     subcategory: "Layout",
+  },
+  {
+    name: "next-themes",
+    type: "registry:block",
+    dependencies: ["next-themes"],
+    registryDependencies: ["button"],
+    files: [
+      {
+        path: "block/next-themes/layout.tsx",
+        target: "app/layout.example.tsx",
+        type: "registry:page",
+      },
+      {
+        path: "block/next-themes/components/theme-provider.tsx",
+        target: "components/provider/theme-provider.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "block/next-themes/components/toggle-theme.tsx",
+        target: "components/layout/toggle/toggle-theme.tsx",
+        type: "registry:component",
+      },
+    ],
+    category: "Themes",
+    subcategory: "Setup",
   },
 ];

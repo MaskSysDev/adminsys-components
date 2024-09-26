@@ -97,11 +97,22 @@ export const Index: Record<string, any> = {
       name: "home-page",
       type: "registry:block",
       registryDependencies: ["button","navigation-menu","scroll-area","sonner","toast","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/typography.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/drawer-menu.json"],
-      files: ["registry/new-york/block/home-page/layout.tsx","registry/new-york/block/home-page/page.tsx","registry/new-york/block/home-page/components/theme-provider.tsx","registry/new-york/block/home-page/components/toggle-theme.tsx","registry/new-york/block/home-page/components/site-header.tsx","registry/new-york/block/home-page/components/nav-main.tsx","registry/new-york/block/home-page/components/nav-link.tsx","registry/new-york/block/home-page/components/nav-mobile.tsx","registry/new-york/block/home-page/components/site-footer.tsx","registry/new-york/block/home-page/components/site.ts"],
+      files: ["registry/new-york/block/home-page/layout.tsx","registry/new-york/block/home-page/page.tsx","registry/new-york/block/next-themes/components/theme-provider.tsx","registry/new-york/block/next-themes/components/toggle-theme.tsx","registry/new-york/block/home-page/components/site-header.tsx","registry/new-york/block/home-page/components/nav-main.tsx","registry/new-york/block/home-page/components/nav-link.tsx","registry/new-york/block/home-page/components/nav-mobile.tsx","registry/new-york/block/home-page/components/site-footer.tsx","registry/new-york/block/home-page/components/site.ts"],
       component: React.lazy(() => import("@/registry/new-york/block/home-page/layout.tsx")),
       source: "__registry__/new-york/block/home-page/layout.tsx",
       category: "Web",
       subcategory: "Layout",
+      chunks: []
+    },
+    "next-themes": {
+      name: "next-themes",
+      type: "registry:block",
+      registryDependencies: ["button"],
+      files: ["registry/new-york/block/next-themes/layout.tsx","registry/new-york/block/next-themes/components/theme-provider.tsx","registry/new-york/block/next-themes/components/toggle-theme.tsx"],
+      component: React.lazy(() => import("@/registry/new-york/block/next-themes/layout.tsx")),
+      source: "__registry__/new-york/block/next-themes/layout.tsx",
+      category: "Themes",
+      subcategory: "Setup",
       chunks: []
     },
     "utils": {
@@ -219,11 +230,22 @@ export const Index: Record<string, any> = {
       name: "home-page",
       type: "registry:block",
       registryDependencies: ["button","navigation-menu","scroll-area","sonner","toast","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/typography.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/drawer-menu.json"],
-      files: ["registry/default/block/home-page/layout.tsx","registry/default/block/home-page/page.tsx","registry/default/block/home-page/components/theme-provider.tsx","registry/default/block/home-page/components/toggle-theme.tsx","registry/default/block/home-page/components/site-header.tsx","registry/default/block/home-page/components/nav-main.tsx","registry/default/block/home-page/components/nav-link.tsx","registry/default/block/home-page/components/nav-mobile.tsx","registry/default/block/home-page/components/site-footer.tsx","registry/default/block/home-page/components/site.ts"],
+      files: ["registry/default/block/home-page/layout.tsx","registry/default/block/home-page/page.tsx","registry/default/block/next-themes/components/theme-provider.tsx","registry/default/block/next-themes/components/toggle-theme.tsx","registry/default/block/home-page/components/site-header.tsx","registry/default/block/home-page/components/nav-main.tsx","registry/default/block/home-page/components/nav-link.tsx","registry/default/block/home-page/components/nav-mobile.tsx","registry/default/block/home-page/components/site-footer.tsx","registry/default/block/home-page/components/site.ts"],
       component: React.lazy(() => import("@/registry/default/block/home-page/layout.tsx")),
       source: "__registry__/default/block/home-page/layout.tsx",
       category: "Web",
       subcategory: "Layout",
+      chunks: []
+    },
+    "next-themes": {
+      name: "next-themes",
+      type: "registry:block",
+      registryDependencies: ["button"],
+      files: ["registry/default/block/next-themes/layout.tsx","registry/default/block/next-themes/components/theme-provider.tsx","registry/default/block/next-themes/components/toggle-theme.tsx"],
+      component: React.lazy(() => import("@/registry/default/block/next-themes/layout.tsx")),
+      source: "__registry__/default/block/next-themes/layout.tsx",
+      category: "Themes",
+      subcategory: "Setup",
       chunks: []
     },
     "utils": {
