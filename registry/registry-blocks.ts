@@ -39,7 +39,7 @@ export const blocks: Registry = [
       },
       {
         path: "block/hero-01/components/hero-01.tsx",
-        type: "registry:component/layout",
+        type: "registry:example",
       },
     ],
     category: "Banner",
