@@ -71,17 +71,6 @@ export const Index: Record<string, any> = {
       subcategory: "undefined",
       chunks: []
     },
-    "accordion-demo": {
-      name: "accordion-demo",
-      type: "registry:example",
-      registryDependencies: ["accordion"],
-      files: ["registry/new-york/example/accordion-demo.tsx"],
-      component: React.lazy(() => import("@/registry/new-york/example/accordion-demo.tsx")),
-      source: "",
-      category: "undefined",
-      subcategory: "undefined",
-      chunks: []
-    },
     "hero-01": {
       name: "hero-01",
       type: "registry:block",
@@ -199,17 +188,6 @@ export const Index: Record<string, any> = {
       registryDependencies: undefined,
       files: ["registry/default/ui/typography.tsx"],
       component: React.lazy(() => import("@/registry/default/ui/typography.tsx")),
-      source: "",
-      category: "undefined",
-      subcategory: "undefined",
-      chunks: []
-    },
-    "accordion-demo": {
-      name: "accordion-demo",
-      type: "registry:example",
-      registryDependencies: ["accordion"],
-      files: ["registry/default/example/accordion-demo.tsx"],
-      component: React.lazy(() => import("@/registry/default/example/accordion-demo.tsx")),
       source: "",
       category: "undefined",
       subcategory: "undefined",
