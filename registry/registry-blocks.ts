@@ -286,6 +286,11 @@ export const blocks: Registry = [
         target: "components/layout/sidebar/inc/sidebar-nav-user.tsx",
         type: "registry:component",
       },
+      {
+        path: "block/adminsys/components/admin-sidebar.tsx",
+        target: "components/layout/sidebar/admin-sidebar.tsx",
+        type: "registry:component",
+      },
     ],
     category: "Admin",
     subcategory: "Layout",

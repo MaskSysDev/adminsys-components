@@ -1,0 +1,57 @@
+"use client";
+
+import { siteConfig } from "@/config/site";
+
+import { SidebarLinkSingle } from "@/components/layout/sidebar/inc/sidebar-link-single";
+import { SidebarLinksSection } from "@/components/layout/sidebar/inc/sidebar-links-section";
+import { SidebarNavUser } from "@/components/layout/sidebar/inc/sidebar-nav-user";
+
+import { ScrollArea } from "@/components/ui/scroll-area";
+import {
+  Sidebar,
+  SidebarContent,
+  SidebarFooter,
+  SidebarHeader,
+  SidebarItem,
+  SidebarLabel,
+} from "@/components/ui/sidebar";
+
+export function AdminSidebar() {
+  return (
+    <Sidebar>
+      <SidebarHeader className="min-h-14">
+        <h1 className="text-3xl font-bold">{siteConfig.adminSidebar.name}</h1>
+      </SidebarHeader>
+      <SidebarContent>
+        <ScrollArea>
+          {siteConfig.adminSidebar.content.map((item) => (
+            <SidebarItem key={item.id} className="mb-10">
+              {item.contentTitle && (
+                <div className="px-1.5 text-sm font-medium text-muted-foreground/60">
+                  {item.contentTitle}
+                </div>
+              )}
+              <SidebarLinksSection linksSection={item.linksSection} />
+            </SidebarItem>
+          ))}
+        </ScrollArea>
+        <SidebarItem className="mt-auto gap-0">
+          <SidebarLabel className="mb-2 text-muted-foreground/60">
+            Help
+          </SidebarLabel>
+          {siteConfig.adminSidebar.support.map((item) => (
+            <SidebarLinkSingle
+              key={item.href}
+              label={item.label}
+              href={item.href}
+              className="text-sm"
+            />
+          ))}
+        </SidebarItem>
+      </SidebarContent>
+      <SidebarFooter>
+        <SidebarNavUser />
+      </SidebarFooter>
+    </Sidebar>
+  );
+}
