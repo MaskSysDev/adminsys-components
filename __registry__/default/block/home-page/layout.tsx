@@ -9,7 +9,6 @@ import { SiteHeader } from "@/components/layout/header/site-header";
 
 import { ThemeProvider } from "@/components/provider/theme-provider";
 
-import { TailwindIndicator } from "@/components/tailwind-indicator";
 import { Toaster as ToasterSonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
 
@@ -131,7 +130,6 @@ export default function RootLayout({
             </div>
             <SiteFooter footer={siteConfig.footerSimple} />
           </div>
-          <TailwindIndicator />
           <ToasterSonner />
           <Toaster />
         </ThemeProvider>

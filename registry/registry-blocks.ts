@@ -74,6 +74,11 @@ export const blocks: Registry = [
         type: "registry:component",
       },
       {
+        path: "block/home-page/components/site-footer.tsx",
+        target: "components/layout/footer/site-footer.tsx",
+        type: "registry:component",
+      },
+      {
         path: "block/home-page/components/site.ts",
         target: "config/site.ts",
         type: "registry:block",

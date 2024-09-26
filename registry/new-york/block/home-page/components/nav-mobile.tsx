@@ -9,7 +9,7 @@ import { NavMain } from "@/components/layout/navbar/inc/nav-main";
 import { ToggleTheme } from "@/components/layout/toggle/toggle-theme";
 
 import { buttonVariants } from "@/components/ui/button";
-import { DrawerMenu } from "@/components/ui/drawer/drawer-menu";
+import { DrawerMenu } from "@/components/ui/drawer-menu";
 import { ScrollArea } from "@/components/ui/scroll-area";
 
 type NavMobileProps = {
