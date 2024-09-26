@@ -9,12 +9,6 @@
   ],
   "files": [
     {
-      "path": "block/next-themes/layout.tsx",
-      "content": "import { cn } from \"@/lib/utils\";\n\nimport { ThemeProvider } from \"@/components/provider/theme-provider\";\n\nexport default function RootLayout({\n  children,\n}: Readonly<{\n  children: React.ReactNode;\n}>) {\n  return (\n    <html lang=\"en\" suppressHydrationWarning>\n      <body className={cn(\"min-h-screen bg-background antialiased\")}>\n        <ThemeProvider\n          attribute=\"class\"\n          defaultTheme=\"system\"\n          enableSystem\n          disableTransitionOnChange\n        >\n          <div className=\"flex min-h-screen min-w-full flex-col\">\n            <div className=\"flex flex-1\">\n              <main className=\"flex flex-1 flex-col\">{children}</main>\n            </div>\n          </div>\n        </ThemeProvider>\n      </body>\n    </html>\n  );\n}\n",
-      "type": "registry:page",
-      "target": "app/layout.example.tsx"
-    },
-    {
       "path": "block/next-themes/components/theme-provider.tsx",
       "content": "\"use client\";\n\nimport * as React from \"react\";\n\nimport { ThemeProvider as NextThemesProvider } from \"next-themes\";\nimport type { ThemeProviderProps } from \"next-themes/dist/types\";\n\nexport function ThemeProvider({\n  children,\n  ...props\n}: Readonly<ThemeProviderProps>) {\n  return <NextThemesProvider {...props}>{children}</NextThemesProvider>;\n}\n",
       "type": "registry:component",

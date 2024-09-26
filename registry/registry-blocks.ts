@@ -32,6 +32,7 @@ export const blocks: Registry = [
       "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/typography.json",
       "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/drawer-menu.json",
       "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/theme-adminsys.json",
+      "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/next-themes.json",
     ],
     files: [
       {
@@ -75,16 +76,6 @@ export const blocks: Registry = [
         type: "registry:component",
       },
       {
-        path: "block/next-themes/components/theme-provider.tsx",
-        target: "components/provider/theme-provider.tsx",
-        type: "registry:component",
-      },
-      {
-        path: "block/next-themes/components/toggle-theme.tsx",
-        target: "components/layout/toggle/toggle-theme.tsx",
-        type: "registry:component",
-      },
-      {
         path: "block/home-page/components/site-header.tsx",
         target: "components/layout/header/site-header.tsx",
         type: "registry:component",
@@ -124,11 +115,6 @@ export const blocks: Registry = [
     dependencies: ["next-themes"],
     registryDependencies: ["button"],
     files: [
-      {
-        path: "block/next-themes/layout.tsx",
-        target: "app/layout.example.tsx",
-        type: "registry:page",
-      },
       {
         path: "block/next-themes/components/theme-provider.tsx",
         target: "components/provider/theme-provider.tsx",
