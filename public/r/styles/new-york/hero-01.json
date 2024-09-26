@@ -7,7 +7,7 @@
   "files": [
     {
       "path": "block/hero-01/page.tsx",
-      "content": "import { Hero01 } from \"@/components/hero-01\";\n\nexport default function Hero01Page() {\n  return (\n    <div\n      className=\"flex flex-1\n     flex-col\"\n    >\n      <Hero01\n        title=\"Hero 01 Title\"\n        description=\"Description Hero 01.\"\n        label=\"Hero Label\"\n        href=\"/\"\n      />\n    </div>\n  );\n}\n",
+      "content": "import { Hero01 } from \"@/components/layout/hero/hero-01\";\n\nexport default function Hero01Page() {\n  return (\n    <div\n      className=\"flex flex-1\n     flex-col\"\n    >\n      <Hero01\n        title=\"Hero 01 Title\"\n        description=\"Description Hero 01.\"\n        label=\"Hero Label\"\n        href=\"/\"\n      />\n    </div>\n  );\n}\n",
       "type": "registry:page",
       "target": "app/hero-01/page.tsx"
     },

@@ -5,17 +5,6 @@ import * as React from "react"
 
 export const Index: Record<string, any> = {
   "new-york": {
-    "accordion": {
-      name: "accordion",
-      type: "registry:ui",
-      registryDependencies: undefined,
-      files: ["registry/new-york/ui/accordion.tsx"],
-      component: React.lazy(() => import("@/registry/new-york/ui/accordion.tsx")),
-      source: "",
-      category: "undefined",
-      subcategory: "undefined",
-      chunks: []
-    },
     "badge-theme": {
       name: "badge-theme",
       type: "registry:ui",
@@ -60,28 +49,6 @@ export const Index: Record<string, any> = {
       subcategory: "undefined",
       chunks: []
     },
-    "login-01": {
-      name: "login-01",
-      type: "registry:block",
-      registryDependencies: ["button","card","input","label"],
-      files: ["registry/new-york/block/login-01/page.tsx","registry/new-york/block/login-01/components/login-form.tsx"],
-      component: React.lazy(() => import("@/registry/new-york/block/login-01/page.tsx")),
-      source: "__registry__/new-york/block/login-01/page.tsx",
-      category: "Authentication",
-      subcategory: "Login",
-      chunks: []
-    },
-    "authentication-01": {
-      name: "authentication-01",
-      type: "registry:block",
-      registryDependencies: ["button","card","input","label"],
-      files: ["registry/new-york/block/authentication-01.tsx"],
-      component: React.lazy(() => import("@/registry/new-york/block/authentication-01.tsx")),
-      source: "__registry__/new-york/block/authentication-01.tsx",
-      category: "Authentication",
-      subcategory: "Login",
-      chunks: []
-    },
     "hero-01": {
       name: "hero-01",
       type: "registry:block",
@@ -116,17 +83,6 @@ export const Index: Record<string, any> = {
       chunks: []
     },
   },  "default": {
-    "accordion": {
-      name: "accordion",
-      type: "registry:ui",
-      registryDependencies: undefined,
-      files: ["registry/default/ui/accordion.tsx"],
-      component: React.lazy(() => import("@/registry/default/ui/accordion.tsx")),
-      source: "",
-      category: "undefined",
-      subcategory: "undefined",
-      chunks: []
-    },
     "badge-theme": {
       name: "badge-theme",
       type: "registry:ui",
@@ -169,28 +125,6 @@ export const Index: Record<string, any> = {
       source: "",
       category: "undefined",
       subcategory: "undefined",
-      chunks: []
-    },
-    "login-01": {
-      name: "login-01",
-      type: "registry:block",
-      registryDependencies: ["button","card","input","label"],
-      files: ["registry/default/block/login-01/page.tsx","registry/default/block/login-01/components/login-form.tsx"],
-      component: React.lazy(() => import("@/registry/default/block/login-01/page.tsx")),
-      source: "__registry__/default/block/login-01/page.tsx",
-      category: "Authentication",
-      subcategory: "Login",
-      chunks: []
-    },
-    "authentication-01": {
-      name: "authentication-01",
-      type: "registry:block",
-      registryDependencies: ["button","card","input","label"],
-      files: ["registry/default/block/authentication-01.tsx"],
-      component: React.lazy(() => import("@/registry/default/block/authentication-01.tsx")),
-      source: "__registry__/default/block/authentication-01.tsx",
-      category: "Authentication",
-      subcategory: "Login",
       chunks: []
     },
     "hero-01": {
