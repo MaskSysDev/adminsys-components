@@ -2,7 +2,6 @@
 
 import { siteConfig } from "@/config/site";
 
-import { LogoLink } from "@/components/layout/logo/logo-link";
 import { SidebarLinkSingle } from "@/components/layout/sidebar/inc/sidebar-link-single";
 import { SidebarLinksSection } from "@/components/layout/sidebar/inc/sidebar-links-section";
 import { SidebarNavUser } from "@/components/layout/sidebar/inc/sidebar-nav-user";
@@ -21,7 +20,7 @@ export function AdminSidebar() {
   return (
     <Sidebar>
       <SidebarHeader className="min-h-14">
-        <LogoLink />
+        <h1 className="text-3xl font-bold">{siteConfig.adminSidebar.name}</h1>
       </SidebarHeader>
       <SidebarContent>
         <ScrollArea>

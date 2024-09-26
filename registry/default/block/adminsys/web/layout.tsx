@@ -4,25 +4,23 @@ import localFont from "next/font/local";
 import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
 
-import { DocsHeader } from "@/components/layout/header/docs-header";
-import { DocsSidebar } from "@/components/layout/sidebar/docs-sidebar";
+import { SiteFooter } from "@/components/layout/footer/site-footer";
+import { SiteHeader } from "@/components/layout/header/site-header";
 
 import { ThemeProvider } from "@/components/provider/theme-provider";
 
-import { TailwindIndicator } from "@/components/tailwind-indicator";
-import { SidebarLayout } from "@/components/ui/sidebar";
 import { Toaster as ToasterSonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
 
 import "@/styles/globals.css";
 
 const geistSans = localFont({
-  src: "../../../fonts/GeistVF.woff",
+  src: "../../fonts/GeistVF.woff",
   variable: "--font-geist-sans",
   weight: "100 900",
 });
 const geistMono = localFont({
-  src: "../../../fonts/GeistMonoVF.woff",
+  src: "../../fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
   weight: "100 900",
 });
@@ -105,13 +103,11 @@ export const viewport: Viewport = {
   ],
 };
 
-export default async function RootLayout({
+export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const { cookies } = await import("next/headers");
-
   return (
     <html lang="en" suppressHydrationWarning>
       <body
@@ -127,20 +123,13 @@ export default async function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <SidebarLayout
-            defaultOpen={cookies().get("sidebar:state")?.value === "true"}
-          >
-            <div className="flex min-h-screen min-w-full flex-col">
-              <DocsHeader />
-              <div className="flex flex-1">
-                <DocsSidebar />
-                <main className="mx-auto flex max-w-4xl flex-1 flex-col               transition-all duration-300 ease-in-out">
-                  {children}
-                </main>
-              </div>
+          <div className="flex min-h-screen min-w-full flex-col">
+            <SiteHeader siteHeader={siteConfig.siteHeader} />
+            <div className="flex flex-1">
+              <main className="flex flex-1 flex-col">{children}</main>
             </div>
-          </SidebarLayout>
-          <TailwindIndicator />
+            <SiteFooter footer={siteConfig.footerSimple} />
+          </div>
           <ToasterSonner />
           <Toaster />
         </ThemeProvider>

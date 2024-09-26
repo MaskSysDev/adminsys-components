@@ -104,6 +104,17 @@ export const Index: Record<string, any> = {
       subcategory: "Setup",
       chunks: []
     },
+    "adminsys": {
+      name: "adminsys",
+      type: "registry:block",
+      registryDependencies: ["button","navigation-menu","scroll-area","sonner","toast","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/typography.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/drawer-menu.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/theme-adminsys.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/next-themes.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/sidebar.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/use-mobile.json"],
+      files: ["registry/new-york/block/adminsys/web/layout.tsx","registry/new-york/block/adminsys/web/loading.tsx","registry/new-york/block/adminsys/components/loading-spinner.tsx","registry/new-york/block/adminsys/web/page.tsx","registry/new-york/block/adminsys/web/about/page.tsx","registry/new-york/block/adminsys/web/contact/page.tsx","registry/new-york/block/adminsys/web/not-found/page.tsx","registry/new-york/block/adminsys/components/not-found.tsx","registry/new-york/block/adminsys/components/site-header.tsx","registry/new-york/block/adminsys/components/nav-main.tsx","registry/new-york/block/adminsys/components/nav-link.tsx","registry/new-york/block/adminsys/components/nav-mobile.tsx","registry/new-york/block/adminsys/components/site-footer.tsx","registry/new-york/block/adminsys/components/site.ts","registry/new-york/block/adminsys/admin/layout.tsx","registry/new-york/block/adminsys/admin/loading.tsx","registry/new-york/block/adminsys/admin/dashboard/page.tsx","registry/new-york/block/adminsys/admin/users/list/page.tsx","registry/new-york/block/adminsys/admin/not-found/page.tsx","registry/new-york/block/adminsys/components/admin-header.tsx","registry/new-york/block/adminsys/components/dropdown-user.tsx","registry/new-york/block/adminsys/components/link-folder-root.tsx","registry/new-york/block/adminsys/components/sidebar-links-section.tsx","registry/new-york/block/adminsys/components/sidebar-link-folder.tsx","registry/new-york/block/adminsys/components/sidebar-link-single.tsx","registry/new-york/block/adminsys/components/sidebar-link-submenu.tsx","registry/new-york/block/adminsys/components/sidebar-links-section.tsx","registry/new-york/block/adminsys/components/sidebar-nav-user.tsx"],
+      component: React.lazy(() => import("@/registry/new-york/block/adminsys/web/layout.tsx")),
+      source: "__registry__/new-york/block/adminsys/web/layout.tsx",
+      category: "Admin",
+      subcategory: "Layout",
+      chunks: []
+    },
     "utils": {
       name: "utils",
       type: "registry:lib",
@@ -224,6 +235,17 @@ export const Index: Record<string, any> = {
       source: "__registry__/default/block/next-themes/components/theme-provider.tsx",
       category: "Themes",
       subcategory: "Setup",
+      chunks: []
+    },
+    "adminsys": {
+      name: "adminsys",
+      type: "registry:block",
+      registryDependencies: ["button","navigation-menu","scroll-area","sonner","toast","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/typography.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/drawer-menu.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/theme-adminsys.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/next-themes.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/sidebar.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/use-mobile.json"],
+      files: ["registry/default/block/adminsys/web/layout.tsx","registry/default/block/adminsys/web/loading.tsx","registry/default/block/adminsys/components/loading-spinner.tsx","registry/default/block/adminsys/web/page.tsx","registry/default/block/adminsys/web/about/page.tsx","registry/default/block/adminsys/web/contact/page.tsx","registry/default/block/adminsys/web/not-found/page.tsx","registry/default/block/adminsys/components/not-found.tsx","registry/default/block/adminsys/components/site-header.tsx","registry/default/block/adminsys/components/nav-main.tsx","registry/default/block/adminsys/components/nav-link.tsx","registry/default/block/adminsys/components/nav-mobile.tsx","registry/default/block/adminsys/components/site-footer.tsx","registry/default/block/adminsys/components/site.ts","registry/default/block/adminsys/admin/layout.tsx","registry/default/block/adminsys/admin/loading.tsx","registry/default/block/adminsys/admin/dashboard/page.tsx","registry/default/block/adminsys/admin/users/list/page.tsx","registry/default/block/adminsys/admin/not-found/page.tsx","registry/default/block/adminsys/components/admin-header.tsx","registry/default/block/adminsys/components/dropdown-user.tsx","registry/default/block/adminsys/components/link-folder-root.tsx","registry/default/block/adminsys/components/sidebar-links-section.tsx","registry/default/block/adminsys/components/sidebar-link-folder.tsx","registry/default/block/adminsys/components/sidebar-link-single.tsx","registry/default/block/adminsys/components/sidebar-link-submenu.tsx","registry/default/block/adminsys/components/sidebar-links-section.tsx","registry/default/block/adminsys/components/sidebar-nav-user.tsx"],
+      component: React.lazy(() => import("@/registry/default/block/adminsys/web/layout.tsx")),
+      source: "__registry__/default/block/adminsys/web/layout.tsx",
+      category: "Admin",
+      subcategory: "Layout",
       chunks: []
     },
     "utils": {

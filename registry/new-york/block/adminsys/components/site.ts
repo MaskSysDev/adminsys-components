@@ -93,18 +93,12 @@ export const siteConfig = {
       },
       {
         id: "3",
-        label: "Docs",
-        href: "/docs",
-        disabled: false,
-      },
-      {
-        id: "4",
-        label: "Admin",
+        label: "Dashboard",
         href: "/admin/dashboard",
         disabled: false,
       },
       {
-        id: "5",
+        id: "4",
         label: "Contact",
         href: "/contact",
         disabled: false,
@@ -168,76 +162,6 @@ export const siteConfig = {
     ],
   },
 
-  docsSidebar: {
-    id: "1",
-    content: [
-      {
-        id: "1",
-        contentTitle: "Started",
-        linksSection: [
-          {
-            id: "1",
-            label: "Get Started",
-            href: "/docs/get-starter",
-            path: "",
-            items: [],
-          },
-        ],
-      },
-      {
-        id: "2",
-        contentTitle: "Components",
-        linksSection: [
-          {
-            id: "1",
-            label: "UI",
-            href: "",
-            path: "/docs/components/ui",
-            items: [
-              {
-                id: "1",
-                label: "BadgeTheme",
-                href: "/docs/components/ui/badge-theme",
-                path: "",
-                items: [],
-              },
-              {
-                id: "2",
-                label: "CardTheme",
-                href: "/docs/components/ui/card-theme",
-                path: "",
-                items: [],
-              },
-              {
-                id: "3",
-                label: "Typography",
-                href: "/docs/components/ui/typography",
-                path: "",
-                items: [],
-              },
-            ],
-          },
-        ],
-      },
-    ],
-    support: [
-      {
-        id: "1",
-        label: "Docs",
-        href: "/docs",
-        path: "",
-        items: [],
-      },
-      {
-        id: "2",
-        label: "Support",
-        href: "/support",
-        path: "",
-        items: [],
-      },
-    ],
-  },
-
   footerSimple: {
     author,
     authorUrl,
@@ -245,17 +169,5 @@ export const siteConfig = {
     facebook,
     instagram,
     youtube,
-  },
-
-  heroSimple: {
-    size: "64",
-    title: name,
-    subtitle: "Template ",
-    subtitleColor: "Admin",
-    description: siteDescription,
-    labelLink1: "Get Started",
-    link1: "/",
-    labelLink2: "GitHub",
-    link2: projectUrl,
   },
 };
