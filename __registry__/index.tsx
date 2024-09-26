@@ -82,6 +82,17 @@ export const Index: Record<string, any> = {
       subcategory: "Login",
       chunks: []
     },
+    "hero-01": {
+      name: "hero-01",
+      type: "registry:block",
+      registryDependencies: ["button"],
+      files: ["registry/new-york/block/hero-01/page.tsx","registry/new-york/block/hero-01/components/hero-01.tsx"],
+      component: React.lazy(() => import("@/registry/new-york/block/hero-01/page.tsx")),
+      source: "__registry__/new-york/block/hero-01/page.tsx",
+      category: "Banner",
+      subcategory: "Hero",
+      chunks: []
+    },
     "utils": {
       name: "utils",
       type: "registry:lib",
@@ -180,6 +191,17 @@ export const Index: Record<string, any> = {
       source: "__registry__/default/block/authentication-01.tsx",
       category: "Authentication",
       subcategory: "Login",
+      chunks: []
+    },
+    "hero-01": {
+      name: "hero-01",
+      type: "registry:block",
+      registryDependencies: ["button"],
+      files: ["registry/default/block/hero-01/page.tsx","registry/default/block/hero-01/components/hero-01.tsx"],
+      component: React.lazy(() => import("@/registry/default/block/hero-01/page.tsx")),
+      source: "__registry__/default/block/hero-01/page.tsx",
+      category: "Banner",
+      subcategory: "Hero",
       chunks: []
     },
     "utils": {
