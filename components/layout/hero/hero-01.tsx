@@ -33,7 +33,7 @@ export const Hero01 = ({ title, description, label, href }: Hero01Props) => {
         <div className="lg:w-1/2">
           <img
             src="/placeholder.svg?height=400&width=600"
-            alt="Produtos em destaque"
+            alt="Hero Image"
             className="rounded-lg shadow-lg"
             width={600}
             height={400}

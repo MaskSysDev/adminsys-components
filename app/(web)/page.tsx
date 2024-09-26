@@ -1,4 +1,5 @@
-import { Hero01 } from "@/components/block/hero-01";
+import { Hero01 } from "@/components/layout/hero/hero-01";
+
 import { Typography } from "@/components/ui/typography";
 
 export default function HomePage() {
