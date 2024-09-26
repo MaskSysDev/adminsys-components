@@ -133,7 +133,9 @@ export const blocks: Registry = [
     name: "adminsys",
     type: "registry:block",
     registryDependencies: [
+      "avatar",
       "button",
+      "dropdown-menu",
       "navigation-menu",
       "scroll-area",
       "sonner",
