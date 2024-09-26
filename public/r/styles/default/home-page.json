@@ -8,7 +8,8 @@
     "sonner",
     "toast",
     "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/typography.json",
-    "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/drawer-menu.json"
+    "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/drawer-menu.json",
+    "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/theme-adminsys.json"
   ],
   "files": [
     {
@@ -18,10 +19,46 @@
       "target": "app/(web)/layout.tsx"
     },
     {
+      "path": "block/home-page/loading.tsx",
+      "content": "import { LoadingSpinner } from \"@/components/layout/loading/loading-spinner\";\n\nexport default function Loading() {\n  return (\n    <section className=\"flex flex-col items-center gap-64 py-72\">\n      <div className=\"container flex h-full flex-col items-center justify-center space-y-2\">\n        <LoadingSpinner />\n      </div>\n    </section>\n  );\n}\n",
+      "type": "registry:page",
+      "target": "app/(web)/loading.tsx"
+    },
+    {
+      "path": "block/home-page/components/loading-spinner.tsx",
+      "content": "import { cn } from \"@/lib/utils\";\n\ntype LoadingSpinnerProps = {\n  className?: string;\n};\n\nexport const LoadingSpinner = ({ className }: LoadingSpinnerProps) => {\n  return (\n    <span\n      aria-label=\"loading\"\n      className={cn(\n        \"absolute inline-block size-6 min-w-max animate-spin rounded-full border-[3px] border-current border-t-transparent text-muted-foreground\",\n        className,\n      )}\n    >\n      <span className=\"sr-only\">Loading...</span>\n    </span>\n  );\n};\n",
+      "type": "registry:component",
+      "target": "components/layout/loading/loading-spinner.tsx"
+    },
+    {
       "path": "block/home-page/page.tsx",
       "content": "import { Typography } from \"@/components/ui/typography\";\n\nexport default function HomePage() {\n  return (\n    <div className=\"flex flex-1 flex-col\">\n      <section className=\"container p-2\">\n        <Typography.H1 className=\"text-2xl font-semibold lg:text-3xl\">\n          Home\n        </Typography.H1>\n      </section>\n    </div>\n  );\n}\n",
       "type": "registry:page",
       "target": "app/(web)/page.tsx"
+    },
+    {
+      "path": "block/home-page/about/page.tsx",
+      "content": "import { Metadata } from \"next\";\n\nimport { siteConfig } from \"@/config/site\";\n\nimport { Typography } from \"@/components/ui/typography\";\n\nexport const metadata: Metadata = {\n  title: siteConfig.aboutPage.title,\n  description: siteConfig.aboutPage.description,\n  keywords: siteConfig.aboutPage.keywords,\n};\n\nexport default function AboutPage() {\n  return (\n    <div className=\"flex flex-1 justify-center\">\n      <section className=\"container p-2\">\n        <Typography.H1 className=\"text-2xl font-semibold lg:text-3xl\">\n          About\n        </Typography.H1>\n      </section>\n    </div>\n  );\n}\n",
+      "type": "registry:page",
+      "target": "app/(web)/about/page.tsx"
+    },
+    {
+      "path": "block/home-page/contact/page.tsx",
+      "content": "import { Metadata } from \"next\";\n\nimport { Typography } from \"@/components/ui/typography\";\n\nexport const metadata: Metadata = {\n  title: \"Contact\",\n  description: \"Description Contact.\",\n};\n\nexport default function ContactPage() {\n  return (\n    <div className=\"flex flex-1 justify-center\">\n      <section className=\"container p-2\">\n        <Typography.H1 className=\"text-2xl font-semibold lg:text-3xl\">\n          Contact\n        </Typography.H1>\n      </section>\n    </div>\n  );\n}\n",
+      "type": "registry:page",
+      "target": "app/(web)/contact/page.tsx"
+    },
+    {
+      "path": "block/home-page/not-found/page.tsx",
+      "content": "import { Metadata } from \"next\";\n\nimport { NotFound } from \"@/components/layout/not-found/not-found\";\n\nexport const metadata: Metadata = {\n  title: \"NotFound\",\n  description: \"Description NotFound.\",\n};\n\nexport default function NotFoundPage() {\n  return (\n    <div className=\"container mx-auto py-8\">\n      <NotFound />\n    </div>\n  );\n}\n",
+      "type": "registry:page",
+      "target": "app/(web)/[...not-found]/page.tsx"
+    },
+    {
+      "path": "block/home-page/components/not-found.tsx",
+      "content": "import Link from \"next/link\";\n\nimport { Button } from \"@/components/ui/button\";\n\nexport const NotFound = () => {\n  return (\n    <section className=\"container flex flex-col items-center justify-center gap-4 py-6 md:min-h-[48vh] md:py-20\">\n      <div className=\"text-7xl font-bold text-primary\">404</div>\n\n      <div className=\"text-center text-2xl font-bold md:text-4xl lg:text-5xl xl:text-6xl\">\n        This page does not exist\n      </div>\n\n      <div className=\" text-sm font-medium text-muted-foreground md:text-xl lg:text-2xl\">\n        The page you are looking for could not be found.\n      </div>\n\n      <Button asChild variant=\"secondary\">\n        <Link href=\"/\">Go Home</Link>\n      </Button>\n    </section>\n  );\n};\n",
+      "type": "registry:component",
+      "target": "components/layout/not-found/not-found.tsx"
     },
     {
       "path": "block/next-themes/components/theme-provider.tsx",
@@ -37,7 +74,7 @@
     },
     {
       "path": "block/home-page/components/site-header.tsx",
-      "content": "import Link from \"next/link\";\n\nimport { NavMain } from \"@/components/layout/navbar/inc/nav-main\";\nimport { NavMobile } from \"@/components/layout/navbar/nav-mobile\";\nimport { ToggleTheme } from \"@/components/layout/toggle/toggle-theme\";\n\nimport { Button } from \"@/components/ui/button\";\n\ntype SiteHeaderProps = {\n  siteHeader: {\n    name: string;\n    links: {\n      id: string;\n      label: string;\n      href: string;\n      disabled: boolean;\n    }[];\n  };\n};\n\nexport const SiteHeader = ({ siteHeader }: SiteHeaderProps) => {\n  return (\n    <header className=\"sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/95\">\n      <div className=\"mx-auto flex h-14 items-center justify-center px-2\">\n        <div className=\"container relative flex w-full items-center justify-between\">\n          {/* Left */}\n          <div className=\"flex items-center space-x-2\">\n            <h1 className=\"text-3xl font-bold\">{siteHeader.name}</h1>\n            <NavMain navbar={siteHeader} className=\"hidden md:flex\" />\n          </div>\n\n          {/* Right */}\n          <div className=\"flex flex-1 items-center justify-end space-x-2\">\n            <Button asChild size=\"sm\">\n              <Link href=\"/auth/sign-in\">Sign-in</Link>\n            </Button>\n            <ToggleTheme className=\"hidden md:flex\" />\n            <NavMobile className=\"flex md:hidden\" />\n          </div>\n        </div>\n      </div>\n    </header>\n  );\n};\n",
+      "content": "import { NavMain } from \"@/components/layout/navbar/inc/nav-main\";\nimport { NavMobile } from \"@/components/layout/navbar/nav-mobile\";\nimport { ToggleTheme } from \"@/components/layout/toggle/toggle-theme\";\n\ntype SiteHeaderProps = {\n  siteHeader: {\n    name: string;\n    links: {\n      id: string;\n      label: string;\n      href: string;\n      disabled: boolean;\n    }[];\n  };\n};\n\nexport const SiteHeader = ({ siteHeader }: SiteHeaderProps) => {\n  return (\n    <header className=\"sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/95\">\n      <div className=\"mx-auto flex h-14 items-center justify-center px-2\">\n        <div className=\"container relative flex w-full items-center justify-between\">\n          {/* Left */}\n          <div className=\"flex items-center space-x-2\">\n            <h1 className=\"text-3xl font-bold\">{siteHeader.name}</h1>\n            <NavMain navbar={siteHeader} className=\"hidden md:flex\" />\n          </div>\n\n          {/* Right */}\n          <div className=\"flex flex-1 items-center justify-end space-x-2\">\n            <ToggleTheme className=\"hidden md:flex\" />\n            <NavMobile className=\"flex md:hidden\" />\n          </div>\n        </div>\n      </div>\n    </header>\n  );\n};\n",
       "type": "registry:component",
       "target": "components/layout/header/site-header.tsx"
     },
@@ -67,7 +104,7 @@
     },
     {
       "path": "block/home-page/components/site.ts",
-      "content": "export type SiteConfig = typeof siteConfig;\n\nconst name = \"AdminSys\";\nconst emailContact = \"contact@email.com\";\nconst emailSupport = \"support@email.com\";\n\nconst url = \"https://adminsys-boilerplate.vercel.app\";\nconst favicon = \"/favicon.ico\";\nconst favicon16x16 = \"/assets/images/icon/icon-16x16.png\";\nconst favicon180x180 = \"/assets/images/icon/icon-180x180.png\";\nconst favicon192x192 = \"/assets/images/icon/icon-192x192.png\";\nconst favicon512x512 = \"/assets/images/icon/icon-512x512.png\";\nconst logo = \"/assets/images/logo/logo-dark.png\";\nconst logoLight = \"/assets/images/logo/logo-light.png\";\nconst logoDark = \"/assets/images/logo/logo-dark.png\";\n\nconst locale = \"en-US\";\n\nconst facebook = \"https://www.facebook.com/\";\nconst instagram = \"https://www.instagram.com/\";\nconst youtube = \"https://www.youtube.com/\";\n\nconst keywords = \"React, Next.js, TypeScript\";\n\nconst author = \"MaskSysDev\";\nconst authorUrl = \"https://github.com/MaskSysDev\";\n\nconst creator = \"Mask\";\nconst publisher = \"MaskSysDev\";\n\nconst projectUrl = \"https://github.com/MaskSysDev/adminsys-boilerplate\";\n\nexport const siteConfig = {\n  /* Global */\n  name,\n  description,\n  emailContact,\n  emailSupport,\n  url,\n\n  favicon,\n  favicon16x16,\n  favicon180x180,\n  favicon192x192,\n  favicon512x512,\n  logo,\n  logoLight,\n  logoDark,\n\n  locale,\n\n  keywords,\n\n  author,\n  authorUrl,\n\n  creator,\n  publisher,\n\n  project: {\n    url: projectUrl,\n    author,\n    authorUrl,\n  },\n  docsRepositoryBase: projectUrl,\n\n  links: {\n    github: projectUrl,\n    facebook,\n    instagram,\n    youtube,\n  },\n\n  /* Components Layout */\n  siteHeader: {\n    name,\n    links: [\n      {\n        id: \"1\",\n        label: \"Home\",\n        href: \"/\",\n        disabled: false,\n      },\n      {\n        id: \"2\",\n        label: \"About\",\n        href: \"/about\",\n        disabled: false,\n      },\n      {\n        id: \"3\",\n        label: \"Docs\",\n        href: \"/docs\",\n        disabled: false,\n      },\n      {\n        id: \"4\",\n        label: \"Admin\",\n        href: \"/admin/dashboard\",\n        disabled: false,\n      },\n      {\n        id: \"5\",\n        label: \"Contact\",\n        href: \"/contact\",\n        disabled: false,\n      },\n    ],\n  },\n\n  footerSimple: {\n    author,\n    authorUrl,\n    name,\n    facebook,\n    instagram,\n    youtube,\n  },\n};\n",
+      "content": "export type SiteConfig = typeof siteConfig;\n\nconst name = \"AdminSys\";\nconst emailContact = \"contact@email.com\";\nconst emailSupport = \"support@email.com\";\n\nconst url = \"https://adminsys-boilerplate.vercel.app\";\nconst favicon = \"/favicon.ico\";\nconst favicon16x16 = \"/assets/images/icon/icon-16x16.png\";\nconst favicon180x180 = \"/assets/images/icon/icon-180x180.png\";\nconst favicon192x192 = \"/assets/images/icon/icon-192x192.png\";\nconst favicon512x512 = \"/assets/images/icon/icon-512x512.png\";\nconst logo = \"/assets/images/logo/logo-dark.png\";\nconst logoLight = \"/assets/images/logo/logo-light.png\";\nconst logoDark = \"/assets/images/logo/logo-dark.png\";\n\nconst locale = \"en-US\";\n\nconst facebook = \"https://www.facebook.com/\";\nconst instagram = \"https://www.instagram.com/\";\nconst youtube = \"https://www.youtube.com/\";\n\nconst keywords = \"React, Next.js, TypeScript\";\n\nconst author = \"MaskSysDev\";\nconst authorUrl = \"https://github.com/MaskSysDev\";\n\nconst creator = \"Mask\";\nconst publisher = \"MaskSysDev\";\n\nconst projectUrl = \"https://github.com/MaskSysDev/adminsys-boilerplate\";\n\nexport const siteConfig = {\n  /* Global */\n  name,\n  description,\n  emailContact,\n  emailSupport,\n  url,\n\n  favicon,\n  favicon16x16,\n  favicon180x180,\n  favicon192x192,\n  favicon512x512,\n  logo,\n  logoLight,\n  logoDark,\n\n  locale,\n\n  keywords,\n\n  author,\n  authorUrl,\n\n  creator,\n  publisher,\n\n  project: {\n    url: projectUrl,\n    author,\n    authorUrl,\n  },\n  docsRepositoryBase: projectUrl,\n\n  links: {\n    github: projectUrl,\n    facebook,\n    instagram,\n    youtube,\n  },\n\n  /* Components Layout */\n  siteHeader: {\n    name,\n    links: [\n      {\n        id: \"1\",\n        label: \"Home\",\n        href: \"/\",\n        disabled: false,\n      },\n      {\n        id: \"2\",\n        label: \"About\",\n        href: \"/about\",\n        disabled: false,\n      },\n      {\n        id: \"3\",\n        label: \"Contact\",\n        href: \"/contact\",\n        disabled: false,\n      },\n    ],\n  },\n\n  footerSimple: {\n    author,\n    authorUrl,\n    name,\n    facebook,\n    instagram,\n    youtube,\n  },\n};\n",
       "type": "registry:block",
       "target": "config/site.ts"
     }

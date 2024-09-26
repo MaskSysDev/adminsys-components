@@ -1,6 +1,7 @@
 export type SiteConfig = typeof siteConfig;
 
 const name = "AdminSys";
+
 const description =
   "Nextjs App with Typescript, Tailwind CSS, Shadcn/ui, ESLint, Prettier, and more.";
 
@@ -92,18 +93,6 @@ export const siteConfig = {
       },
       {
         id: "3",
-        label: "Docs",
-        href: "/docs",
-        disabled: false,
-      },
-      {
-        id: "4",
-        label: "Admin",
-        href: "/admin/dashboard",
-        disabled: false,
-      },
-      {
-        id: "5",
         label: "Contact",
         href: "/contact",
         disabled: false,

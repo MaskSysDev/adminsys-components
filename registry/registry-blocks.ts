@@ -31,6 +31,7 @@ export const blocks: Registry = [
       "toast",
       "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/typography.json",
       "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/drawer-menu.json",
+      "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/theme-adminsys.json",
     ],
     files: [
       {
@@ -39,9 +40,39 @@ export const blocks: Registry = [
         type: "registry:page",
       },
       {
+        path: "block/home-page/loading.tsx",
+        target: "app/(web)/loading.tsx",
+        type: "registry:page",
+      },
+      {
+        path: "block/home-page/components/loading-spinner.tsx",
+        target: "components/layout/loading/loading-spinner.tsx",
+        type: "registry:component",
+      },
+      {
         path: "block/home-page/page.tsx",
         target: "app/(web)/page.tsx",
         type: "registry:page",
+      },
+      {
+        path: "block/home-page/about/page.tsx",
+        target: "app/(web)/about/page.tsx",
+        type: "registry:page",
+      },
+      {
+        path: "block/home-page/contact/page.tsx",
+        target: "app/(web)/contact/page.tsx",
+        type: "registry:page",
+      },
+      {
+        path: "block/home-page/not-found/page.tsx",
+        target: "app/(web)/[...not-found]/page.tsx",
+        type: "registry:page",
+      },
+      {
+        path: "block/home-page/components/not-found.tsx",
+        target: "components/layout/not-found/not-found.tsx",
+        type: "registry:component",
       },
       {
         path: "block/next-themes/components/theme-provider.tsx",
