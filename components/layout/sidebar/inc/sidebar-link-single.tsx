@@ -5,6 +5,8 @@ import { usePathname } from "next/navigation";
 
 import { cn } from "@/lib/utils";
 
+import { buttonVariants } from "@/components/ui/button";
+
 type SidebarLinkSingleProps = {
   id?: string;
   label: string;
@@ -26,7 +28,10 @@ export const SidebarLinkSingle = ({
       id={id}
       href={href}
       className={cn(
-        "group inline-block h-10 w-full items-center justify-center rounded px-4 py-2 text-base font-semibold text-muted-foreground ring-offset-background transition-colors duration-300 ease-in-out hover:bg-primary/5 hover:text-foreground focus:text-foreground focus:outline-none focus-visible:text-foreground focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-primary/5 data-[state=open]:bg-primary/5",
+        buttonVariants({
+          variant: "ghost",
+        }),
+        "group inline-block h-10 w-full items-center justify-center text-base font-semibold text-muted-foreground transition-colors duration-300 ease-in-out hover:bg-primary/5 focus-visible:text-foreground data-[active]:bg-primary/5 data-[state=open]:bg-primary/5",
         isActive && "bg-primary/5 text-primary",
         className,
       )}

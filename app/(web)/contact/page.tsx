@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 
+import { Container } from "@/components/layout/container/container";
 import { ContactForm } from "@/components/layout/form/contact-form";
 
 import { CardAuthWrapper } from "@/components/auth/wrapper/card-auth-wrapper";
@@ -12,13 +13,11 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <div className="container mx-auto space-y-4 py-8">
-      <Typography.H1 className="text-center text-2xl font-semibold lg:text-3xl">
-        Contact
-      </Typography.H1>
+    <Container>
+      <Typography.H1 className="text-center">Contact</Typography.H1>
       <CardAuthWrapper headerLabel="Contact Us">
         <ContactForm />
       </CardAuthWrapper>
-    </div>
+    </Container>
   );
 }

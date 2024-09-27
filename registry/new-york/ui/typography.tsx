@@ -1,5 +1,3 @@
-import * as React from "react";
-
 import { cn } from "@/lib/utils";
 
 function TypographyH1({
@@ -12,7 +10,7 @@ function TypographyH1({
   return (
     <h1
       className={cn(
-        "mb-4 scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl",
+        "mb-4 scroll-m-20 text-4xl font-extrabold tracking-tight",
         className,
       )}
     >

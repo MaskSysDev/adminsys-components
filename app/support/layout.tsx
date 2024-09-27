@@ -4,12 +4,15 @@ import localFont from "next/font/local";
 import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
 
-import { FooterSimple } from "@/components/layout/footer/site-footer";
+import { SiteFooter } from "@/components/layout/footer/site-footer";
 import { SiteHeader } from "@/components/layout/header/site-header";
 
 import { ThemeProvider } from "@/components/provider/theme-provider";
 
+import { TailwindIndicator } from "@/components/tailwind-indicator";
+import { Toaster as ToasterSonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
+
 import "@/styles/globals.css";
 
 const geistSans = localFont({
@@ -29,7 +32,7 @@ export const metadata: Metadata = {
     default: siteConfig.name,
     template: `%s - ${siteConfig.name}`,
   },
-  description: siteConfig.description,
+  description: siteConfig.siteDescription,
 
   robots: {
     follow: false,
@@ -58,7 +61,7 @@ export const metadata: Metadata = {
     type: "website",
     title: siteConfig.name,
     locale: siteConfig.locale,
-    description: siteConfig.description,
+    description: siteConfig.siteDescription,
     url: siteConfig.url,
     siteName: siteConfig.name,
     images: [
@@ -83,7 +86,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: siteConfig.name,
-    description: siteConfig.description,
+    description: siteConfig.siteDescription,
     images: [siteConfig.favicon512x512],
     creator: siteConfig.creator,
   },
@@ -121,11 +124,15 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div className="flex min-h-screen flex-col">
+          <div className="flex min-h-screen min-w-full flex-col">
             <SiteHeader siteHeader={siteConfig.siteHeader} />
-            <main className="flex-1">{children}</main>
-            <FooterSimple footer={siteConfig.footerSimple} />
+            <div className="flex flex-1">
+              <main className="flex flex-1 flex-col">{children}</main>
+            </div>
+            <SiteFooter footer={siteConfig.footerSimple} />
           </div>
+          <TailwindIndicator />
+          <ToasterSonner />
           <Toaster />
         </ThemeProvider>
       </body>

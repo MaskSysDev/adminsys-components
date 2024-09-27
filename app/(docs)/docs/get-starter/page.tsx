@@ -1,5 +1,7 @@
 import { Metadata } from "next";
 
+import { Container } from "@/components/layout/container/container";
+
 import { Typography } from "@/components/ui/typography";
 
 export const metadata: Metadata = {
@@ -9,10 +11,8 @@ export const metadata: Metadata = {
 
 export default function GetStarterPage() {
   return (
-    <div className="container mx-auto p-6">
-      <Typography.H1 className="text-2xl font-semibold lg:text-3xl">
-        Get Starter
-      </Typography.H1>
-    </div>
+    <Container className="py-4">
+      <Typography.H1>Get Starter</Typography.H1>
+    </Container>
   );
 }
