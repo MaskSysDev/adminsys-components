@@ -87,24 +87,13 @@
       "lucide-react"
     ],
     "registryDependencies": [
-      "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/toaster-theme.json",
       "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/use-toast-theme.json"
     ],
     "files": [
       {
         "path": "ui/toast-theme.tsx",
         "type": "registry:ui"
-      }
-    ]
-  },
-  {
-    "name": "toaster-theme",
-    "type": "registry:ui",
-    "registryDependencies": [
-      "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/toast-theme.json",
-      "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/use-toast-theme.json"
-    ],
-    "files": [
+      },
       {
         "path": "ui/toaster-theme.tsx",
         "type": "registry:ui"

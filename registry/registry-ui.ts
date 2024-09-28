@@ -49,19 +49,9 @@ export const ui: Registry = [
       "lucide-react",
     ],
     registryDependencies: [
-      "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/toaster-theme.json",
       "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/use-toast-theme.json",
     ],
-    files: ["ui/toast-theme.tsx"],
-  },
-  {
-    name: "toaster-theme",
-    type: "registry:ui",
-    registryDependencies: [
-      "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/toast-theme.json",
-      "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/use-toast-theme.json",
-    ],
-    files: ["ui/toaster-theme.tsx"],
+    files: ["ui/toast-theme.tsx", "ui/toaster-theme.tsx"],
   },
   {
     name: "typography",
