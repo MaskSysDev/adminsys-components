@@ -24,7 +24,7 @@ const CardThemeHeader = React.forwardRef<
   <div
     ref={ref}
     className={cn(
-      "flex min-h-12 flex-col space-y-1.5 border-b bg-muted/50 px-4 py-2",
+      "flex min-h-12 flex-col space-y-1.5 border-b bg-muted/60 px-4 py-2",
       className,
     )}
     {...props}
@@ -99,7 +99,7 @@ const CardThemeFooter = React.forwardRef<
     <div
       ref={ref}
       className={cn(
-        "flex min-h-12 flex-col space-y-1.5 border-t bg-muted/50 px-4 py-2",
+        "flex min-h-12 flex-col space-y-1.5 border-t bg-muted/60 px-4 py-2",
         className,
       )}
       {...props}

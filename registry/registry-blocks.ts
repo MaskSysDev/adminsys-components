@@ -226,4 +226,116 @@ export const blocks: Registry = [
     category: "Admin",
     subcategory: "Layout",
   },
+  {
+    name: "docsys",
+    type: "registry:block",
+    dependencies: ["prismjs"],
+    devDependencies: ["@types/prismjs"],
+    registryDependencies: [
+      "button",
+      "scroll-area",
+      "sonner",
+      "toast",
+      "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/typography.json",
+      "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/drawer-menu.json",
+      "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/theme-adminsys.json",
+      "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/next-themes.json",
+      "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/sidebar.json",
+      "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/use-mobile.json",
+    ],
+    files: [
+      {
+        path: "block/docsys/app/(docs)/docs/layout.tsx",
+        target: "app/(docs)/docs/layout.tsx",
+        type: "registry:page",
+      },
+      {
+        path: "block/docsys/app/(docs)/docs/loading.tsx",
+        target: "app/(docs)/docs/loading.tsx",
+        type: "registry:page",
+      },
+      {
+        path: "block/docsys/app/(docs)/docs/page.tsx",
+        target: "app/(docs)/docs/page.tsx",
+        type: "registry:page",
+      },
+      {
+        path: "block/docsys/app/(docs)/docs/[...not-found]/page.tsx",
+        target: "app/(docs)/docs/[...not-found]/page.tsx",
+        type: "registry:page",
+      },
+      {
+        path: "block/docsys/app/(docs)/docs/components/ui/badge/page.tsx",
+        target: "app/(docs)/docs/components/ui/badge/page.tsx",
+        type: "registry:page",
+      },
+      {
+        path: "block/docsys/app/(docs)/docs/components/ui/card/page.tsx",
+        target: "app/(docs)/docs/components/ui/card/page.tsx",
+        type: "registry:page",
+      },
+      {
+        path: "block/docsys/app/(docs)/docs/components/ui/typography/page.tsx",
+        target: "app/(docs)/docs/components/ui/typography/page.tsx",
+        type: "registry:page",
+      },
+      {
+        path: "block/docsys/app/(docs)/docs/get-starter/page.tsx",
+        target: "app/(docs)/docs/get-starter/page.tsx",
+        type: "registry:page",
+      },
+      {
+        path: "block/components/layout/code/code-block.tsx",
+        target: "components/layout/code/code-block.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "block/components/layout/container/container.tsx",
+        target: "components/layout/container/container.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "block/components/layout/header/docs-header.tsx",
+        target: "components/layout/header/docs-header.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "block/components/layout/loading/loading-spinner.tsx",
+        target: "components/layout/loading/loading-spinner.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "block/components/layout/logo/logo.tsx",
+        target: "components/layout/logo/logo.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "block/components/layout/not-found/not-found.tsx",
+        target: "components/layout/not-found/not-found.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "block/components/layout/sidebar/docs-sidebar.tsx",
+        target: "components/layout/sidebar/docs-sidebar.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "block/components/layout/sidebar/inc/sidebar-menu-item.tsx",
+        target: "components/layout/sidebar/inc/sidebar-menu-item.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "block/components/layout/wrapper/code-block-wrapper.tsx",
+        target: "components/layout/wrapper/code-block-wrapper.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "block/docsys/config/site.ts",
+        target: "config/site.ts",
+        type: "registry:component",
+      },
+    ],
+    category: "Admin",
+    subcategory: "Layout",
+  },
 ];

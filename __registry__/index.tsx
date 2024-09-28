@@ -115,6 +115,17 @@ export const Index: Record<string, any> = {
       subcategory: "Layout",
       chunks: []
     },
+    "docsys": {
+      name: "docsys",
+      type: "registry:block",
+      registryDependencies: ["button","scroll-area","sonner","toast","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/typography.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/drawer-menu.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/theme-adminsys.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/next-themes.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/sidebar.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/use-mobile.json"],
+      files: ["registry/new-york/block/docsys/app/(docs)/docs/layout.tsx","registry/new-york/block/docsys/app/(docs)/docs/loading.tsx","registry/new-york/block/docsys/app/(docs)/docs/page.tsx","registry/new-york/block/docsys/app/(docs)/docs/[...not-found]/page.tsx","registry/new-york/block/docsys/app/(docs)/docs/components/ui/badge/page.tsx","registry/new-york/block/docsys/app/(docs)/docs/components/ui/card/page.tsx","registry/new-york/block/docsys/app/(docs)/docs/components/ui/typography/page.tsx","registry/new-york/block/docsys/app/(docs)/docs/get-starter/page.tsx","registry/new-york/block/components/layout/code/code-block.tsx","registry/new-york/block/components/layout/container/container.tsx","registry/new-york/block/components/layout/header/docs-header.tsx","registry/new-york/block/components/layout/loading/loading-spinner.tsx","registry/new-york/block/components/layout/logo/logo.tsx","registry/new-york/block/components/layout/not-found/not-found.tsx","registry/new-york/block/components/layout/sidebar/docs-sidebar.tsx","registry/new-york/block/components/layout/sidebar/inc/sidebar-menu-item.tsx","registry/new-york/block/components/layout/wrapper/code-block-wrapper.tsx","registry/new-york/block/docsys/config/site.ts"],
+      component: React.lazy(() => import("@/registry/new-york/block/docsys/app/(docs)/docs/layout.tsx")),
+      source: "__registry__/new-york/block/docsys/app/(docs)/docs/layout.tsx",
+      category: "Admin",
+      subcategory: "Layout",
+      chunks: []
+    },
     "utils": {
       name: "utils",
       type: "registry:lib",
@@ -244,6 +255,17 @@ export const Index: Record<string, any> = {
       files: ["registry/default/block/adminsys/app/(admin)/admin/layout.tsx","registry/default/block/adminsys/app/(admin)/admin/loading.tsx","registry/default/block/adminsys/app/(admin)/admin/[...not-found]/page.tsx","registry/default/block/adminsys/app/(admin)/admin/dashboard/page.tsx","registry/default/block/adminsys/app/(admin)/admin/users/list/page.tsx","registry/default/block/components/auth/dropdown/dropdown-user.tsx","registry/default/block/components/layout/container/container.tsx","registry/default/block/components/layout/header/admin-header.tsx","registry/default/block/components/layout/loading/loading-spinner.tsx","registry/default/block/components/layout/logo/logo.tsx","registry/default/block/components/layout/not-found/not-found.tsx","registry/default/block/components/layout/sidebar/admin-sidebar.tsx","registry/default/block/components/layout/sidebar/inc/sidebar-menu-item.tsx","registry/default/block/components/layout/sidebar/inc/sidebar-nav-user.tsx","registry/default/block/adminsys/config/site.ts"],
       component: React.lazy(() => import("@/registry/default/block/adminsys/app/(admin)/admin/layout.tsx")),
       source: "__registry__/default/block/adminsys/app/(admin)/admin/layout.tsx",
+      category: "Admin",
+      subcategory: "Layout",
+      chunks: []
+    },
+    "docsys": {
+      name: "docsys",
+      type: "registry:block",
+      registryDependencies: ["button","scroll-area","sonner","toast","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/typography.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/drawer-menu.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/theme-adminsys.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/next-themes.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/sidebar.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/use-mobile.json"],
+      files: ["registry/default/block/docsys/app/(docs)/docs/layout.tsx","registry/default/block/docsys/app/(docs)/docs/loading.tsx","registry/default/block/docsys/app/(docs)/docs/page.tsx","registry/default/block/docsys/app/(docs)/docs/[...not-found]/page.tsx","registry/default/block/docsys/app/(docs)/docs/components/ui/badge/page.tsx","registry/default/block/docsys/app/(docs)/docs/components/ui/card/page.tsx","registry/default/block/docsys/app/(docs)/docs/components/ui/typography/page.tsx","registry/default/block/docsys/app/(docs)/docs/get-starter/page.tsx","registry/default/block/components/layout/code/code-block.tsx","registry/default/block/components/layout/container/container.tsx","registry/default/block/components/layout/header/docs-header.tsx","registry/default/block/components/layout/loading/loading-spinner.tsx","registry/default/block/components/layout/logo/logo.tsx","registry/default/block/components/layout/not-found/not-found.tsx","registry/default/block/components/layout/sidebar/docs-sidebar.tsx","registry/default/block/components/layout/sidebar/inc/sidebar-menu-item.tsx","registry/default/block/components/layout/wrapper/code-block-wrapper.tsx","registry/default/block/docsys/config/site.ts"],
+      component: React.lazy(() => import("@/registry/default/block/docsys/app/(docs)/docs/layout.tsx")),
+      source: "__registry__/default/block/docsys/app/(docs)/docs/layout.tsx",
       category: "Admin",
       subcategory: "Layout",
       chunks: []
