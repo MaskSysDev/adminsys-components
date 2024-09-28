@@ -242,6 +242,8 @@ export const blocks: Registry = [
       "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/next-themes.json",
       "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/sidebar.json",
       "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/use-mobile.json",
+      "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/badge-theme.json",
+      "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/card-theme.json",
     ],
     files: [
       {
@@ -332,6 +334,11 @@ export const blocks: Registry = [
       {
         path: "block/docsys/config/site.ts",
         target: "config/site.ts",
+        type: "registry:component",
+      },
+      {
+        path: "block/docsys/styles/code-block.css",
+        target: "styles/code-block.css",
         type: "registry:component",
       },
     ],
