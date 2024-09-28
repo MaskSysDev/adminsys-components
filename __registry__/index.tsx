@@ -16,6 +16,17 @@ export const Index: Record<string, any> = {
       subcategory: "undefined",
       chunks: []
     },
+    "button-theme": {
+      name: "button-theme",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: ["registry/new-york/ui/button-theme.tsx"],
+      component: React.lazy(() => import("@/registry/new-york/ui/button-theme.tsx")),
+      source: "",
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
     "card-theme": {
       name: "card-theme",
       type: "registry:ui",
@@ -55,6 +66,28 @@ export const Index: Record<string, any> = {
       registryDependencies: ["button","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/drawer-menu.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/use-mobile.json"],
       files: ["registry/new-york/ui/sidebar.tsx"],
       component: React.lazy(() => import("@/registry/new-york/ui/sidebar.tsx")),
+      source: "",
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "toast-theme": {
+      name: "toast-theme",
+      type: "registry:ui",
+      registryDependencies: ["https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/toaster-theme.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/use-toast-theme.json"],
+      files: ["registry/new-york/ui/toast-theme.tsx"],
+      component: React.lazy(() => import("@/registry/new-york/ui/toast-theme.tsx")),
+      source: "",
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "toaster-theme": {
+      name: "toaster-theme",
+      type: "registry:ui",
+      registryDependencies: ["https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/toast-theme.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/use-toast-theme.json"],
+      files: ["registry/new-york/ui/toaster-theme.tsx"],
+      component: React.lazy(() => import("@/registry/new-york/ui/toaster-theme.tsx")),
       source: "",
       category: "undefined",
       subcategory: "undefined",
@@ -118,7 +151,7 @@ export const Index: Record<string, any> = {
     "docsys": {
       name: "docsys",
       type: "registry:block",
-      registryDependencies: ["button","collapsible","scroll-area","sonner","toast","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/badge-theme.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/card-theme.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/typography.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/drawer-menu.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/theme-adminsys.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/next-themes.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/sidebar.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/use-mobile.json"],
+      registryDependencies: ["button","collapsible","scroll-area","tabs","sonner","toast","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/badge-theme.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/card-theme.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/typography.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/drawer-menu.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/theme-adminsys.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/next-themes.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/sidebar.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/use-mobile.json"],
       files: ["registry/new-york/block/docsys/app/(docs)/docs/layout.tsx","registry/new-york/block/docsys/app/(docs)/docs/loading.tsx","registry/new-york/block/docsys/app/(docs)/docs/page.tsx","registry/new-york/block/docsys/app/(docs)/docs/[...not-found]/page.tsx","registry/new-york/block/docsys/app/(docs)/docs/components/ui/badge/page.tsx","registry/new-york/block/docsys/app/(docs)/docs/components/ui/card/page.tsx","registry/new-york/block/docsys/app/(docs)/docs/components/ui/typography/page.tsx","registry/new-york/block/docsys/app/(docs)/docs/get-starter/page.tsx","registry/new-york/block/components/layout/code/code-block.tsx","registry/new-york/block/components/layout/container/container.tsx","registry/new-york/block/components/layout/header/docs-header.tsx","registry/new-york/block/components/layout/loading/loading-spinner.tsx","registry/new-york/block/components/layout/logo/logo.tsx","registry/new-york/block/components/layout/not-found/not-found.tsx","registry/new-york/block/components/layout/sidebar/docs-sidebar.tsx","registry/new-york/block/components/layout/sidebar/inc/sidebar-menu-item.tsx","registry/new-york/block/components/layout/wrapper/code-block-wrapper.tsx","registry/new-york/block/docsys/config/site.ts","registry/new-york/block/docsys/styles/code-block.css"],
       component: React.lazy(() => import("@/registry/new-york/block/docsys/app/(docs)/docs/layout.tsx")),
       source: "__registry__/new-york/block/docsys/app/(docs)/docs/layout.tsx",
@@ -148,6 +181,17 @@ export const Index: Record<string, any> = {
       subcategory: "undefined",
       chunks: []
     },
+    "use-toast-theme": {
+      name: "use-toast-theme",
+      type: "registry:hook",
+      registryDependencies: undefined,
+      files: ["registry/new-york/hooks/use-toast-theme.ts"],
+      component: React.lazy(() => import("@/registry/new-york/hooks/use-toast-theme.ts")),
+      source: "",
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
   },  "default": {
     "badge-theme": {
       name: "badge-theme",
@@ -155,6 +199,17 @@ export const Index: Record<string, any> = {
       registryDependencies: undefined,
       files: ["registry/default/ui/badge-theme.tsx"],
       component: React.lazy(() => import("@/registry/default/ui/badge-theme.tsx")),
+      source: "",
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "button-theme": {
+      name: "button-theme",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: ["registry/default/ui/button-theme.tsx"],
+      component: React.lazy(() => import("@/registry/default/ui/button-theme.tsx")),
       source: "",
       category: "undefined",
       subcategory: "undefined",
@@ -199,6 +254,28 @@ export const Index: Record<string, any> = {
       registryDependencies: ["button","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/drawer-menu.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/use-mobile.json"],
       files: ["registry/default/ui/sidebar.tsx"],
       component: React.lazy(() => import("@/registry/default/ui/sidebar.tsx")),
+      source: "",
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "toast-theme": {
+      name: "toast-theme",
+      type: "registry:ui",
+      registryDependencies: ["https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/toaster-theme.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/use-toast-theme.json"],
+      files: ["registry/default/ui/toast-theme.tsx"],
+      component: React.lazy(() => import("@/registry/default/ui/toast-theme.tsx")),
+      source: "",
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "toaster-theme": {
+      name: "toaster-theme",
+      type: "registry:ui",
+      registryDependencies: ["https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/toast-theme.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/use-toast-theme.json"],
+      files: ["registry/default/ui/toaster-theme.tsx"],
+      component: React.lazy(() => import("@/registry/default/ui/toaster-theme.tsx")),
       source: "",
       category: "undefined",
       subcategory: "undefined",
@@ -262,7 +339,7 @@ export const Index: Record<string, any> = {
     "docsys": {
       name: "docsys",
       type: "registry:block",
-      registryDependencies: ["button","collapsible","scroll-area","sonner","toast","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/badge-theme.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/card-theme.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/typography.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/drawer-menu.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/theme-adminsys.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/next-themes.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/sidebar.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/use-mobile.json"],
+      registryDependencies: ["button","collapsible","scroll-area","tabs","sonner","toast","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/badge-theme.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/card-theme.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/typography.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/drawer-menu.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/theme-adminsys.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/next-themes.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/sidebar.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/use-mobile.json"],
       files: ["registry/default/block/docsys/app/(docs)/docs/layout.tsx","registry/default/block/docsys/app/(docs)/docs/loading.tsx","registry/default/block/docsys/app/(docs)/docs/page.tsx","registry/default/block/docsys/app/(docs)/docs/[...not-found]/page.tsx","registry/default/block/docsys/app/(docs)/docs/components/ui/badge/page.tsx","registry/default/block/docsys/app/(docs)/docs/components/ui/card/page.tsx","registry/default/block/docsys/app/(docs)/docs/components/ui/typography/page.tsx","registry/default/block/docsys/app/(docs)/docs/get-starter/page.tsx","registry/default/block/components/layout/code/code-block.tsx","registry/default/block/components/layout/container/container.tsx","registry/default/block/components/layout/header/docs-header.tsx","registry/default/block/components/layout/loading/loading-spinner.tsx","registry/default/block/components/layout/logo/logo.tsx","registry/default/block/components/layout/not-found/not-found.tsx","registry/default/block/components/layout/sidebar/docs-sidebar.tsx","registry/default/block/components/layout/sidebar/inc/sidebar-menu-item.tsx","registry/default/block/components/layout/wrapper/code-block-wrapper.tsx","registry/default/block/docsys/config/site.ts","registry/default/block/docsys/styles/code-block.css"],
       component: React.lazy(() => import("@/registry/default/block/docsys/app/(docs)/docs/layout.tsx")),
       source: "__registry__/default/block/docsys/app/(docs)/docs/layout.tsx",
@@ -287,6 +364,17 @@ export const Index: Record<string, any> = {
       registryDependencies: undefined,
       files: ["registry/default/hooks/use-mobile.tsx"],
       component: React.lazy(() => import("@/registry/default/hooks/use-mobile.tsx")),
+      source: "",
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "use-toast-theme": {
+      name: "use-toast-theme",
+      type: "registry:hook",
+      registryDependencies: undefined,
+      files: ["registry/default/hooks/use-toast-theme.ts"],
+      component: React.lazy(() => import("@/registry/default/hooks/use-toast-theme.ts")),
       source: "",
       category: "undefined",
       subcategory: "undefined",

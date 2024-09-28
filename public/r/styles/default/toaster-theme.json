@@ -1,0 +1,16 @@
+{
+  "name": "toaster-theme",
+  "type": "registry:ui",
+  "registryDependencies": [
+    "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/toast-theme.json",
+    "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/use-toast-theme.json"
+  ],
+  "files": [
+    {
+      "path": "ui/toaster-theme.tsx",
+      "content": "\"use client\";\n\nimport { useToastTheme } from \"@/hooks/use-toast-theme\";\n\nimport {\n  ToastTheme,\n  ToastThemeClose,\n  ToastThemeDescription,\n  ToastThemeProvider,\n  ToastThemeTitle,\n  ToastThemeViewport,\n} from \"@/components/ui/toast-theme\";\n\nexport function ToasterTheme() {\n  const { toasts } = useToastTheme();\n\n  return (\n    <ToastThemeProvider>\n      {toasts.map(function ({ id, title, description, action, ...props }) {\n        return (\n          <ToastTheme key={id} {...props}>\n            <div className=\"grid gap-1\">\n              {title && <ToastThemeTitle>{title}</ToastThemeTitle>}\n              {description && (\n                <ToastThemeDescription>{description}</ToastThemeDescription>\n              )}\n            </div>\n            {action}\n            <ToastThemeClose />\n          </ToastTheme>\n        );\n      })}\n      <ToastThemeViewport />\n    </ToastThemeProvider>\n  );\n}\n",
+      "type": "registry:ui",
+      "target": ""
+    }
+  ]
+}

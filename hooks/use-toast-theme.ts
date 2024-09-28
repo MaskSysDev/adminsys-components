@@ -3,16 +3,19 @@
 // Inspired by react-hot-toast library
 import * as React from "react";
 
-import type { ToastActionElement, ToastProps } from "@/components/ui/toast";
+import type {
+  ToastThemeActionElement,
+  ToastThemeProps,
+} from "@/components/ui/toast-theme";
 
 const TOAST_LIMIT = 1;
 const TOAST_REMOVE_DELAY = 1000000;
 
-type ToasterToast = ToastProps & {
+type ToasterThemeToast = ToastThemeProps & {
   id: string;
   title?: React.ReactNode;
   description?: React.ReactNode;
-  action?: ToastActionElement;
+  action?: ToastThemeActionElement;
 };
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -35,23 +38,23 @@ type ActionType = typeof actionTypes;
 type Action =
   | {
       type: ActionType["ADD_TOAST"];
-      toast: ToasterToast;
+      toast: ToasterThemeToast;
     }
   | {
       type: ActionType["UPDATE_TOAST"];
-      toast: Partial<ToasterToast>;
+      toast: Partial<ToasterThemeToast>;
     }
   | {
       type: ActionType["DISMISS_TOAST"];
-      toastId?: ToasterToast["id"];
+      toastId?: ToasterThemeToast["id"];
     }
   | {
       type: ActionType["REMOVE_TOAST"];
-      toastId?: ToasterToast["id"];
+      toastId?: ToasterThemeToast["id"];
     };
 
 interface State {
-  toasts: ToasterToast[];
+  toasts: ToasterThemeToast[];
 }
 
 const toastTimeouts = new Map<string, ReturnType<typeof setTimeout>>();
@@ -138,12 +141,12 @@ function dispatch(action: Action) {
   });
 }
 
-type Toast = Omit<ToasterToast, "id">;
+type Toast = Omit<ToasterThemeToast, "id">;
 
 function toast({ ...props }: Toast) {
   const id = genId();
 
-  const update = (props: ToasterToast) =>
+  const update = (props: ToasterThemeToast) =>
     dispatch({
       type: "UPDATE_TOAST",
       toast: { ...props, id },
@@ -169,7 +172,7 @@ function toast({ ...props }: Toast) {
   };
 }
 
-function useToast() {
+function useToastTheme() {
   const [state, setState] = React.useState<State>(memoryState);
 
   React.useEffect(() => {
@@ -189,4 +192,4 @@ function useToast() {
   };
 }
 
-export { toast, useToast };
+export { toast, useToastTheme };

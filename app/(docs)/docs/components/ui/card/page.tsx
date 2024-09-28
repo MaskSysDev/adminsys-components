@@ -12,8 +12,8 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Typography } from "@/components/ui/typography";
 
 export const metadata: Metadata = {
-  title: "CardTheme",
-  description: "Description CardTheme.",
+  title: "Card",
+  description: "Description Card.",
 };
 
 export default function CardThemePage() {

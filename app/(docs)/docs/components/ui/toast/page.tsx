@@ -1,19 +1,16 @@
-import { Metadata } from "next";
+"use client";
+
 import Link from "next/link";
+
+import { toast } from "@/hooks/use-toast-theme";
 
 import { Container } from "@/components/layout/container/container";
 import { CodeBlockWrapper } from "@/components/layout/wrapper/code-block-wrapper";
 
-import { BadgeTheme } from "@/components/ui/badge-theme";
 import { Button } from "@/components/ui/button";
 import { CardTheme } from "@/components/ui/card-theme";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Typography } from "@/components/ui/typography";
-
-export const metadata: Metadata = {
-  title: "Badge",
-  description: "Description Badge.",
-};
 
 export default function BadgeThemePage() {
   const badgeThemeCode = `import { BadgeTheme } from "@/components/ui/badge-theme";
@@ -28,16 +25,16 @@ export function Page() {
         <div className="grid auto-rows-max items-start gap-4 lg:col-span-2 lg:gap-8">
           <section className="mb-16">
             <span className="text-primary">UI</span>
-            <Typography.H1>Badge</Typography.H1>
+            <Typography.H1>Toast</Typography.H1>
             <Typography.Lead>
-              Displays a badge or a component that looks like a badge.
+              A succinct message that is displayed temporarily.
             </Typography.Lead>
           </section>
 
           <section id="badge-theme" className="pt-16">
-            <Typography.H2>BadgeTheme</Typography.H2>
+            <Typography.H2>ToastTheme</Typography.H2>
             <Typography.P>
-              Displays a badge or a component that looks like a badge.
+              Displays a toast or a component that looks like a toast.
             </Typography.P>
             <Tabs defaultValue="preview">
               <TabsList>
@@ -47,13 +44,18 @@ export function Page() {
               <TabsContent value="preview">
                 <CardTheme.Root>
                   <CardTheme.Content className="flex min-h-64 items-center justify-center gap-4">
-                    <BadgeTheme variant="primary">Badge</BadgeTheme>
-                    <BadgeTheme variant="primary" theme="outline">
-                      Badge
-                    </BadgeTheme>
-                    <BadgeTheme variant="primary" theme="soft">
-                      Badge
-                    </BadgeTheme>
+                    <Button
+                      variant="outline"
+                      onClick={() => {
+                        toast({
+                          title: "Toast Title ",
+                          description: "Description Toast.",
+                          variant: "positive",
+                        });
+                      }}
+                    >
+                      Toaster
+                    </Button>
                   </CardTheme.Content>
                 </CardTheme.Root>
               </TabsContent>

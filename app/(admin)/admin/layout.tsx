@@ -12,8 +12,7 @@ import { ThemeProvider } from "@/components/provider/theme-provider";
 import { TailwindIndicator } from "@/components/tailwind-indicator";
 import { SidebarLayout } from "@/components/ui/sidebar";
 import { Toaster as ToasterSonner } from "@/components/ui/sonner";
-import { Toaster } from "@/components/ui/toaster";
-
+import { ToasterTheme } from "@/components/ui/toaster-theme";
 import "@/styles/globals.css";
 
 const geistSans = localFont({
@@ -142,7 +141,7 @@ export default async function RootLayout({
           </SidebarLayout>
           <TailwindIndicator />
           <ToasterSonner />
-          <Toaster />
+          <ToasterTheme />
         </ThemeProvider>
       </body>
     </html>

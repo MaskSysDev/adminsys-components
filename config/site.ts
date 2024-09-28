@@ -203,13 +203,20 @@ export const siteConfig = {
               },
               {
                 id: "2",
-                label: "CardTheme",
-                href: "/docs/components/ui/card",
+                label: "Button",
+                href: "/docs/components/ui/button",
                 path: "",
                 items: [],
               },
               {
                 id: "3",
+                label: "Card",
+                href: "/docs/components/ui/card",
+                path: "",
+                items: [],
+              },
+              {
+                id: "4",
                 label: "Typography",
                 href: "/docs/components/ui/typography",
                 path: "",

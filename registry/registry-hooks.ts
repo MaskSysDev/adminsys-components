@@ -11,4 +11,14 @@ export const hooks: Registry = [
       },
     ],
   },
+  {
+    name: "use-toast-theme",
+    type: "registry:hook",
+    files: [
+      {
+        path: "hooks/use-toast-theme.ts",
+        type: "registry:hook",
+      },
+    ],
+  },
 ];

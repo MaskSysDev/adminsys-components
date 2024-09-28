@@ -235,6 +235,7 @@ export const blocks: Registry = [
       "button",
       "collapsible",
       "scroll-area",
+      "tabs",
       "sonner",
       "toast",
       "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/badge-theme.json",
