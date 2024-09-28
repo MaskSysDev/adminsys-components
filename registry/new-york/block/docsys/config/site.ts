@@ -75,99 +75,6 @@ export const siteConfig = {
     youtube,
   },
 
-  /* Components Layout */
-  siteHeader: {
-    name,
-    links: [
-      {
-        id: "1",
-        label: "Home",
-        href: "/",
-        disabled: false,
-      },
-      {
-        id: "2",
-        label: "About",
-        href: "/about",
-        disabled: false,
-      },
-      {
-        id: "3",
-        label: "Docs",
-        href: "/docs",
-        disabled: false,
-      },
-      {
-        id: "4",
-        label: "Admin",
-        href: "/admin/dashboard",
-        disabled: false,
-      },
-      {
-        id: "5",
-        label: "Contact",
-        href: "/contact",
-        disabled: false,
-      },
-    ],
-  },
-
-  adminSidebar: {
-    name,
-    content: [
-      {
-        id: "1",
-        contentTitle: "Admin",
-        linksSection: [
-          {
-            id: "1",
-            label: "Dashboard",
-            href: "/admin/dashboard",
-            path: "",
-            items: [],
-          },
-        ],
-      },
-      {
-        id: "2",
-        contentTitle: "Management",
-        linksSection: [
-          {
-            id: "1",
-            label: "Users",
-            href: "",
-            path: "/admin/users",
-            items: [
-              {
-                id: "1",
-                label: "Users List",
-                href: "/admin/users/list",
-                path: "",
-                items: [],
-              },
-            ],
-          },
-        ],
-      },
-    ],
-    support: [
-      {
-        id: "1",
-        label: "Docs",
-        href: "/docs",
-        path: "",
-        items: [],
-      },
-      {
-        id: "2",
-        label: "Support",
-        href: "/support",
-        path: "",
-        items: [],
-      },
-    ],
-  },
-
   docsSidebar: {
     id: "1",
     content: [
@@ -229,26 +136,5 @@ export const siteConfig = {
         items: [],
       },
     ],
-  },
-
-  footerSimple: {
-    author,
-    authorUrl,
-    name,
-    facebook,
-    instagram,
-    youtube,
-  },
-
-  heroSimple: {
-    size: "64",
-    title: name,
-    subtitle: "Template ",
-    subtitleColor: "Admin",
-    description: siteDescription,
-    labelLink1: "Get Started",
-    link1: "/",
-    labelLink2: "GitHub",
-    link2: projectUrl,
   },
 };
