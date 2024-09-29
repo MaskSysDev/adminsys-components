@@ -1,5 +1,6 @@
-import { DataSampleFormValues } from "@/validation/data-sample";
 import { faker } from "@faker-js/faker";
+
+import { DataSampleFormValues } from "@/lib/validation/data-sample";
 
 const FakeDataSample = () => {
   return {

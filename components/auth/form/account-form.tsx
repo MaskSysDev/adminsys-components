@@ -4,10 +4,10 @@
 import { useState, useTransition } from "react";
 import { useForm } from "react-hook-form";
 
-import { AccountFormValues, accountSchema } from "@/validation/auth";
 import { zodResolver } from "@hookform/resolvers/zod";
 
 import { toast } from "@/hooks/use-toast";
+import { AccountFormValues, accountSchema } from "@/lib/validation/auth";
 
 import { Button } from "@/components/ui/button";
 import {

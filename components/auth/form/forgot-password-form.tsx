@@ -3,13 +3,13 @@
 import { useState, useTransition } from "react";
 import { useForm } from "react-hook-form";
 
-import {
-  ForgotPasswordFormValues,
-  forgotPasswordSchema,
-} from "@/validation/auth";
 import { zodResolver } from "@hookform/resolvers/zod";
 
 import { toast } from "@/hooks/use-toast";
+import {
+  ForgotPasswordFormValues,
+  forgotPasswordSchema,
+} from "@/lib/validation/auth";
 
 import { AlertError } from "@/components/layout/alert/alert-error";
 import { AlertSuccess } from "@/components/layout/alert/alert-success";

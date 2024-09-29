@@ -3,10 +3,10 @@
 import { useState, useTransition } from "react";
 import { useForm } from "react-hook-form";
 
-import { ContactFormValues, contactSchema } from "@/validation/contact";
 import { zodResolver } from "@hookform/resolvers/zod";
 
 import { toast } from "@/hooks/use-toast";
+import { ContactFormValues, contactSchema } from "@/lib/validation/contact";
 
 import { Button } from "@/components/ui/button";
 import {

@@ -5,11 +5,11 @@ import { useForm } from "react-hook-form";
 
 import Link from "next/link";
 
-import { SignInFormValues, signInSchema } from "@/validation/auth";
 import { zodResolver } from "@hookform/resolvers/zod";
 
 import { toast } from "@/hooks/use-toast";
 import { cn } from "@/lib/utils";
+import { SignInFormValues, signInSchema } from "@/lib/validation/auth";
 
 import { AlertError } from "@/components/layout/alert/alert-error";
 import { AlertSuccess } from "@/components/layout/alert/alert-success";
