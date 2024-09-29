@@ -13,6 +13,16 @@
     ]
   },
   {
+    "name": "banner",
+    "type": "registry:ui",
+    "files": [
+      {
+        "path": "ui/banner.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  {
     "name": "button-theme",
     "type": "registry:ui",
     "dependencies": [

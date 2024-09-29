@@ -78,6 +78,7 @@ export const siteConfig = {
   /* Components Layout */
   siteHeader: {
     name,
+    position: "end",
     links: [
       {
         id: "1",
@@ -257,5 +258,9 @@ export const siteConfig = {
     link1: "/",
     labelLink2: "GitHub",
     link2: projectUrl,
+    backgroundImage: "image",
+    backgroundColor: "rgba(0, 0, 0, 0.0)",
+    backgroundColorTop: "rgba(0, 0, 0, 0.0)",
+    backgroundColorBottom: "rgba(0, 0, 0, 0.0)",
   },
 };

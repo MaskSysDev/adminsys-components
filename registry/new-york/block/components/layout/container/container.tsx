@@ -15,7 +15,7 @@ const containerVariants = cva("px-4", {
       lg: "container max-w-screen-lg",
       xl: "container max-w-screen-xl",
       "2xl": "container max-w-screen-2xl",
-      full: "w-full",
+      full: "w-full px-0",
     },
   },
   defaultVariants: {

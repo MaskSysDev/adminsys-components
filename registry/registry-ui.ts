@@ -8,6 +8,11 @@ export const ui: Registry = [
     files: ["ui/badge-theme.tsx"],
   },
   {
+    name: "banner",
+    type: "registry:ui",
+    files: ["ui/banner.tsx"],
+  },
+  {
     name: "button-theme",
     type: "registry:ui",
     dependencies: ["class-variance-authority", "@radix-ui/react-slot"],
