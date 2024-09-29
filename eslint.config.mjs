@@ -117,6 +117,7 @@ const config = [
           endOfLine: "auto",
         },
       ],
+      "react/no-unescaped-entities": "off",
     },
   },
   {
