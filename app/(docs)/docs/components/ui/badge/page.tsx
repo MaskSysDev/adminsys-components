@@ -11,8 +11,8 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Typography } from "@/components/ui/typography";
 
 export const metadata: Metadata = {
-  title: "Badge",
-  description: "Description Badge.",
+  title: "BadgeTheme",
+  description: "Description BadgeTheme.",
 };
 
 export default function BadgeThemePage() {
@@ -69,14 +69,16 @@ export function Page() {
         </div>
 
         <div className="grid auto-rows-max items-start gap-4 lg:gap-8">
-          <CardTheme.Root>
-            <CardTheme.Content className="flex flex-wrap items-center text-muted-foreground lg:flex-col lg:items-start">
-              <p>On this page:</p>
-              <Button asChild variant="link" className="h-7 px-2">
-                <Link href="#badge-theme">BadgeTheme</Link>
-              </Button>
-            </CardTheme.Content>
-          </CardTheme.Root>
+          <div className="sticky top-20 lg:block">
+            <CardTheme.Root>
+              <CardTheme.Content className="flex flex-wrap items-center text-muted-foreground lg:flex-col lg:items-start">
+                <p>On this page:</p>
+                <Button asChild variant="link" className="h-7 px-2">
+                  <Link href="#badge-theme">BadgeTheme</Link>
+                </Button>
+              </CardTheme.Content>
+            </CardTheme.Root>
+          </div>
         </div>
       </div>
     </Container>

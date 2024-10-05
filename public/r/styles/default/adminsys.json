@@ -31,7 +31,7 @@
     },
     {
       "path": "block/adminsys/app/(admin)/admin/[...not-found]/page.tsx",
-      "content": "import { Container } from \"@/components/layout/container/container\";\nimport { NotFound } from \"@/components/layout/not-found/not-found\";\n\nexport default function NotFoundPage() {\n  return (\n    <Container>\n      <NotFound />\n    </Container>\n  );\n}\n",
+      "content": "import { Metadata } from \"next\";\n\nimport { Container } from \"@/components/layout/container/container\";\nimport { NotFound } from \"@/components/layout/not-found/not-found\";\n\nexport const metadata: Metadata = {\n  title: \"NotFound\",\n  description: \"Description NotFound.\",\n};\n\nexport default function NotFoundPage() {\n  return (\n    <Container>\n      <NotFound labelAction=\"Go to Home\" href=\"/\" />\n    </Container>\n  );\n}\n",
       "type": "registry:page",
       "target": "app/(admin)/admin/[...not-found]/page.tsx"
     },
@@ -79,7 +79,7 @@
     },
     {
       "path": "block/components/layout/not-found/not-found.tsx",
-      "content": "import Link from \"next/link\";\n\nimport { Button } from \"@/components/ui/button\";\n\nexport const NotFound = () => {\n  return (\n    <section className=\"container flex flex-col items-center justify-center gap-4 py-6 md:min-h-[48vh] md:py-20\">\n      <div className=\"text-7xl font-bold text-primary\">404</div>\n\n      <div className=\"text-center text-2xl font-bold md:text-4xl lg:text-5xl xl:text-6xl\">\n        This page does not exist\n      </div>\n\n      <div className=\" text-sm font-medium text-muted-foreground md:text-xl lg:text-2xl\">\n        The page you are looking for could not be found.\n      </div>\n\n      <Button asChild variant=\"secondary\">\n        <Link href=\"/\">Go Home</Link>\n      </Button>\n    </section>\n  );\n};\n",
+      "content": "import Link from \"next/link\";\n\nimport { Button } from \"@/components/ui/button\";\n\ntype NotFoundProps = {\n  labelAction?: string;\n  href?: string;\n};\n\nexport const NotFound = ({\n  labelAction = \"Go Home\",\n  href = \"/\",\n}: NotFoundProps) => {\n  return (\n    <section className=\"flex flex-col items-center justify-center gap-4 py-6 md:min-h-[48vh] md:py-20\">\n      <div className=\"text-7xl font-bold text-primary\">404</div>\n\n      <div className=\"text-center text-2xl font-bold md:text-4xl lg:text-5xl xl:text-6xl\">\n        This page does not exist\n      </div>\n\n      <div className=\" text-sm font-medium text-muted-foreground md:text-xl lg:text-2xl\">\n        The page you are looking for could not be found.\n      </div>\n\n      <Button asChild variant=\"secondary\">\n        <Link href={href}>{labelAction}</Link>\n      </Button>\n    </section>\n  );\n};\n",
       "type": "registry:component",
       "target": "components/layout/not-found/not-found.tsx"
     },
