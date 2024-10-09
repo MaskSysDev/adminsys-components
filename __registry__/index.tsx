@@ -173,7 +173,7 @@ export const Index: Record<string, any> = {
     "contact-form": {
       name: "contact-form",
       type: "registry:block",
-      registryDependencies: ["form","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/alert.json"],
+      registryDependencies: ["form","input","textarea","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/alert.json"],
       files: ["registry/new-york/block/components/layout/form/contact-form.tsx","registry/new-york/block/lib/validation/contact.ts"],
       component: React.lazy(() => import("@/registry/new-york/block/components/layout/form/contact-form.tsx")),
       source: "__registry__/new-york/block/components/layout/form/contact-form.tsx",
@@ -669,7 +669,7 @@ export const Index: Record<string, any> = {
     "contact-form": {
       name: "contact-form",
       type: "registry:block",
-      registryDependencies: ["form","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/alert.json"],
+      registryDependencies: ["form","input","textarea","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/alert.json"],
       files: ["registry/default/block/components/layout/form/contact-form.tsx","registry/default/block/lib/validation/contact.ts"],
       component: React.lazy(() => import("@/registry/default/block/components/layout/form/contact-form.tsx")),
       source: "__registry__/default/block/components/layout/form/contact-form.tsx",

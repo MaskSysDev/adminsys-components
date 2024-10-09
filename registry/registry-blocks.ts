@@ -81,6 +81,8 @@ export const blocks: Registry = [
     type: "registry:block",
     registryDependencies: [
       "form",
+      "input",
+      "textarea",
       "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/alert.json",
     ],
     files: [
