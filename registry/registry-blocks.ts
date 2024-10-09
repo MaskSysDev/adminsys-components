@@ -246,9 +246,9 @@ export const blocks: Registry = [
     dependencies: ["lucide-react"],
     registryDependencies: [
       "button",
-      "drawer-menu",
       "navigation-menu",
       "scroll-area",
+      "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/drawer-menu.json",
       "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/site-config.json",
       "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/logo.json",
       "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/toggle-theme.json",

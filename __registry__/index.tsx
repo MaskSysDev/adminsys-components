@@ -305,7 +305,7 @@ export const Index: Record<string, any> = {
     "nav-mobile": {
       name: "nav-mobile",
       type: "registry:block",
-      registryDependencies: ["button","drawer-menu","navigation-menu","scroll-area","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/site-config.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/logo.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/toggle-theme.json"],
+      registryDependencies: ["button","navigation-menu","scroll-area","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/drawer-menu.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/site-config.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/logo.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/toggle-theme.json"],
       files: ["registry/new-york/block/components/layout/navbar/nav-mobile.tsx"],
       component: React.lazy(() => import("@/registry/new-york/block/components/layout/navbar/nav-mobile.tsx")),
       source: "__registry__/new-york/block/components/layout/navbar/nav-mobile.tsx",
@@ -790,7 +790,7 @@ export const Index: Record<string, any> = {
     "nav-mobile": {
       name: "nav-mobile",
       type: "registry:block",
-      registryDependencies: ["button","drawer-menu","navigation-menu","scroll-area","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/site-config.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/logo.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/toggle-theme.json"],
+      registryDependencies: ["button","navigation-menu","scroll-area","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/drawer-menu.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/site-config.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/logo.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/toggle-theme.json"],
       files: ["registry/default/block/components/layout/navbar/nav-mobile.tsx"],
       component: React.lazy(() => import("@/registry/default/block/components/layout/navbar/nav-mobile.tsx")),
       source: "__registry__/default/block/components/layout/navbar/nav-mobile.tsx",
