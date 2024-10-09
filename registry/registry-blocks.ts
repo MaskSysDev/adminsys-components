@@ -369,6 +369,19 @@ export const blocks: Registry = [
       },
     ],
   },
+  // Components Provider
+  {
+    name: "theme-provider",
+    dependencies: ["next-themes"],
+    type: "registry:block",
+    files: [
+      {
+        path: "block/components/provider/theme-provider.tsx",
+        type: "registry:component",
+        target: "components/provider/theme-provider.tsx",
+      },
+    ],
+  },
   // components Auth
   {
     name: "components-auth",

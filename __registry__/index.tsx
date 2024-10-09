@@ -390,6 +390,17 @@ export const Index: Record<string, any> = {
       subcategory: "undefined",
       chunks: []
     },
+    "theme-provider": {
+      name: "theme-provider",
+      type: "registry:block",
+      registryDependencies: undefined,
+      files: ["registry/new-york/block/components/provider/theme-provider.tsx"],
+      component: React.lazy(() => import("@/registry/new-york/block/components/provider/theme-provider.tsx")),
+      source: "__registry__/new-york/block/components/provider/theme-provider.tsx",
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
     "components-auth": {
       name: "components-auth",
       type: "registry:block",
@@ -838,6 +849,17 @@ export const Index: Record<string, any> = {
       files: ["registry/default/block/components/layout/toggle/toggle-theme.tsx"],
       component: React.lazy(() => import("@/registry/default/block/components/layout/toggle/toggle-theme.tsx")),
       source: "__registry__/default/block/components/layout/toggle/toggle-theme.tsx",
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "theme-provider": {
+      name: "theme-provider",
+      type: "registry:block",
+      registryDependencies: undefined,
+      files: ["registry/default/block/components/provider/theme-provider.tsx"],
+      component: React.lazy(() => import("@/registry/default/block/components/provider/theme-provider.tsx")),
+      source: "__registry__/default/block/components/provider/theme-provider.tsx",
       category: "undefined",
       subcategory: "undefined",
       chunks: []
