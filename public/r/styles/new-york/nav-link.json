@@ -1,0 +1,15 @@
+{
+  "name": "nav-link",
+  "type": "registry:block",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "block/components/layout/navbar/inc/nav-link.tsx",
+      "content": "\"use client\";\n\nimport type { ReactNode } from \"react\";\nimport React from \"react\";\n\nimport Link from \"next/link\";\nimport { usePathname } from \"next/navigation\";\n\nimport { cn } from \"@/lib/utils\";\n\nimport { Button } from \"@/components/ui/button\";\n\ninterface NavLinkProps {\n  href: string;\n  children: ReactNode;\n}\nexport const NavLink = ({\n  href,\n  children,\n}: NavLinkProps): React.JSX.Element => {\n  const pathname = usePathname();\n\n  return (\n    <Button\n      asChild\n      variant=\"ghost\"\n      size=\"sm\"\n      className=\"text-lg hover:bg-transparent\"\n    >\n      <Link\n        className={cn(pathname === href ? \"text-primary\" : null)}\n        href={href}\n      >\n        {children}\n      </Link>\n    </Button>\n  );\n};\n",
+      "type": "registry:component",
+      "target": "components/layout/navbar/inc/nav-link.tsx"
+    }
+  ]
+}

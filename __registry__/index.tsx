@@ -313,6 +313,28 @@ export const Index: Record<string, any> = {
       subcategory: "undefined",
       chunks: []
     },
+    "nav-link": {
+      name: "nav-link",
+      type: "registry:block",
+      registryDependencies: ["button"],
+      files: ["registry/new-york/block/components/layout/navbar/inc/nav-link.tsx"],
+      component: React.lazy(() => import("@/registry/new-york/block/components/layout/navbar/inc/nav-link.tsx")),
+      source: "__registry__/new-york/block/components/layout/navbar/inc/nav-link.tsx",
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "nav-main": {
+      name: "nav-main",
+      type: "registry:block",
+      registryDependencies: ["navigation-menu"],
+      files: ["registry/new-york/block/components/layout/navbar/inc/nav-main.tsx"],
+      component: React.lazy(() => import("@/registry/new-york/block/components/layout/navbar/inc/nav-main.tsx")),
+      source: "__registry__/new-york/block/components/layout/navbar/inc/nav-main.tsx",
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
     "not-found": {
       name: "not-found",
       type: "registry:block",
@@ -772,6 +794,28 @@ export const Index: Record<string, any> = {
       files: ["registry/default/block/components/layout/navbar/nav-mobile.tsx"],
       component: React.lazy(() => import("@/registry/default/block/components/layout/navbar/nav-mobile.tsx")),
       source: "__registry__/default/block/components/layout/navbar/nav-mobile.tsx",
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "nav-link": {
+      name: "nav-link",
+      type: "registry:block",
+      registryDependencies: ["button"],
+      files: ["registry/default/block/components/layout/navbar/inc/nav-link.tsx"],
+      component: React.lazy(() => import("@/registry/default/block/components/layout/navbar/inc/nav-link.tsx")),
+      source: "__registry__/default/block/components/layout/navbar/inc/nav-link.tsx",
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "nav-main": {
+      name: "nav-main",
+      type: "registry:block",
+      registryDependencies: ["navigation-menu"],
+      files: ["registry/default/block/components/layout/navbar/inc/nav-main.tsx"],
+      component: React.lazy(() => import("@/registry/default/block/components/layout/navbar/inc/nav-main.tsx")),
+      source: "__registry__/default/block/components/layout/navbar/inc/nav-main.tsx",
       category: "undefined",
       subcategory: "undefined",
       chunks: []

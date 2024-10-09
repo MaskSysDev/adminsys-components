@@ -263,6 +263,30 @@ export const blocks: Registry = [
     ],
   },
   {
+    name: "nav-link",
+    registryDependencies: ["button"],
+    type: "registry:block",
+    files: [
+      {
+        path: "block/components/layout/navbar/inc/nav-link.tsx",
+        type: "registry:component",
+        target: "components/layout/navbar/inc/nav-link.tsx",
+      },
+    ],
+  },
+  {
+    name: "nav-main",
+    registryDependencies: ["navigation-menu"],
+    type: "registry:block",
+    files: [
+      {
+        path: "block/components/layout/navbar/inc/nav-main.tsx",
+        type: "registry:component",
+        target: "components/layout/navbar/inc/nav-main.tsx",
+      },
+    ],
+  },
+  {
     name: "not-found",
     registryDependencies: ["button"],
     type: "registry:block",

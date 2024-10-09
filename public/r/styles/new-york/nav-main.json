@@ -1,0 +1,15 @@
+{
+  "name": "nav-main",
+  "type": "registry:block",
+  "registryDependencies": [
+    "navigation-menu"
+  ],
+  "files": [
+    {
+      "path": "block/components/layout/navbar/inc/nav-main.tsx",
+      "content": "\"use client\";\n\nimport { cn } from \"@/lib/utils\";\n\nimport { NavLink } from \"@/components/layout/navbar/inc/nav-link\";\n\nimport {\n  NavigationMenu,\n  NavigationMenuItem,\n  NavigationMenuList,\n} from \"@/components/ui/navigation-menu\";\n\ninterface NavMainProps {\n  className?: string;\n  navbar: {\n    name: string;\n    links: {\n      id: string;\n      label: string;\n      href: string;\n    }[];\n  };\n}\n\nexport const NavMain = ({ className, navbar }: NavMainProps) => {\n  return (\n    <NavigationMenu>\n      <NavigationMenuList className={cn(\"flex items-center\", className)}>\n        {navbar.links.map((item) => (\n          <NavigationMenuItem\n            className=\"flex items-center text-lg font-medium text-muted-foreground md:block\"\n            key={item.id}\n          >\n            <NavLink href={item.href}>{item.label}</NavLink>\n          </NavigationMenuItem>\n        ))}\n      </NavigationMenuList>\n    </NavigationMenu>\n  );\n};\n",
+      "type": "registry:component",
+      "target": "components/layout/navbar/inc/nav-main.tsx"
+    }
+  ]
+}

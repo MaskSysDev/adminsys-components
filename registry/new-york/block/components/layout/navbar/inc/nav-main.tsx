@@ -2,13 +2,13 @@
 
 import { cn } from "@/lib/utils";
 
+import { NavLink } from "@/components/layout/navbar/inc/nav-link";
+
 import {
   NavigationMenu,
   NavigationMenuItem,
   NavigationMenuList,
 } from "@/components/ui/navigation-menu";
-
-import { NavLink } from "./nav-link";
 
 interface NavMainProps {
   className?: string;
