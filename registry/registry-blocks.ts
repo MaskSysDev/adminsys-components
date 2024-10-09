@@ -20,6 +20,18 @@ export const blocks: Registry = [
       },
     ],
   },
+  // Config
+  {
+    name: "config-site",
+    type: "registry:block",
+    files: [
+      {
+        path: "block/config/site.ts",
+        type: "registry:component",
+        target: "config/site.ts",
+      },
+    ],
+  },
   // Components Layout
   {
     name: "alert",
@@ -249,7 +261,7 @@ export const blocks: Registry = [
       "navigation-menu",
       "scroll-area",
       "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/drawer-menu.json",
-      "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/site-config.json",
+      "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/config-site.json",
       "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/logo.json",
       "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/toggle-theme.json",
     ],
@@ -303,7 +315,7 @@ export const blocks: Registry = [
     registryDependencies: [
       "button",
       "scroll-area",
-      "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/site-config.json",
+      "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/config-site.json",
       "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/logo.json",
       "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/sidebar-nav-item.json",
       "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/sidebar-nav-user.json",
@@ -322,7 +334,7 @@ export const blocks: Registry = [
     registryDependencies: [
       "button",
       "scroll-area",
-      "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/site-config.json",
+      "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/config-site.json",
       "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/logo.json",
       "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/sidebar-nav-item.json",
     ],

@@ -126,6 +126,17 @@ export const Index: Record<string, any> = {
       subcategory: "undefined",
       chunks: []
     },
+    "config-site": {
+      name: "config-site",
+      type: "registry:block",
+      registryDependencies: undefined,
+      files: ["registry/new-york/block/config/site.ts"],
+      component: React.lazy(() => import("@/registry/new-york/block/config/site.ts")),
+      source: "__registry__/new-york/block/config/site.ts",
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
     "alert": {
       name: "alert",
       type: "registry:block",
@@ -305,7 +316,7 @@ export const Index: Record<string, any> = {
     "nav-mobile": {
       name: "nav-mobile",
       type: "registry:block",
-      registryDependencies: ["button","navigation-menu","scroll-area","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/drawer-menu.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/site-config.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/logo.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/toggle-theme.json"],
+      registryDependencies: ["button","navigation-menu","scroll-area","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/drawer-menu.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/config-site.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/logo.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/toggle-theme.json"],
       files: ["registry/new-york/block/components/layout/navbar/nav-mobile.tsx"],
       component: React.lazy(() => import("@/registry/new-york/block/components/layout/navbar/nav-mobile.tsx")),
       source: "__registry__/new-york/block/components/layout/navbar/nav-mobile.tsx",
@@ -349,7 +360,7 @@ export const Index: Record<string, any> = {
     "admin-sidebar": {
       name: "admin-sidebar",
       type: "registry:block",
-      registryDependencies: ["button","scroll-area","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/site-config.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/logo.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/sidebar-nav-item.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/sidebar-nav-user.json"],
+      registryDependencies: ["button","scroll-area","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/config-site.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/logo.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/sidebar-nav-item.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/sidebar-nav-user.json"],
       files: ["registry/new-york/block/components/layout/sidebar/admin-sidebar.tsx"],
       component: React.lazy(() => import("@/registry/new-york/block/components/layout/sidebar/admin-sidebar.tsx")),
       source: "__registry__/new-york/block/components/layout/sidebar/admin-sidebar.tsx",
@@ -360,7 +371,7 @@ export const Index: Record<string, any> = {
     "docs-sidebar": {
       name: "docs-sidebar",
       type: "registry:block",
-      registryDependencies: ["button","scroll-area","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/site-config.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/logo.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/sidebar-nav-item.json"],
+      registryDependencies: ["button","scroll-area","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/config-site.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/logo.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/sidebar-nav-item.json"],
       files: ["registry/new-york/block/components/layout/sidebar/docs-sidebar.tsx"],
       component: React.lazy(() => import("@/registry/new-york/block/components/layout/sidebar/docs-sidebar.tsx")),
       source: "__registry__/new-york/block/components/layout/sidebar/docs-sidebar.tsx",
@@ -611,6 +622,17 @@ export const Index: Record<string, any> = {
       subcategory: "undefined",
       chunks: []
     },
+    "config-site": {
+      name: "config-site",
+      type: "registry:block",
+      registryDependencies: undefined,
+      files: ["registry/default/block/config/site.ts"],
+      component: React.lazy(() => import("@/registry/default/block/config/site.ts")),
+      source: "__registry__/default/block/config/site.ts",
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
     "alert": {
       name: "alert",
       type: "registry:block",
@@ -790,7 +812,7 @@ export const Index: Record<string, any> = {
     "nav-mobile": {
       name: "nav-mobile",
       type: "registry:block",
-      registryDependencies: ["button","navigation-menu","scroll-area","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/drawer-menu.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/site-config.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/logo.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/toggle-theme.json"],
+      registryDependencies: ["button","navigation-menu","scroll-area","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/drawer-menu.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/config-site.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/logo.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/toggle-theme.json"],
       files: ["registry/default/block/components/layout/navbar/nav-mobile.tsx"],
       component: React.lazy(() => import("@/registry/default/block/components/layout/navbar/nav-mobile.tsx")),
       source: "__registry__/default/block/components/layout/navbar/nav-mobile.tsx",
@@ -834,7 +856,7 @@ export const Index: Record<string, any> = {
     "admin-sidebar": {
       name: "admin-sidebar",
       type: "registry:block",
-      registryDependencies: ["button","scroll-area","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/site-config.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/logo.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/sidebar-nav-item.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/sidebar-nav-user.json"],
+      registryDependencies: ["button","scroll-area","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/config-site.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/logo.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/sidebar-nav-item.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/sidebar-nav-user.json"],
       files: ["registry/default/block/components/layout/sidebar/admin-sidebar.tsx"],
       component: React.lazy(() => import("@/registry/default/block/components/layout/sidebar/admin-sidebar.tsx")),
       source: "__registry__/default/block/components/layout/sidebar/admin-sidebar.tsx",
@@ -845,7 +867,7 @@ export const Index: Record<string, any> = {
     "docs-sidebar": {
       name: "docs-sidebar",
       type: "registry:block",
-      registryDependencies: ["button","scroll-area","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/site-config.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/logo.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/sidebar-nav-item.json"],
+      registryDependencies: ["button","scroll-area","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/config-site.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/logo.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/sidebar-nav-item.json"],
       files: ["registry/default/block/components/layout/sidebar/docs-sidebar.tsx"],
       component: React.lazy(() => import("@/registry/default/block/components/layout/sidebar/docs-sidebar.tsx")),
       source: "__registry__/default/block/components/layout/sidebar/docs-sidebar.tsx",
