@@ -79,7 +79,10 @@ export const blocks: Registry = [
   {
     name: "contact-form",
     type: "registry:block",
-    registryDependencies: ["form"],
+    registryDependencies: [
+      "form",
+      "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/alert.json",
+    ],
     files: [
       {
         path: "block/components/layout/form/contact-form.tsx",
