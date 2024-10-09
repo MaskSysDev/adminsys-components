@@ -4,6 +4,7 @@ import Link from "next/link";
 
 import { cn } from "@/lib/utils";
 
+import { SocialLogin } from "@/components/auth/form/social-login";
 import { buttonVariants } from "@/components/ui/button";
 import {
   Card,
@@ -13,8 +14,6 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-
-import { SocialLogin } from "../form/social-login";
 
 interface CardWrapperProps {
   children: React.ReactNode;

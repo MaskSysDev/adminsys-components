@@ -115,6 +115,17 @@ export const Index: Record<string, any> = {
       subcategory: "undefined",
       chunks: []
     },
+    "components-auth": {
+      name: "components-auth",
+      type: "registry:component",
+      registryDependencies: ["avatar","card"],
+      files: ["registry/new-york/block/components/auth/card/card-user-profile.tsx","registry/new-york/block/components/auth/dropdown/dropdown-user.tsx","registry/new-york/block/components/auth/form/account-form.tsx","registry/new-york/block/components/auth/form/forgot-password-form.tsx","registry/new-york/block/components/auth/form/form-auth.tsx","registry/new-york/block/components/auth/form/new-verification-form.tsx","registry/new-york/block/components/auth/form/reset-password-form.tsx","registry/new-york/block/components/auth/form/sign-in-form.tsx","registry/new-york/block/components/auth/form/sign-up-form.tsx","registry/new-york/block/components/auth/form/social-login.tsx","registry/new-york/block/components/auth/sidebar/sidebar-settings.tsx","registry/new-york/block/components/auth/wrapper/card-auth-wrapper.tsx"],
+      component: React.lazy(() => import("@/registry/new-york/block/components/auth/card/card-user-profile.tsx")),
+      source: "",
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
     "utils": {
       name: "utils",
       type: "registry:lib",
@@ -254,6 +265,17 @@ export const Index: Record<string, any> = {
       registryDependencies: undefined,
       files: ["registry/default/ui/typography.tsx"],
       component: React.lazy(() => import("@/registry/default/ui/typography.tsx")),
+      source: "",
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "components-auth": {
+      name: "components-auth",
+      type: "registry:component",
+      registryDependencies: ["avatar","card"],
+      files: ["registry/default/block/components/auth/card/card-user-profile.tsx","registry/default/block/components/auth/dropdown/dropdown-user.tsx","registry/default/block/components/auth/form/account-form.tsx","registry/default/block/components/auth/form/forgot-password-form.tsx","registry/default/block/components/auth/form/form-auth.tsx","registry/default/block/components/auth/form/new-verification-form.tsx","registry/default/block/components/auth/form/reset-password-form.tsx","registry/default/block/components/auth/form/sign-in-form.tsx","registry/default/block/components/auth/form/sign-up-form.tsx","registry/default/block/components/auth/form/social-login.tsx","registry/default/block/components/auth/sidebar/sidebar-settings.tsx","registry/default/block/components/auth/wrapper/card-auth-wrapper.tsx"],
+      component: React.lazy(() => import("@/registry/default/block/components/auth/card/card-user-profile.tsx")),
       source: "",
       category: "undefined",
       subcategory: "undefined",
