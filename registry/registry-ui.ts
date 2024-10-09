@@ -7,13 +7,7 @@ export const ui: Registry = [
     type: "registry:component",
     dependencies: ["lucide-react"],
     registryDependencies: ["avatar", "card"],
-    files: [
-      {
-        path: "components/auth/card/card-user-profile.tsx",
-        target: "components/auth/card/card-user-profile.tsx",
-        type: "registry:component",
-      },
-    ],
+    files: ["components/auth/card/card-user-profile.tsx"],
   },
   {
     name: "badge-theme",
