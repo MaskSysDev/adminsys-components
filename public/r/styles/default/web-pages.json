@@ -1,0 +1,73 @@
+{
+  "name": "web-pages",
+  "type": "registry:block",
+  "registryDependencies": [
+    "card",
+    "sonner",
+    "toast",
+    "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/theme-adminsys.json",
+    "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/container.json",
+    "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/hero-simple.json",
+    "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/loading-spinner.json",
+    "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/site-footer.json",
+    "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/theme-provider.json",
+    "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/toaster-theme.json",
+    "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/typography.json"
+  ],
+  "files": [
+    {
+      "path": "block/web/app/(web)/[...not-found]/page.tsx",
+      "content": "import { Metadata } from \"next\";\n\nimport { Container } from \"@/components/layout/container/container\";\nimport { NotFound } from \"@/components/layout/not-found/not-found\";\n\nexport const metadata: Metadata = {\n  title: \"NotFound\",\n  description: \"Description NotFound.\",\n};\n\nexport default function NotFoundPage() {\n  return (\n    <Container>\n      <NotFound labelAction=\"Go to Home\" href=\"/\" />\n    </Container>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "app/(web)/[...not-found]/page.tsx"
+    },
+    {
+      "path": "block/web/app/(web)/about/page.tsx",
+      "content": "import { Metadata } from \"next\";\n\nimport { Container } from \"@/components/layout/container/container\";\n\nimport { Typography } from \"@/components/ui/typography\";\n\nexport const metadata: Metadata = {\n  title: \"About\",\n  description: \"Description About.\",\n};\n\nexport default function AboutPage() {\n  return (\n    <Container className=\"py-4\">\n      <Typography.H1>About</Typography.H1>\n    </Container>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "app/(web)/about/page.tsx"
+    },
+    {
+      "path": "block/web/app/(web)/contact/page.tsx",
+      "content": "import { Metadata } from \"next\";\n\nimport { Container } from \"@/components/layout/container/container\";\nimport { ContactForm } from \"@/components/layout/form/contact-form\";\n\nimport { Card, CardContent } from \"@/components/ui/card\";\nimport { Typography } from \"@/components/ui/typography\";\n\nexport const metadata: Metadata = {\n  title: \"Contact\",\n  description: \"Description Contact.\",\n};\n\nexport default function ContactPage() {\n  return (\n    <Container className=\"py-4\">\n      <Typography.H1 className=\"text-center\">Contact</Typography.H1>\n      <Card className=\"mx-auto max-w-xl pt-4\">\n        <CardContent>\n          <ContactForm />\n        </CardContent>\n      </Card>\n    </Container>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "app/(web)/contact/page.tsx"
+    },
+    {
+      "path": "block/web/app/(web)/layout.tsx",
+      "content": "import type { Metadata, Viewport } from \"next\";\nimport localFont from \"next/font/local\";\n\nimport { siteConfig } from \"@/config/site\";\nimport { cn } from \"@/lib/utils\";\n\nimport { SiteFooter } from \"@/components/layout/footer/site-footer\";\nimport { SiteHeader } from \"@/components/layout/header/site-header\";\n\nimport { ThemeProvider } from \"@/components/provider/theme-provider\";\n\nimport { Toaster as ToasterSonner } from \"@/components/ui/sonner\";\nimport { Toaster } from \"@/components/ui/toaster\";\nimport { ToasterTheme } from \"@/components/ui/toaster-theme\";\nimport \"@/styles/globals.css\";\n\nconst geistSans = localFont({\n  src: \"../../fonts/GeistVF.woff\",\n  variable: \"--font-geist-sans\",\n  weight: \"100 900\",\n});\nconst geistMono = localFont({\n  src: \"../../fonts/GeistMonoVF.woff\",\n  variable: \"--font-geist-mono\",\n  weight: \"100 900\",\n});\n\nexport const metadata: Metadata = {\n  metadataBase: new URL(siteConfig.url),\n  title: {\n    default: siteConfig.name,\n    template: `%s - ${siteConfig.name}`,\n  },\n  description: siteConfig.siteDescription,\n\n  robots: {\n    follow: false,\n    index: false,\n    nocache: false,\n    googleBot: {\n      index: false,\n      follow: false,\n      noimageindex: false,\n    },\n  },\n  formatDetection: {\n    email: false,\n    address: false,\n    telephone: false,\n  },\n  referrer: \"origin-when-cross-origin\",\n\n  icons: {\n    icon: siteConfig.favicon,\n    shortcut: siteConfig.favicon16x16,\n    apple: siteConfig.favicon180x180,\n  },\n\n  openGraph: {\n    type: \"website\",\n    title: siteConfig.name,\n    locale: siteConfig.locale,\n    description: siteConfig.siteDescription,\n    url: siteConfig.url,\n    siteName: siteConfig.name,\n    images: [\n      {\n        url: siteConfig.favicon180x180,\n        width: 180,\n        height: 180,\n      },\n      {\n        url: siteConfig.favicon192x192,\n        width: 192,\n        height: 192,\n      },\n      {\n        url: siteConfig.favicon512x512,\n        width: 512,\n        height: 512,\n      },\n    ],\n  },\n\n  twitter: {\n    card: \"summary_large_image\",\n    title: siteConfig.name,\n    description: siteConfig.siteDescription,\n    images: [siteConfig.favicon512x512],\n    creator: siteConfig.creator,\n  },\n\n  authors: [{ name: siteConfig.author, url: siteConfig.authorUrl }],\n\n  creator: siteConfig.creator,\n  publisher: siteConfig.publisher,\n};\n\nexport const viewport: Viewport = {\n  themeColor: [\n    { media: \"(prefers-color-scheme: light)\", color: \"white\" },\n    { media: \"(prefers-color-scheme: dark)\", color: \"black\" },\n  ],\n};\n\nexport default function RootLayout({\n  children,\n}: Readonly<{\n  children: React.ReactNode;\n}>) {\n  return (\n    <html lang=\"en\" suppressHydrationWarning>\n      <body\n        className={cn(\n          \"min-h-screen bg-background antialiased\",\n          geistSans.variable,\n          geistMono.variable,\n        )}\n      >\n        <ThemeProvider\n          attribute=\"class\"\n          defaultTheme=\"system\"\n          enableSystem\n          disableTransitionOnChange\n        >\n          <div className=\"flex min-h-screen min-w-full flex-col\">\n            <SiteHeader siteHeader={siteConfig.siteHeader} />\n            <div className=\"flex flex-1\">\n              <main className=\"flex flex-1 flex-col\">{children}</main>\n            </div>\n            <SiteFooter footer={siteConfig.footerSimple} />\n          </div>\n          <ToasterSonner />\n          <Toaster />\n          <ToasterTheme />\n        </ThemeProvider>\n      </body>\n    </html>\n  );\n}\n",
+      "type": "registry:page",
+      "target": "app/(web)/layout.tsx"
+    },
+    {
+      "path": "block/web/app/(web)/loading.tsx",
+      "content": "import { LoadingSpinner } from \"@/components/layout/loading/loading-spinner\";\n\nexport default function Loading() {\n  return (\n    <section className=\"flex flex-col items-center gap-64 py-72\">\n      <div className=\"container flex h-full flex-col items-center justify-center space-y-2\">\n        <LoadingSpinner />\n      </div>\n    </section>\n  );\n}\n",
+      "type": "registry:page",
+      "target": "app/(web)/loading.tsx"
+    },
+    {
+      "path": "block/web/app/(web)/page.tsx",
+      "content": "import { siteConfig } from \"@/config/site\";\n\nimport { Container } from \"@/components/layout/container/container\";\nimport { HeroSimple } from \"@/components/layout/hero/hero-simple\";\n\nexport default function HomePage() {\n  return (\n    <Container size=\"full\">\n      <HeroSimple hero={siteConfig.heroSimple} />\n    </Container>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "app/(web)/page.tsx"
+    },
+    {
+      "path": "block/web/config/site.ts",
+      "content": "export type SiteConfig = typeof siteConfig;\n\nconst name = \"AdminSys\";\n\nconst siteDescription =\n  \"Nextjs App with Typescript, Tailwind CSS, Shadcn/ui, ESLint, Prettier, and more.\";\n\nconst emailContact = \"contact@email.com\";\nconst emailSupport = \"support@email.com\";\n\nconst url = \"https://adminsys-boilerplate.vercel.app\";\nconst favicon = \"/favicon.ico\";\nconst favicon16x16 = \"/assets/images/icon/icon-16x16.png\";\nconst favicon180x180 = \"/assets/images/icon/icon-180x180.png\";\nconst favicon192x192 = \"/assets/images/icon/icon-192x192.png\";\nconst favicon512x512 = \"/assets/images/icon/icon-512x512.png\";\nconst logo = \"/assets/images/logo/logo-dark.png\";\nconst logoLight = \"/assets/images/logo/logo-light.png\";\nconst logoDark = \"/assets/images/logo/logo-dark.png\";\n\nconst locale = \"en-US\";\n\nconst facebook = \"https://www.facebook.com/\";\nconst instagram = \"https://www.instagram.com/\";\nconst youtube = \"https://www.youtube.com/\";\n\nconst keywords = \"React, Next.js, TypeScript\";\n\nconst author = \"MaskSysDev\";\nconst authorUrl = \"https://github.com/MaskSysDev\";\n\nconst creator = \"Mask\";\nconst publisher = \"MaskSysDev\";\n\nconst projectUrl = \"https://github.com/MaskSysDev/adminsys-boilerplate\";\n\nexport const siteConfig = {\n  /* Global */\n  name,\n  siteDescription,\n  emailContact,\n  emailSupport,\n  url,\n\n  favicon,\n  favicon16x16,\n  favicon180x180,\n  favicon192x192,\n  favicon512x512,\n  logo,\n  logoLight,\n  logoDark,\n\n  locale,\n\n  keywords,\n\n  author,\n  authorUrl,\n\n  creator,\n  publisher,\n\n  project: {\n    url: projectUrl,\n    author,\n    authorUrl,\n  },\n  docsRepositoryBase: projectUrl,\n\n  links: {\n    github: projectUrl,\n    facebook,\n    instagram,\n    youtube,\n  },\n\n  /* Components Layout */\n  siteHeader: {\n    name,\n    position: \"end\",\n    links: [\n      {\n        id: \"1\",\n        label: \"Home\",\n        href: \"/\",\n        disabled: false,\n      },\n      {\n        id: \"2\",\n        label: \"About\",\n        href: \"/about\",\n        disabled: false,\n      },\n      {\n        id: \"3\",\n        label: \"Contact\",\n        href: \"/contact\",\n        disabled: false,\n      },\n    ],\n  },\n\n  footerSimple: {\n    author,\n    authorUrl,\n    name,\n    facebook,\n    instagram,\n    youtube,\n  },\n\n  heroSimple: {\n    size: \"64\",\n    title: name,\n    subtitle: \"Template \",\n    subtitleColor: \"Admin\",\n    description: siteDescription,\n    labelLink1: \"Get Started\",\n    link1: \"/\",\n    labelLink2: \"GitHub\",\n    link2: projectUrl,\n    backgroundImage: \"image\",\n    backgroundColor: \"rgba(0, 0, 0, 0.0)\",\n    backgroundColorTop: \"rgba(0, 0, 0, 0.0)\",\n    backgroundColorBottom: \"rgba(0, 0, 0, 0.0)\",\n  },\n};\n",
+      "type": "registry:page",
+      "target": "config/site.ts"
+    },
+    {
+      "path": "block/lib/validation/contact.ts",
+      "content": "import * as z from \"zod\";\n\nexport const contactSchema = z.object({\n  name: z.string().min(2, {\n    message: \"Name must be at least 2 characters.\",\n  }),\n  email: z.string().email({\n    message: \"Please enter a valid email address.\",\n  }),\n  message: z.string().min(10, {\n    message: \"Message must be at least 10 characters.\",\n  }),\n});\n\nexport type ContactFormValues = z.infer<typeof contactSchema>;\n",
+      "type": "registry:page",
+      "target": "lib/validation/contact.ts"
+    },
+    {
+      "path": "block/web/components/layout/header/site-header.tsx",
+      "content": "import Link from \"next/link\";\n\nimport { cn } from \"@/lib/utils\";\n\nimport { Container } from \"@/components/layout/container/container\";\nimport { Logo } from \"@/components/layout/logo/logo\";\nimport { NavMain } from \"@/components/layout/navbar/inc/nav-main\";\nimport { NavMobile } from \"@/components/layout/navbar/nav-mobile\";\nimport { ToggleTheme } from \"@/components/layout/toggle/toggle-theme\";\n\nimport { Button, buttonVariants } from \"@/components/ui/button\";\n\ntype SiteHeaderProps = {\n  siteHeader: {\n    name: string;\n    position?: string;\n    links: {\n      id: string;\n      label: string;\n      href: string;\n      disabled: boolean;\n    }[];\n  };\n};\n\nexport const SiteHeader = ({ siteHeader }: SiteHeaderProps) => {\n  return (\n    <header className=\"sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/95\">\n      <Container className=\"flex h-14 items-center justify-center\">\n        <div className=\"relative flex w-full items-center justify-between\">\n          {/* Left */}\n          <div className=\"flex items-center space-x-2\">\n            <Link\n              href=\"/\"\n              className={cn(\n                buttonVariants({\n                  variant: \"ghost\",\n                }),\n                \"flex items-center space-x-2 px-0 hover:bg-transparent\",\n              )}\n            >\n              <Logo />\n            </Link>\n          </div>\n\n          {/* Center */}\n          <div\n            className={cn(\"flex w-full items-center justify-start px-4\", {\n              \"justify-start\":\n                siteHeader.position === \"start\" ||\n                siteHeader.position === \"left\",\n              \"justify-center\": siteHeader.position === \"center\",\n              \"justify-end\":\n                siteHeader.position === \"end\" ||\n                siteHeader.position === \"right\",\n            })}\n          >\n            <NavMain navbar={siteHeader} className=\"hidden md:flex\" />\n          </div>\n\n          {/* Right */}\n          <div className=\"flex flex-1 items-center justify-end space-x-2\">\n            <Button size=\"sm\" asChild>\n              <Link href=\"/auth/sign-in\">Sign in</Link>\n            </Button>\n            <ToggleTheme className=\"hidden md:flex\" />\n            <NavMobile className=\"flex md:hidden\" />\n          </div>\n        </div>\n      </Container>\n    </header>\n  );\n};\n",
+      "type": "registry:page",
+      "target": "components/layout/header/site-header.tsx"
+    }
+  ]
+}

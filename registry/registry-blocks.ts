@@ -473,7 +473,7 @@ export const blocks: Registry = [
   // Web Pages
   {
     name: "web-pages",
-    type: "registry:page",
+    type: "registry:block",
     registryDependencies: [
       "card",
       "sonner",
