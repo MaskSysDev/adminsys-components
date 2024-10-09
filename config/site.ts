@@ -113,6 +113,48 @@ export const siteConfig = {
     ],
   },
 
+  sidebarAccount: {
+    name: "Account",
+    content: [
+      {
+        id: "1",
+        contentTitle: "Account",
+        linksSection: [
+          {
+            id: "1",
+            label: "Account",
+            href: "/settings/account",
+            path: "",
+            items: [],
+          },
+          {
+            id: "2",
+            label: "Profile",
+            href: "/settings/profile",
+            path: "",
+            items: [],
+          },
+        ],
+      },
+    ],
+    support: [
+      {
+        id: "1",
+        label: "Docs",
+        href: "/docs",
+        path: "",
+        items: [],
+      },
+      {
+        id: "2",
+        label: "Support",
+        href: "/support",
+        path: "",
+        items: [],
+      },
+    ],
+  },
+
   adminSidebar: {
     name,
     content: [

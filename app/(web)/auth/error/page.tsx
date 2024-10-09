@@ -3,6 +3,8 @@ import Link from "next/link";
 
 import { TriangleAlertIcon } from "lucide-react";
 
+import { Container } from "@/components/layout/container/container";
+
 import { CardAuthWrapper } from "@/components/auth/wrapper/card-auth-wrapper";
 import { Button } from "@/components/ui/button";
 
@@ -13,7 +15,7 @@ export const metadata: Metadata = {
 
 export default function AuthErrorPage() {
   return (
-    <div className="container mx-auto flex items-center justify-center py-8 md:py-16">
+    <Container className="flex items-center justify-center py-8 md:py-16">
       <CardAuthWrapper headerLabel="Oops! Something went wrong!">
         <div className="flex w-full flex-col items-center justify-center gap-4">
           <TriangleAlertIcon className="size-16 text-red-600" />
@@ -23,6 +25,6 @@ export default function AuthErrorPage() {
           </Button>
         </div>
       </CardAuthWrapper>
-    </div>
+    </Container>
   );
 }

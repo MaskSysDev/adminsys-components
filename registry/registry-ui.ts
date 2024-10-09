@@ -1,6 +1,20 @@
 import { Registry } from "@/registry/schema";
 
 export const ui: Registry = [
+  // Auth
+  {
+    name: "card-user-profile",
+    type: "registry:component",
+    dependencies: ["lucide-react"],
+    registryDependencies: ["avatar", "card"],
+    files: [
+      {
+        path: "components/auth/card/card-user-profile.tsx",
+        target: "components/auth/card/card-user-profile.tsx",
+        type: "registry:component",
+      },
+    ],
+  },
   {
     name: "badge-theme",
     type: "registry:ui",

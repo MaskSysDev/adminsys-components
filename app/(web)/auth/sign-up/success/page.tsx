@@ -2,6 +2,8 @@ import { Metadata } from "next";
 
 import { Check } from "lucide-react";
 
+import { Container } from "@/components/layout/container/container";
+
 import { CardAuthWrapper } from "@/components/auth/wrapper/card-auth-wrapper";
 
 export const metadata: Metadata = {
@@ -11,12 +13,12 @@ export const metadata: Metadata = {
 
 export default function SuccessPage() {
   return (
-    <div className="container mx-auto flex items-center justify-center py-8 md:py-16">
+    <Container className="flex items-center justify-center py-8 md:py-16">
       <CardAuthWrapper headerLabel="Confirmation email sent!">
         <div className="flex w-full items-center justify-center">
           <Check className="size-16 text-green-600" />
         </div>
       </CardAuthWrapper>
-    </div>
+    </Container>
   );
 }

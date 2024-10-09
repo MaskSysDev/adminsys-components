@@ -11,6 +11,7 @@ import { ThemeProvider } from "@/components/provider/theme-provider";
 
 import { TailwindIndicator } from "@/components/tailwind-indicator";
 import { Toaster as ToasterSonner } from "@/components/ui/sonner";
+import { Toaster } from "@/components/ui/toaster";
 import { ToasterTheme } from "@/components/ui/toaster-theme";
 import "@/styles/globals.css";
 
@@ -132,6 +133,7 @@ export default function RootLayout({
           </div>
           <TailwindIndicator />
           <ToasterSonner />
+          <Toaster />
           <ToasterTheme />
         </ThemeProvider>
       </body>
