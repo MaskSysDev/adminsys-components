@@ -4,7 +4,7 @@ export const blocks: Registry = [
   // Auth
   {
     name: "components-auth",
-    type: "registry:component",
+    type: "registry:block",
     dependencies: ["lucide-react"],
     registryDependencies: ["avatar", "card"],
     files: [
