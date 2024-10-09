@@ -1,0 +1,18 @@
+{
+  "name": "admin-header",
+  "type": "registry:block",
+  "registryDependencies": [
+    "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/container.json",
+    "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/toggle-theme.json",
+    "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/dropdown-user.json",
+    "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/sidebar.json"
+  ],
+  "files": [
+    {
+      "path": "block/components/layout/header/admin-header.tsx",
+      "content": "import { Container } from \"@/components/layout/container/container\";\nimport { ToggleTheme } from \"@/components/layout/toggle/toggle-theme\";\n\nimport { DropdownUser } from \"@/components/auth/dropdown/dropdown-user\";\nimport { SidebarTrigger } from \"@/components/ui/sidebar\";\n\nexport const AdminHeader = () => {\n  return (\n    <header className=\"sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/95\">\n      <Container className=\"flex h-14 items-center justify-center\">\n        <div className=\"relative flex w-full items-center justify-between\">\n          {/* Left */}\n          <div className=\"flex items-center space-x-2\">\n            <SidebarTrigger />\n          </div>\n\n          {/* Right */}\n          <div className=\"flex flex-1 items-center justify-end space-x-2\">\n            <ToggleTheme />\n            <DropdownUser />\n          </div>\n        </div>\n      </Container>\n    </header>\n  );\n};\n",
+      "type": "registry:component",
+      "target": "components/layout/header/admin-header.tsx"
+    }
+  ]
+}

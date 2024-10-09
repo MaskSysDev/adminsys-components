@@ -1,0 +1,17 @@
+{
+  "name": "hero-simple",
+  "type": "registry:block",
+  "registryDependencies": [
+    "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/badge-theme.json",
+    "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/banner.json",
+    "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/button-theme.json"
+  ],
+  "files": [
+    {
+      "path": "block/components/layout/hero/hero-simple.tsx",
+      "content": "import type { JSX } from \"react\";\n\nimport Link from \"next/link\";\n\nimport { BadgeTheme } from \"@/components/ui/badge-theme\";\nimport { Banner } from \"@/components/ui/banner\";\nimport { buttonThemeVariants } from \"@/components/ui/button-theme\";\n\ninterface HeroSimpleProps {\n  hero: {\n    size: string;\n    title?: string;\n    subtitle?: string;\n    subtitleColor?: string;\n    description?: string;\n    labelLink1?: string;\n    link1: string;\n    labelLink2?: string;\n    link2: string;\n    backgroundImage?: string;\n    backgroundColor?: string;\n    backgroundColorTop?: string;\n    backgroundColorBottom?: string;\n  };\n}\n\nexport function HeroSimple({ hero }: Readonly<HeroSimpleProps>): JSX.Element {\n  return (\n    <Banner.Root\n      size={hero.size}\n      backgroundImage={hero.backgroundImage}\n      backgroundColor={hero.backgroundColor}\n      backgroundColorTop={hero.backgroundColorTop}\n      backgroundColorBottom={hero.backgroundColorBottom}\n    >\n      {hero.subtitle || hero.subtitleColor ? (\n        <BadgeTheme\n          variant=\"muted\"\n          className=\"mb-3 rounded-md text-muted-foreground\"\n        >\n          <div className=\"inline\">\n            <span>{hero.subtitle}</span>\n            {hero.subtitleColor ? (\n              <span className=\"text-primary\">{hero.subtitleColor}</span>\n            ) : null}\n          </div>\n        </BadgeTheme>\n      ) : null}\n\n      {hero.title ? <Banner.Title>{hero.title}</Banner.Title> : null}\n\n      {hero.description ? (\n        <Banner.Description>{hero.description}</Banner.Description>\n      ) : null}\n\n      <Banner.Actions>\n        {hero.labelLink1 ? (\n          <Link\n            className={buttonThemeVariants({\n              size: \"lg\",\n              className: \"w-full sm:w-auto\",\n            })}\n            href={hero.link1}\n          >\n            {hero.labelLink1}\n          </Link>\n        ) : null}\n        {hero.labelLink2 ? (\n          <Link\n            className={buttonThemeVariants({\n              size: \"lg\",\n              variant: \"secondary\",\n              theme: \"outline\",\n              className: \"w-full sm:w-auto\",\n            })}\n            href={hero.link2}\n            rel=\"noopener noreferrer\"\n            target=\"_blank\"\n          >\n            {hero.labelLink2}\n          </Link>\n        ) : null}\n      </Banner.Actions>\n    </Banner.Root>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/layout/hero/hero-simple.tsx"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "loading-spinner",
+  "type": "registry:block",
+  "files": [
+    {
+      "path": "block/components/layout/loading/loading-spinner.tsx",
+      "content": "import { cn } from \"@/lib/utils\";\n\ntype LoadingSpinnerProps = {\n  className?: string;\n};\n\nexport const LoadingSpinner = ({ className }: LoadingSpinnerProps) => {\n  return (\n    <span\n      aria-label=\"loading\"\n      className={cn(\n        \"absolute inline-block size-6 min-w-max animate-spin rounded-full border-[3px] border-current border-t-transparent text-muted-foreground\",\n        className,\n      )}\n    >\n      <span className=\"sr-only\">Loading...</span>\n    </span>\n  );\n};\n",
+      "type": "registry:component",
+      "target": "components/layout/loading/loading-spinner.tsx"
+    }
+  ]
+}

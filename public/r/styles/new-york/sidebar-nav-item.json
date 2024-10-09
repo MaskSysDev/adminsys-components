@@ -1,0 +1,18 @@
+{
+  "name": "sidebar-nav-item",
+  "type": "registry:block",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "block/components/layout/sidebar/inc/sidebar-nav-item.tsx",
+      "content": "\"use client\";\n\nimport { useState } from \"react\";\n\nimport Link from \"next/link\";\nimport { usePathname } from \"next/navigation\";\n\nimport { ChevronLeft } from \"lucide-react\";\n\nimport { cn } from \"@/lib/utils\";\n\nimport { Button } from \"@/components/ui/button\";\n\nexport type NavProps = {\n  label: string;\n  href: string;\n  path: string;\n};\n\nexport type NavItemProps = {\n  label: string;\n  href: string;\n  path: string;\n  items: NavProps[];\n};\n\nexport const SidebarNavItem = ({\n  item,\n  className,\n}: {\n  item: NavItemProps;\n  className?: string;\n}) => {\n  const pathname = usePathname();\n\n  const isActive = (href: string) => {\n    return pathname === href || pathname.startsWith(`${href}/`);\n  };\n\n  const isActiveSubmenu = pathname.includes(item.path);\n\n  const [isOpen, setIsOpen] = useState(isActiveSubmenu);\n  const hasSubItems = item.items && item.items.length > 0;\n\n  return (\n    <div id=\"sidebar-nav-item\" className=\"group\">\n      <Button\n        variant=\"ghost\"\n        className={cn(\n          \"w-full justify-start text-base text-muted-foreground hover:bg-primary/5\",\n          {\n            \"bg-primary/5 text-primary\": isActiveSubmenu && isActive(item.href),\n            \"rounded-b-none bg-primary/5 \": hasSubItems && isOpen,\n          },\n          className,\n        )}\n        onClick={() => {\n          if (hasSubItems) {\n            setIsOpen(!isOpen);\n          }\n        }}\n        asChild={!hasSubItems}\n      >\n        {hasSubItems ? (\n          <>\n            {item.label}\n            <ChevronLeft\n              className={cn(\n                \"ml-auto size-4 transition-transform\",\n                isOpen ? \"-rotate-90\" : \"\",\n              )}\n            />\n          </>\n        ) : (\n          <Link href={item.href}>{item.label}</Link>\n        )}\n      </Button>\n      {isOpen && hasSubItems && (\n        <div className=\"space-y-1 rounded-b-md bg-primary/5\">\n          {item.items!.map((subItem, index) => (\n            <Button\n              key={index}\n              variant=\"ghost\"\n              className={cn(\n                \"w-full justify-start pl-8 text-base text-muted-foreground hover:bg-transparent\",\n                isActive(subItem.href) &&\n                  subItem.href === pathname &&\n                  \"text-primary\",\n              )}\n              asChild\n            >\n              <Link href={subItem.href}>{subItem.label}</Link>\n            </Button>\n          ))}\n        </div>\n      )}\n    </div>\n  );\n};\n",
+      "type": "registry:component",
+      "target": "components/layout/sidebar/inc/sidebar-nav-item.tsx"
+    }
+  ]
+}

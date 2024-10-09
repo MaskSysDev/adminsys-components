@@ -1,0 +1,24 @@
+{
+  "name": "nav-mobile",
+  "type": "registry:block",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "button",
+    "drawer-menu",
+    "navigation-menu",
+    "scroll-area",
+    "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/site-config.json",
+    "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/logo.json",
+    "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/toggle-theme.json"
+  ],
+  "files": [
+    {
+      "path": "block/components/layout/navbar/nav-mobile.tsx",
+      "content": "\"use client\";\n\nimport { useState } from \"react\";\n\nimport Link from \"next/link\";\nimport { usePathname } from \"next/navigation\";\n\nimport { MenuIcon, X } from \"lucide-react\";\n\nimport { siteConfig } from \"@/config/site\";\nimport { cn } from \"@/lib/utils\";\n\nimport { Logo } from \"@/components/layout/logo/logo\";\nimport { ToggleTheme } from \"@/components/layout/toggle/toggle-theme\";\n\nimport { Button, buttonVariants } from \"@/components/ui/button\";\nimport { DrawerMenu } from \"@/components/ui/drawer-menu\";\nimport {\n  NavigationMenu,\n  NavigationMenuItem,\n  NavigationMenuList,\n} from \"@/components/ui/navigation-menu\";\nimport { ScrollArea } from \"@/components/ui/scroll-area\";\n\ntype NavMobileProps = {\n  className?: string;\n};\nexport const NavMobile = ({ className }: NavMobileProps) => {\n  const pathname = usePathname();\n\n  const [isOpen, setIsOpen] = useState(false);\n\n  return (\n    <DrawerMenu.Root\n      onClose={() => setIsOpen(!isOpen)}\n      open={isOpen}\n      direction={\"right\"}\n    >\n      <DrawerMenu.Trigger\n        className={cn(\n          buttonVariants({\n            variant: \"ghost\",\n            size: \"icon\",\n          }),\n          \"text-muted-foreground\",\n          className,\n        )}\n        onClick={() => setIsOpen(!isOpen)}\n      >\n        <MenuIcon />\n        <span className=\"sr-only\">Menu</span>\n      </DrawerMenu.Trigger>\n      <DrawerMenu.Content className=\"ring-offset-background  focus-visible:outline-none\">\n        <DrawerMenu.Header className=\"flex h-16 items-start border-b\">\n          <DrawerMenu.Title className=\"flex w-full justify-between gap-2\">\n            <Link\n              href=\"/\"\n              className={cn(\n                buttonVariants({\n                  variant: \"ghost\",\n                }),\n                \"flex items-center space-x-2 px-0 hover:bg-transparent\",\n              )}\n              onClick={() => setIsOpen(!isOpen)}\n            >\n              <Logo />\n            </Link>\n            <ToggleTheme className=\"me-6\" />\n          </DrawerMenu.Title>\n          <DrawerMenu.Close\n            className={cn(\n              buttonVariants({\n                variant: \"ghost\",\n                size: \"icon\",\n              }),\n              \"absolute right-4 top-4 size-6 text-muted-foreground\",\n            )}\n            onClick={() => setIsOpen(!isOpen)}\n          >\n            <X className=\"size-4\" />\n            <span className=\"sr-only\">Close</span>\n          </DrawerMenu.Close>\n        </DrawerMenu.Header>\n        <DrawerMenu.Description />\n        <ScrollArea className=\"overflow-auto break-all p-4\">\n          <NavigationMenu>\n            <NavigationMenuList className=\"flex size-full flex-col items-start space-x-0 space-y-1 p-1\">\n              {siteConfig.siteHeader.links.map((item) => (\n                <NavigationMenuItem\n                  className=\"flex items-center text-lg font-medium text-muted-foreground md:block\"\n                  key={item.id}\n                >\n                  <Button\n                    asChild\n                    variant=\"ghost\"\n                    size=\"sm\"\n                    className=\"text-lg hover:bg-transparent\"\n                    onClick={() => setIsOpen(!isOpen)}\n                  >\n                    <Link\n                      className={cn(\n                        pathname === item.href ? \"text-primary\" : null,\n                      )}\n                      href={item.href}\n                    >\n                      {item.label}\n                    </Link>\n                  </Button>\n                </NavigationMenuItem>\n              ))}\n            </NavigationMenuList>\n          </NavigationMenu>\n        </ScrollArea>\n      </DrawerMenu.Content>\n    </DrawerMenu.Root>\n  );\n};\n",
+      "type": "registry:component",
+      "target": "components/layout/navbar/nav-mobile.tsx"
+    }
+  ]
+}

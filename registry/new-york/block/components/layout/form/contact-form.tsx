@@ -8,6 +8,9 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { toast } from "@/hooks/use-toast";
 import { ContactFormValues, contactSchema } from "@/lib/validation/contact";
 
+import { AlertError } from "@/components/layout/alert/alert-error";
+import { AlertSuccess } from "@/components/layout/alert/alert-success";
+
 import { Button } from "@/components/ui/button";
 import {
   Form,
@@ -19,9 +22,6 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-
-import { AlertError } from "../alert/alert-error";
-import { AlertSuccess } from "../alert/alert-success";
 
 export const ContactForm = () => {
   const [error, setError] = useState<string | undefined>("");

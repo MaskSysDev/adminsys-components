@@ -4,7 +4,7 @@ import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
 
 import { Logo } from "@/components/layout/logo/logo";
-import { SidebarMenu } from "@/components/layout/sidebar/inc/sidebar-nav-item";
+import { SidebarNavItem } from "@/components/layout/sidebar/inc/sidebar-nav-item";
 
 import { buttonVariants } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -43,11 +43,7 @@ export function DocsSidebar() {
                   </div>
                 )}
                 {item.linksSection.map((subitem) => (
-                  <SidebarMenu
-                    key={subitem.id}
-                    item={subitem}
-                    path={subitem.path}
-                  />
+                  <SidebarNavItem key={subitem.id} item={subitem} />
                 ))}
               </SidebarItem>
             ))}
@@ -58,7 +54,7 @@ export function DocsSidebar() {
             Help
           </SidebarLabel>
           {siteConfig.docsSidebar.support.map((item) => (
-            <SidebarMenu key={item.id} item={item} path={item.path} />
+            <SidebarNavItem key={item.id} item={item} />
           ))}
         </SidebarItem>
       </SidebarContent>

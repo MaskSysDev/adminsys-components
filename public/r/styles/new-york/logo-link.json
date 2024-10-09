@@ -1,0 +1,12 @@
+{
+  "name": "logo-link",
+  "type": "registry:block",
+  "files": [
+    {
+      "path": "block/components/layout/logo/logo-link.tsx",
+      "content": "import Link from \"next/link\";\n\nimport { cn } from \"@/lib/utils\";\n\nimport { LogoDark } from \"@/components/layout/logo/logo-dark\";\nimport { LogoLight } from \"@/components/layout/logo/logo-light\";\nimport { LogoTheme } from \"@/components/layout/logo/logo-theme\";\n\nimport { buttonVariants } from \"@/components/ui/button\";\n\ninterface LogoLinkProps {\n  theme?: \"theme\" | \"dark\" | \"light\";\n}\nexport const LogoLink = ({ theme = \"theme\" }: LogoLinkProps) => {\n  return (\n    <Link\n      href=\"/\"\n      className={cn(\n        buttonVariants({\n          variant: \"ghost\",\n        }),\n        \"flex items-center space-x-2 px-0 hover:bg-transparent\",\n      )}\n    >\n      {theme === \"theme\" && <LogoTheme className=\"h-[40px] w-full\" />}\n      {theme === \"light\" && <LogoLight className=\"h-[40px] w-full\" />}\n      {theme === \"dark\" && <LogoDark className=\"h-[40px] w-full\" />}\n    </Link>\n  );\n};\n",
+      "type": "registry:component",
+      "target": "components/layout/logo/logo-link.tsx"
+    }
+  ]
+}

@@ -5,13 +5,24 @@ import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-import { NavItemProps } from "@/types/sidebar";
-
 import { ChevronLeft } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 
 import { Button } from "@/components/ui/button";
+
+export type NavProps = {
+  label: string;
+  href: string;
+  path: string;
+};
+
+export type NavItemProps = {
+  label: string;
+  href: string;
+  path: string;
+  items: NavProps[];
+};
 
 export const SidebarNavItem = ({
   item,

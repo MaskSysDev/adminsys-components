@@ -1,0 +1,12 @@
+{
+  "name": "container",
+  "type": "registry:block",
+  "files": [
+    {
+      "path": "block/components/layout/container/container.tsx",
+      "content": "import * as React from \"react\";\n\nimport { cva, type VariantProps } from \"class-variance-authority\";\n\nimport { cn } from \"@/lib/utils\";\n\nconst containerVariants = cva(\"px-4\", {\n  variants: {\n    center: {\n      true: \"mx-auto\",\n    },\n    size: {\n      sm: \"container max-w-screen-sm\",\n      md: \"container max-w-screen-md\",\n      lg: \"container max-w-screen-lg\",\n      xl: \"container max-w-screen-xl\",\n      \"2xl\": \"container max-w-screen-2xl\",\n      full: \"w-full px-0\",\n    },\n  },\n  defaultVariants: {\n    size: \"xl\",\n    center: true,\n  },\n});\n\nexport interface ContainerProps\n  extends React.HTMLAttributes<HTMLDivElement>,\n    VariantProps<typeof containerVariants> {}\n\nfunction Container({ className, size, center, ...props }: ContainerProps) {\n  return (\n    <div\n      className={cn(containerVariants({ size, center }), className)}\n      {...props}\n    />\n  );\n}\n\nexport { Container, containerVariants };\n",
+      "type": "registry:component",
+      "target": "components/layout/container/container.tsx"
+    }
+  ]
+}

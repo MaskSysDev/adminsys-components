@@ -1,0 +1,19 @@
+{
+  "name": "docs-sidebar",
+  "type": "registry:block",
+  "registryDependencies": [
+    "button",
+    "scroll-area",
+    "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/site-config.json",
+    "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/logo.json",
+    "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/sidebar-nav-item.json"
+  ],
+  "files": [
+    {
+      "path": "block/components/layout/sidebar/docs-sidebar.tsx",
+      "content": "import Link from \"next/link\";\n\nimport { siteConfig } from \"@/config/site\";\nimport { cn } from \"@/lib/utils\";\n\nimport { Logo } from \"@/components/layout/logo/logo\";\nimport { SidebarNavItem } from \"@/components/layout/sidebar/inc/sidebar-nav-item\";\n\nimport { buttonVariants } from \"@/components/ui/button\";\nimport { ScrollArea } from \"@/components/ui/scroll-area\";\nimport {\n  Sidebar,\n  SidebarContent,\n  SidebarHeader,\n  SidebarItem,\n  SidebarLabel,\n} from \"@/components/ui/sidebar\";\n\nexport function DocsSidebar() {\n  return (\n    <Sidebar>\n      <SidebarHeader className=\"min-h-14\">\n        <Link\n          href=\"/\"\n          className={cn(\n            buttonVariants({\n              variant: \"ghost\",\n            }),\n            \"flex items-center space-x-2 px-0 hover:bg-transparent\",\n          )}\n        >\n          <Logo />\n        </Link>\n      </SidebarHeader>\n      <SidebarContent>\n        <ScrollArea className=\"pb-8\">\n          <nav className=\"flex-1 space-y-2 pb-8\">\n            {siteConfig.docsSidebar.content.map((item) => (\n              <SidebarItem key={item.id} className=\"mb-10\">\n                {item.contentTitle && (\n                  <div className=\"px-1.5 text-sm font-medium text-muted-foreground/60\">\n                    {item.contentTitle}\n                  </div>\n                )}\n                {item.linksSection.map((subitem) => (\n                  <SidebarNavItem key={subitem.id} item={subitem} />\n                ))}\n              </SidebarItem>\n            ))}\n          </nav>\n        </ScrollArea>\n        <SidebarItem className=\"mt-auto gap-0\">\n          <SidebarLabel className=\"mb-2 text-muted-foreground/60\">\n            Help\n          </SidebarLabel>\n          {siteConfig.docsSidebar.support.map((item) => (\n            <SidebarNavItem key={item.id} item={item} />\n          ))}\n        </SidebarItem>\n      </SidebarContent>\n    </Sidebar>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/layout/sidebar/docs-sidebar.tsx"
+    }
+  ]
+}

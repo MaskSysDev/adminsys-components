@@ -1,0 +1,24 @@
+{
+  "name": "alert",
+  "type": "registry:block",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "alert"
+  ],
+  "files": [
+    {
+      "path": "block/components/layout/alert/alert-error.tsx",
+      "content": "import { TriangleAlert } from \"lucide-react\";\n\nimport { Alert, AlertTitle } from \"@/components/ui/alert\";\n\ninterface AlertErrorProps {\n  message?: string;\n}\n\nexport const AlertError = ({ message }: AlertErrorProps) => {\n  if (!message) return null;\n\n  return (\n    <Alert className=\"border-0 bg-red-600/20 text-red-600\">\n      <AlertTitle className=\"flex items-center gap-2\">\n        <TriangleAlert className=\"size-6\" />\n        {message}\n      </AlertTitle>\n    </Alert>\n  );\n};\n",
+      "type": "registry:component",
+      "target": "components/layout/alert/alert-error.tsx"
+    },
+    {
+      "path": "block/components/layout/alert/alert-success.tsx",
+      "content": "import { Check } from \"lucide-react\";\n\nimport { Alert, AlertTitle } from \"@/components/ui/alert\";\n\ninterface AlertSuccessProps {\n  message?: string;\n}\n\nexport const AlertSuccess = ({ message }: AlertSuccessProps) => {\n  if (!message) return null;\n\n  return (\n    <Alert className=\"border-0 bg-green-600/20 text-green-600\">\n      <AlertTitle className=\"flex items-center gap-2\">\n        <Check className=\"size-6\" />\n        {message}\n      </AlertTitle>\n    </Alert>\n  );\n};\n",
+      "type": "registry:component",
+      "target": "components/layout/alert/alert-success.tsx"
+    }
+  ]
+}
