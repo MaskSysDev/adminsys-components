@@ -6,7 +6,19 @@ export const blocks: Registry = [
     name: "components-auth",
     type: "registry:block",
     dependencies: ["lucide-react"],
-    registryDependencies: ["avatar", "card"],
+    registryDependencies: [
+      "alert",
+      "avatar",
+      "button",
+      "card",
+      "dropdown-menu",
+      "form",
+      "input",
+      "switch",
+      "tabs",
+      "toast",
+      "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/password-input.json",
+    ],
     files: [
       {
         path: "block/components/auth/card/card-user-profile.tsx",
@@ -67,6 +79,26 @@ export const blocks: Registry = [
         path: "block/components/auth/wrapper/card-auth-wrapper.tsx",
         type: "registry:component",
         target: "components/auth/wrapper/card-auth-wrapper.tsx",
+      },
+      {
+        path: "block/components/layout/alert/alert-error.tsx",
+        type: "registry:component",
+        target: "components/layout/alert/alert-error.tsx",
+      },
+      {
+        path: "block/components/layout/alert/alert-success.tsx",
+        type: "registry:component",
+        target: "components/layout/alert/alert-success.tsx",
+      },
+      {
+        path: "block/components/layout/icon/icon.tsx",
+        type: "registry:component",
+        target: "components/layout/icon/icon.tsx",
+      },
+      {
+        path: "block/lib/validation/auth.ts",
+        type: "registry:component",
+        target: "lib/validation/auth.ts",
       },
     ],
   },
