@@ -531,6 +531,7 @@ export const blocks: Registry = [
 
       // Ui
       "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/toaster-theme.json",
+      "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/typography.json",
     ],
     files: [
       // Pages
