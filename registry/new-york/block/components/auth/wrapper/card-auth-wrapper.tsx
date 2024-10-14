@@ -89,6 +89,7 @@ export const CardAuthWrapper = ({
               >
                 Privacy Policy
               </Link>
+              .
             </p>
           )}
         </div>
