@@ -20,18 +20,7 @@ export const blocks: Registry = [
       },
     ],
   },
-  // Config
-  {
-    name: "config-site",
-    type: "registry:block",
-    files: [
-      {
-        path: "block/config/site.ts",
-        type: "registry:component",
-        target: "config/site.ts",
-      },
-    ],
-  },
+
   // Components Layout
   {
     name: "alert",
@@ -266,7 +255,6 @@ export const blocks: Registry = [
       "navigation-menu",
       "scroll-area",
       "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/drawer-menu.json",
-      "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/config-site.json",
       "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/logo.json",
       "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/toggle-theme.json",
     ],
@@ -320,7 +308,6 @@ export const blocks: Registry = [
     registryDependencies: [
       "button",
       "scroll-area",
-      "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/config-site.json",
       "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/logo.json",
       "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/sidebar-nav-item.json",
       "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/sidebar-nav-user.json",
@@ -339,7 +326,6 @@ export const blocks: Registry = [
     registryDependencies: [
       "button",
       "scroll-area",
-      "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/config-site.json",
       "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/logo.json",
       "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/sidebar-nav-item.json",
     ],
@@ -397,19 +383,7 @@ export const blocks: Registry = [
       },
     ],
   },
-  {
-    name: "toggle-theme",
-    dependencies: ["lucide-react"],
-    registryDependencies: ["button"],
-    type: "registry:block",
-    files: [
-      {
-        path: "block/components/layout/toggle/toggle-theme.tsx",
-        type: "registry:component",
-        target: "components/layout/toggle/toggle-theme.tsx",
-      },
-    ],
-  },
+
   // Components Provider
   {
     name: "theme-provider",
@@ -423,6 +397,7 @@ export const blocks: Registry = [
       },
     ],
   },
+
   // components Auth
   {
     name: "components-auth",
@@ -524,34 +499,43 @@ export const blocks: Registry = [
       },
     ],
   },
+
   // Web Pages
   {
     name: "web-pages",
     type: "registry:block",
     registryDependencies: [
+      // Shadcn
       "card",
       "sonner",
       "toast",
+
+      // next themes
+      "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/next-themes.json",
+
+      // Adminsys Theme
+      "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/theme-adminsys.json",
+
+      // layout
       "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/alert.json",
+      "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/container.json",
+      "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/site-footer.json",
       "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/contact-form.json",
-      "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/nav-link.json",
+      "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/hero-simple.json",
+      "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/loading-spinner.json",
+      "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/logo.json",
       "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/nav-mobile.json",
-      "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/drawer-menu.json",
       "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/nav-link.json",
       "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/nav-main.json",
       "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/not-found.json",
-      "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/next-themes.json",
-      "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/logo.json",
-      "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/theme-adminsys.json",
-      "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/container.json",
-      "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/hero-simple.json",
-      "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/loading-spinner.json",
-      "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/site-footer.json",
-      "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/theme-provider.json",
+
+      // Ui
+      "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/drawer-menu.json",
       "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/toaster-theme.json",
       "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/typography.json",
     ],
     files: [
+      // Pages
       {
         path: "block/web/app/(web)/[...not-found]/page.tsx",
         type: "registry:component",
@@ -582,23 +566,42 @@ export const blocks: Registry = [
         type: "registry:component",
         target: "app/(web)/page.tsx",
       },
+
+      // Config
       {
         path: "block/web/config/site.ts",
         type: "registry:page",
         target: "config/site.ts",
       },
+
+      // Lib
       {
         path: "block/lib/validation/contact.ts",
         type: "registry:page",
         target: "lib/validation/contact.ts",
       },
+
+      // Custom Components
       {
         path: "block/web/components/layout/header/site-header.tsx",
         type: "registry:page",
         target: "components/layout/header/site-header.tsx",
       },
+
+      // Fonts
+      {
+        path: "block/web/assets/fonts/GeistMonoVF.woff",
+        type: "registry:page",
+        target: "assets/fonts/GeistMonoVF.woff",
+      },
+      {
+        path: "block/web/assets/fonts/GeistVF.woff",
+        type: "registry:page",
+        target: "assets/fonts/GeistVF.woff",
+      },
     ],
   },
+
   // Pages Auth
   {
     name: "pages-auth",
