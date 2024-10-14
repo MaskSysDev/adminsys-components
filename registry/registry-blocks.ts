@@ -511,10 +511,10 @@ export const blocks: Registry = [
       "toast",
 
       // next themes
-      "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/next-themes.json",
+      /* "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/next-themes.json", */
 
       // Adminsys Theme
-      "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/theme-adminsys.json",
+      /* "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/theme-adminsys.json", */
 
       // layout
       "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/alert.json",
@@ -589,7 +589,7 @@ export const blocks: Registry = [
       },
 
       // Fonts
-      /* {
+      {
         path: "block/web/assets/fonts/GeistMonoVF.woff",
         type: "registry:page",
         target: "assets/fonts/GeistMonoVF.woff",
@@ -598,7 +598,7 @@ export const blocks: Registry = [
         path: "block/web/assets/fonts/GeistVF.woff",
         type: "registry:page",
         target: "assets/fonts/GeistVF.woff",
-      }, */
+      },
     ],
   },
 
