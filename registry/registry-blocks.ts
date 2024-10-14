@@ -581,7 +581,7 @@ export const blocks: Registry = [
       },
 
       // Fonts
-      /* {
+      {
         path: "block/web/assets/fonts/GeistMonoVF.woff",
         type: "registry:page",
         target: "assets/fonts/GeistMonoVF.woff",
@@ -590,7 +590,7 @@ export const blocks: Registry = [
         path: "block/web/assets/fonts/GeistVF.woff",
         type: "registry:page",
         target: "assets/fonts/GeistVF.woff",
-      }, */
+      },
     ],
   },
 
