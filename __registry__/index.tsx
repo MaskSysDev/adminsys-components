@@ -436,11 +436,11 @@ export const Index: Record<string, any> = {
     },
     "auth-pages": {
       name: "auth-pages",
-      type: "registry:page",
+      type: "registry:block",
       registryDependencies: ["https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/web-pages.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/components-auth.json"],
-      files: ["registry/new-york/block/auth-pages/app/(web)/auth/error/page.tsx","registry/new-york/block/auth-pages/app/(web)/auth/forgot-password/page.tsx","registry/new-york/block/auth-pages/app/(web)/auth/new-verification/page.tsx","registry/new-york/block/auth-pages/app/(web)/auth/reset-password/page.tsx","registry/new-york/block/auth-pages/app/(web)/auth/sign-in/page.tsx","registry/new-york/block/auth-pages/app/(web)/auth/sign-up/success/page.tsx","registry/new-york/block/auth-pages/app/(web)/privacy-policy/page.tsx","registry/new-york/block/auth-pages/app/(web)/settings/page.tsx","registry/new-york/block/auth-pages/app/(web)/terms/page.tsx","registry/new-york/block/auth-pages/components/layout/header/site-header.tsx"],
+      files: ["registry/new-york/block/auth-pages/app/(web)/auth/error/page.tsx","registry/new-york/block/auth-pages/app/(web)/auth/forgot-password/page.tsx","registry/new-york/block/auth-pages/app/(web)/auth/new-verification/page.tsx","registry/new-york/block/auth-pages/app/(web)/auth/reset-password/page.tsx","registry/new-york/block/auth-pages/app/(web)/auth/sign-in/page.tsx","registry/new-york/block/auth-pages/app/(web)/auth/sign-up/success/page.tsx","registry/new-york/block/auth-pages/app/(web)/privacy-policy/page.tsx","registry/new-york/block/auth-pages/app/(web)/settings/template.tsx","registry/new-york/block/auth-pages/app/(web)/settings/account/page.tsx","registry/new-york/block/auth-pages/app/(web)/settings/profile/page.tsx","registry/new-york/block/auth-pages/app/(web)/terms/page.tsx","registry/new-york/block/auth-pages/components/layout/header/site-header.tsx"],
       component: React.lazy(() => import("@/registry/new-york/block/auth-pages/app/(web)/auth/error/page.tsx")),
-      source: "",
+      source: "__registry__/new-york/block/auth-pages/app/(web)/auth/error/page.tsx",
       category: "undefined",
       subcategory: "undefined",
       chunks: []
@@ -910,11 +910,11 @@ export const Index: Record<string, any> = {
     },
     "auth-pages": {
       name: "auth-pages",
-      type: "registry:page",
+      type: "registry:block",
       registryDependencies: ["https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/web-pages.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/components-auth.json"],
-      files: ["registry/default/block/auth-pages/app/(web)/auth/error/page.tsx","registry/default/block/auth-pages/app/(web)/auth/forgot-password/page.tsx","registry/default/block/auth-pages/app/(web)/auth/new-verification/page.tsx","registry/default/block/auth-pages/app/(web)/auth/reset-password/page.tsx","registry/default/block/auth-pages/app/(web)/auth/sign-in/page.tsx","registry/default/block/auth-pages/app/(web)/auth/sign-up/success/page.tsx","registry/default/block/auth-pages/app/(web)/privacy-policy/page.tsx","registry/default/block/auth-pages/app/(web)/settings/page.tsx","registry/default/block/auth-pages/app/(web)/terms/page.tsx","registry/default/block/auth-pages/components/layout/header/site-header.tsx"],
+      files: ["registry/default/block/auth-pages/app/(web)/auth/error/page.tsx","registry/default/block/auth-pages/app/(web)/auth/forgot-password/page.tsx","registry/default/block/auth-pages/app/(web)/auth/new-verification/page.tsx","registry/default/block/auth-pages/app/(web)/auth/reset-password/page.tsx","registry/default/block/auth-pages/app/(web)/auth/sign-in/page.tsx","registry/default/block/auth-pages/app/(web)/auth/sign-up/success/page.tsx","registry/default/block/auth-pages/app/(web)/privacy-policy/page.tsx","registry/default/block/auth-pages/app/(web)/settings/template.tsx","registry/default/block/auth-pages/app/(web)/settings/account/page.tsx","registry/default/block/auth-pages/app/(web)/settings/profile/page.tsx","registry/default/block/auth-pages/app/(web)/terms/page.tsx","registry/default/block/auth-pages/components/layout/header/site-header.tsx"],
       component: React.lazy(() => import("@/registry/default/block/auth-pages/app/(web)/auth/error/page.tsx")),
-      source: "",
+      source: "__registry__/default/block/auth-pages/app/(web)/auth/error/page.tsx",
       category: "undefined",
       subcategory: "undefined",
       chunks: []

@@ -585,7 +585,7 @@ export const blocks: Registry = [
   // Pages Auth
   {
     name: "auth-pages",
-    type: "registry:page",
+    type: "registry:block",
     registryDependencies: [
       // web-pages
       "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/web-pages.json",
@@ -631,9 +631,19 @@ export const blocks: Registry = [
         target: "app/(web)/privacy-policy/page.tsx",
       },
       {
-        path: "block/auth-pages/app/(web)/settings/page.tsx",
+        path: "block/auth-pages/app/(web)/settings/template.tsx",
         type: "registry:component",
-        target: "app/(web)/settings/page.tsx",
+        target: "app/(web)/settings/template.tsx",
+      },
+      {
+        path: "block/auth-pages/app/(web)/settings/account/page.tsx",
+        type: "registry:component",
+        target: "app/(web)/settings/account/page.tsx",
+      },
+      {
+        path: "block/auth-pages/app/(web)/settings/profile/page.tsx",
+        type: "registry:component",
+        target: "app/(web)/settings/profile/page.tsx",
       },
       {
         path: "block/auth-pages/app/(web)/terms/page.tsx",
