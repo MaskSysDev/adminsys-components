@@ -434,12 +434,12 @@ export const Index: Record<string, any> = {
       subcategory: "undefined",
       chunks: []
     },
-    "pages-auth": {
-      name: "pages-auth",
+    "auth-pages": {
+      name: "auth-pages",
       type: "registry:page",
-      registryDependencies: ["sonner","toast","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/next-themes.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/components-auth.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/toast-theme.json"],
-      files: ["registry/new-york/block/app/(web)/[...not-found]/page.tsx","registry/new-york/block/components/layout/not-found/not-found.tsx","registry/new-york/block/app/(web)/about/page.tsx","registry/new-york/block/app/(web)/auth/error/page.tsx","registry/new-york/block/app/(web)/auth/forgot-password/page.tsx","registry/new-york/block/app/(web)/auth/new-verification/page.tsx","registry/new-york/block/app/(web)/auth/reset-password/page.tsx","registry/new-york/block/app/(web)/auth/sign-in/page.tsx","registry/new-york/block/app/(web)/auth/sign-up/success/page.tsx","registry/new-york/block/app/(web)/contact/page.tsx","registry/new-york/block/app/(web)/privacy-policy/page.tsx","registry/new-york/block/app/(web)/settings/page.tsx","registry/new-york/block/app/(web)/terms/page.tsx","registry/new-york/block/app/(web)/layout.tsx","registry/new-york/block/components/layout/header/site-header.tsx","registry/new-york/block/components/layout/footer/site-footer.tsx","registry/new-york/block/app/(web)/loading.tsx","registry/new-york/block/components/layout/loading/site-loading.tsx","registry/new-york/block/app/(web)/page.tsx"],
-      component: React.lazy(() => import("@/registry/new-york/block/app/(web)/[...not-found]/page.tsx")),
+      registryDependencies: ["https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/web-pages.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/components-auth.json"],
+      files: ["registry/new-york/block/auth-pages/app/(web)/auth/error/page.tsx","registry/new-york/block/auth-pages/app/(web)/auth/forgot-password/page.tsx","registry/new-york/block/auth-pages/app/(web)/auth/new-verification/page.tsx","registry/new-york/block/auth-pages/app/(web)/auth/reset-password/page.tsx","registry/new-york/block/auth-pages/app/(web)/auth/sign-in/page.tsx","registry/new-york/block/auth-pages/app/(web)/auth/sign-up/success/page.tsx","registry/new-york/block/auth-pages/app/(web)/privacy-policy/page.tsx","registry/new-york/block/auth-pages/app/(web)/settings/page.tsx","registry/new-york/block/auth-pages/app/(web)/terms/page.tsx","registry/new-york/block/auth-pages/components/layout/header/site-header.tsx"],
+      component: React.lazy(() => import("@/registry/new-york/block/auth-pages/app/(web)/auth/error/page.tsx")),
       source: "",
       category: "undefined",
       subcategory: "undefined",
@@ -908,12 +908,12 @@ export const Index: Record<string, any> = {
       subcategory: "undefined",
       chunks: []
     },
-    "pages-auth": {
-      name: "pages-auth",
+    "auth-pages": {
+      name: "auth-pages",
       type: "registry:page",
-      registryDependencies: ["sonner","toast","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/next-themes.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/components-auth.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/toast-theme.json"],
-      files: ["registry/default/block/app/(web)/[...not-found]/page.tsx","registry/default/block/components/layout/not-found/not-found.tsx","registry/default/block/app/(web)/about/page.tsx","registry/default/block/app/(web)/auth/error/page.tsx","registry/default/block/app/(web)/auth/forgot-password/page.tsx","registry/default/block/app/(web)/auth/new-verification/page.tsx","registry/default/block/app/(web)/auth/reset-password/page.tsx","registry/default/block/app/(web)/auth/sign-in/page.tsx","registry/default/block/app/(web)/auth/sign-up/success/page.tsx","registry/default/block/app/(web)/contact/page.tsx","registry/default/block/app/(web)/privacy-policy/page.tsx","registry/default/block/app/(web)/settings/page.tsx","registry/default/block/app/(web)/terms/page.tsx","registry/default/block/app/(web)/layout.tsx","registry/default/block/components/layout/header/site-header.tsx","registry/default/block/components/layout/footer/site-footer.tsx","registry/default/block/app/(web)/loading.tsx","registry/default/block/components/layout/loading/site-loading.tsx","registry/default/block/app/(web)/page.tsx"],
-      component: React.lazy(() => import("@/registry/default/block/app/(web)/[...not-found]/page.tsx")),
+      registryDependencies: ["https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/web-pages.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/components-auth.json"],
+      files: ["registry/default/block/auth-pages/app/(web)/auth/error/page.tsx","registry/default/block/auth-pages/app/(web)/auth/forgot-password/page.tsx","registry/default/block/auth-pages/app/(web)/auth/new-verification/page.tsx","registry/default/block/auth-pages/app/(web)/auth/reset-password/page.tsx","registry/default/block/auth-pages/app/(web)/auth/sign-in/page.tsx","registry/default/block/auth-pages/app/(web)/auth/sign-up/success/page.tsx","registry/default/block/auth-pages/app/(web)/privacy-policy/page.tsx","registry/default/block/auth-pages/app/(web)/settings/page.tsx","registry/default/block/auth-pages/app/(web)/terms/page.tsx","registry/default/block/auth-pages/components/layout/header/site-header.tsx"],
+      component: React.lazy(() => import("@/registry/default/block/auth-pages/app/(web)/auth/error/page.tsx")),
       source: "",
       category: "undefined",
       subcategory: "undefined",

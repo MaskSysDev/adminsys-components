@@ -584,110 +584,66 @@ export const blocks: Registry = [
 
   // Pages Auth
   {
-    name: "pages-auth",
+    name: "auth-pages",
     type: "registry:page",
     registryDependencies: [
-      "sonner",
-      "toast",
-      "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/next-themes.json",
+      // web-pages
+      "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/web-pages.json",
+
+      // auth
       "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/components-auth.json",
-      "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/toast-theme.json",
     ],
     files: [
+      // Pages
       {
-        path: "block/app/(web)/[...not-found]/page.tsx",
-        type: "registry:component",
-        target: "app/(web)/[...not-found]/page.tsx",
-      },
-      {
-        path: "block/components/layout/not-found/not-found.tsx",
-        type: "registry:component",
-        target: "components/layout/not-found/not-found.tsx",
-      },
-      {
-        path: "block/app/(web)/about/page.tsx",
-        type: "registry:component",
-        target: "app/(web)/about/page.tsx",
-      },
-      {
-        path: "block/app/(web)/auth/error/page.tsx",
+        path: "block/auth-pages/app/(web)/auth/error/page.tsx",
         type: "registry:component",
         target: "app/(web)/auth/error/page.tsx",
       },
       {
-        path: "block/app/(web)/auth/forgot-password/page.tsx",
+        path: "block/auth-pages/app/(web)/auth/forgot-password/page.tsx",
         type: "registry:component",
         target: "app/(web)/auth/forgot-password/page.tsx",
       },
       {
-        path: "block/app/(web)/auth/new-verification/page.tsx",
+        path: "block/auth-pages/app/(web)/auth/new-verification/page.tsx",
         type: "registry:component",
         target: "app/(web)/auth/new-verification/page.tsx",
       },
       {
-        path: "block/app/(web)/auth/reset-password/page.tsx",
+        path: "block/auth-pages/app/(web)/auth/reset-password/page.tsx",
         type: "registry:component",
         target: "app/(web)/auth/reset-password/page.tsx",
       },
       {
-        path: "block/app/(web)/auth/sign-in/page.tsx",
+        path: "block/auth-pages/app/(web)/auth/sign-in/page.tsx",
         type: "registry:component",
         target: "app/(web)/auth/sign-in/page.tsx",
       },
       {
-        path: "block/app/(web)/auth/sign-up/success/page.tsx",
+        path: "block/auth-pages/app/(web)/auth/sign-up/success/page.tsx",
         type: "registry:component",
         target: "app/(web)/auth/sign-up/success/page.tsx",
       },
       {
-        path: "block/app/(web)/contact/page.tsx",
-        type: "registry:component",
-        target: "app/(web)/contact/page.tsx",
-      },
-      {
-        path: "block/app/(web)/privacy-policy/page.tsx",
+        path: "block/auth-pages/app/(web)/privacy-policy/page.tsx",
         type: "registry:component",
         target: "app/(web)/privacy-policy/page.tsx",
       },
       {
-        path: "block/app/(web)/settings/page.tsx",
+        path: "block/auth-pages/app/(web)/settings/page.tsx",
         type: "registry:component",
         target: "app/(web)/settings/page.tsx",
       },
       {
-        path: "block/app/(web)/terms/page.tsx",
+        path: "block/auth-pages/app/(web)/terms/page.tsx",
         type: "registry:component",
         target: "app/(web)/terms/page.tsx",
       },
       {
-        path: "block/app/(web)/layout.tsx",
-        type: "registry:component",
-        target: "app/(web)/layout.tsx",
-      },
-      {
-        path: "block/components/layout/header/site-header.tsx",
+        path: "block/auth-pages/components/layout/header/site-header.tsx",
         type: "registry:component",
         target: "components/layout/header/site-header.tsx",
-      },
-      {
-        path: "block/components/layout/footer/site-footer.tsx",
-        type: "registry:component",
-        target: "components/layout/footer/site-footer.tsx",
-      },
-      {
-        path: "block/app/(web)/loading.tsx",
-        type: "registry:component",
-        target: "app/(web)/loading.tsx",
-      },
-      {
-        path: "block/components/layout/loading/site-loading.tsx",
-        type: "registry:component",
-        target: "components/layout/loading/loading-spinner.tsx",
-      },
-      {
-        path: "block/app/(web)/page.tsx",
-        type: "registry:component",
-        target: "app/(web)/page.tsx",
       },
     ],
   },
