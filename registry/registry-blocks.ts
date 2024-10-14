@@ -517,7 +517,7 @@ export const blocks: Registry = [
       "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/theme-adminsys.json",
 
       // layout
-      /* "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/alert.json",
+      "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/alert.json",
       "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/container.json",
       "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/site-footer.json",
       "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/contact-form.json",
@@ -527,7 +527,7 @@ export const blocks: Registry = [
       "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/nav-mobile.json",
       "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/nav-link.json",
       "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/nav-main.json",
-      "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/not-found.json", */
+      "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/not-found.json",
 
       // Ui
       "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/drawer-menu.json",
@@ -589,7 +589,7 @@ export const blocks: Registry = [
       },
 
       // Fonts
-      {
+      /* {
         path: "block/web/assets/fonts/GeistMonoVF.woff",
         type: "registry:page",
         target: "assets/fonts/GeistMonoVF.woff",
@@ -598,7 +598,7 @@ export const blocks: Registry = [
         path: "block/web/assets/fonts/GeistVF.woff",
         type: "registry:page",
         target: "assets/fonts/GeistVF.woff",
-      },
+      }, */
     ],
   },
 
