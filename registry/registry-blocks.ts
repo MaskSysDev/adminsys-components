@@ -579,18 +579,6 @@ export const blocks: Registry = [
         type: "registry:page",
         target: "components/layout/header/site-header.tsx",
       },
-
-      // Fonts
-      {
-        path: "block/web/assets/fonts/GeistMonoVF.woff",
-        type: "registry:page",
-        target: "assets/fonts/GeistMonoVF.woff",
-      },
-      {
-        path: "block/web/assets/fonts/GeistVF.woff",
-        type: "registry:page",
-        target: "assets/fonts/GeistVF.woff",
-      },
     ],
   },
 
