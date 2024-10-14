@@ -574,13 +574,6 @@ export const blocks: Registry = [
         target: "config/site.ts",
       },
 
-      // Lib
-      {
-        path: "block/lib/validation/contact.ts",
-        type: "registry:page",
-        target: "lib/validation/contact.ts",
-      },
-
       // Custom Components
       {
         path: "block/web/components/layout/header/site-header.tsx",
