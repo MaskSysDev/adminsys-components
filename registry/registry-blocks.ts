@@ -475,6 +475,16 @@ export const blocks: Registry = [
         target: "components/auth/sidebar/sidebar-settings.tsx",
       },
       {
+        path: "block/components/layout/sidebar/inc/sidebar-nav-item.tsx",
+        type: "registry:component",
+        target: "components/layout/sidebar/inc/sidebar-nav-item.tsx",
+      },
+      {
+        path: "block/auth-pages/types/sidebar.ts",
+        type: "registry:component",
+        target: "auth-pages/types/sidebar.ts",
+      },
+      {
         path: "block/components/auth/wrapper/card-auth-wrapper.tsx",
         type: "registry:component",
         target: "components/auth/wrapper/card-auth-wrapper.tsx",
@@ -589,10 +599,13 @@ export const blocks: Registry = [
     name: "auth-pages",
     type: "registry:block",
     registryDependencies: [
+      // Shadcn
+      "separator",
+
       // web-pages
       "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/web-pages.json",
 
-      // auth
+      // components auth
       "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/components-auth.json",
     ],
     files: [
@@ -656,6 +669,53 @@ export const blocks: Registry = [
         path: "block/auth-pages/components/layout/header/site-header.tsx",
         type: "registry:component",
         target: "components/layout/header/site-header.tsx",
+      },
+    ],
+  },
+
+  // Pages admin
+  {
+    name: "admin-pages",
+    type: "registry:block",
+    registryDependencies: [
+      // auth-pages
+      "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/auth-pages.json",
+
+      // components layout
+      "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/admin-header.json",
+      "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/admin-sidebar.json",
+    ],
+    files: [
+      // Pages
+      {
+        path: "block/admin-pages/app/(admin)/admin/[...not-found]/page.tsx",
+        type: "registry:component",
+        target: "app/(admin)/admin/[...not-found]/page.tsx",
+      },
+      {
+        path: "block/admin-pages/app/(admin)/admin/dashboard/page.tsx",
+        type: "registry:component",
+        target: "app/(admin)/admin/dashboard/page.tsx",
+      },
+      {
+        path: "block/admin-pages/app/(admin)/admin/users/list/page.tsx",
+        type: "registry:component",
+        target: "app/(admin)/admin/users/list/page.tsx",
+      },
+      {
+        path: "block/admin-pages/app/(admin)/admin/layout.tsx",
+        type: "registry:page",
+        target: "app/(admin)/admin/layout.tsx",
+      },
+      {
+        path: "block/admin-pages/app/(admin)/admin/loading.tsx",
+        type: "registry:page",
+        target: "app/(admin)/admin/loading.tsx",
+      },
+      {
+        path: "block/admin-pages/config/site.ts",
+        type: "registry:page",
+        target: "config/site.ts",
       },
     ],
   },

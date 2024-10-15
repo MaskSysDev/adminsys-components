@@ -416,7 +416,7 @@ export const Index: Record<string, any> = {
       name: "components-auth",
       type: "registry:block",
       registryDependencies: ["alert","avatar","button","card","dropdown-menu","form","input","switch","tabs","toast","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/logo-icon.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/logo-theme.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/password-input.json"],
-      files: ["registry/new-york/block/components/auth/card/card-user-profile.tsx","registry/new-york/block/components/auth/dropdown/dropdown-user.tsx","registry/new-york/block/components/auth/form/account-form.tsx","registry/new-york/block/components/auth/form/forgot-password-form.tsx","registry/new-york/block/components/auth/form/form-auth.tsx","registry/new-york/block/components/auth/form/new-verification-form.tsx","registry/new-york/block/components/auth/form/reset-password-form.tsx","registry/new-york/block/components/auth/form/sign-in-form.tsx","registry/new-york/block/components/auth/form/sign-up-form.tsx","registry/new-york/block/components/auth/form/social-login.tsx","registry/new-york/block/components/auth/sidebar/sidebar-settings.tsx","registry/new-york/block/components/auth/wrapper/card-auth-wrapper.tsx","registry/new-york/block/components/layout/alert/alert-error.tsx","registry/new-york/block/components/layout/alert/alert-success.tsx","registry/new-york/block/components/layout/icon/icon.tsx","registry/new-york/block/lib/validation/auth.ts"],
+      files: ["registry/new-york/block/components/auth/card/card-user-profile.tsx","registry/new-york/block/components/auth/dropdown/dropdown-user.tsx","registry/new-york/block/components/auth/form/account-form.tsx","registry/new-york/block/components/auth/form/forgot-password-form.tsx","registry/new-york/block/components/auth/form/form-auth.tsx","registry/new-york/block/components/auth/form/new-verification-form.tsx","registry/new-york/block/components/auth/form/reset-password-form.tsx","registry/new-york/block/components/auth/form/sign-in-form.tsx","registry/new-york/block/components/auth/form/sign-up-form.tsx","registry/new-york/block/components/auth/form/social-login.tsx","registry/new-york/block/components/auth/sidebar/sidebar-settings.tsx","registry/new-york/block/components/layout/sidebar/inc/sidebar-nav-item.tsx","registry/new-york/block/auth-pages/types/sidebar.ts","registry/new-york/block/components/auth/wrapper/card-auth-wrapper.tsx","registry/new-york/block/components/layout/alert/alert-error.tsx","registry/new-york/block/components/layout/alert/alert-success.tsx","registry/new-york/block/components/layout/icon/icon.tsx","registry/new-york/block/lib/validation/auth.ts"],
       component: React.lazy(() => import("@/registry/new-york/block/components/auth/card/card-user-profile.tsx")),
       source: "__registry__/new-york/block/components/auth/card/card-user-profile.tsx",
       category: "undefined",
@@ -437,10 +437,21 @@ export const Index: Record<string, any> = {
     "auth-pages": {
       name: "auth-pages",
       type: "registry:block",
-      registryDependencies: ["https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/web-pages.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/components-auth.json"],
+      registryDependencies: ["separator","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/web-pages.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/components-auth.json"],
       files: ["registry/new-york/block/auth-pages/app/(web)/auth/error/page.tsx","registry/new-york/block/auth-pages/app/(web)/auth/forgot-password/page.tsx","registry/new-york/block/auth-pages/app/(web)/auth/new-verification/page.tsx","registry/new-york/block/auth-pages/app/(web)/auth/reset-password/page.tsx","registry/new-york/block/auth-pages/app/(web)/auth/sign-in/page.tsx","registry/new-york/block/auth-pages/app/(web)/auth/sign-up/success/page.tsx","registry/new-york/block/auth-pages/app/(web)/privacy-policy/page.tsx","registry/new-york/block/auth-pages/app/(web)/settings/template.tsx","registry/new-york/block/auth-pages/app/(web)/settings/account/page.tsx","registry/new-york/block/auth-pages/app/(web)/settings/profile/page.tsx","registry/new-york/block/auth-pages/app/(web)/terms/page.tsx","registry/new-york/block/auth-pages/components/layout/header/site-header.tsx"],
       component: React.lazy(() => import("@/registry/new-york/block/auth-pages/app/(web)/auth/error/page.tsx")),
       source: "__registry__/new-york/block/auth-pages/app/(web)/auth/error/page.tsx",
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "admin-pages": {
+      name: "admin-pages",
+      type: "registry:block",
+      registryDependencies: ["https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/auth-pages.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/admin-header.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/admin-sidebar.json"],
+      files: ["registry/new-york/block/admin-pages/app/(admin)/admin/[...not-found]/page.tsx","registry/new-york/block/admin-pages/app/(admin)/admin/dashboard/page.tsx","registry/new-york/block/admin-pages/app/(admin)/admin/users/list/page.tsx","registry/new-york/block/admin-pages/app/(admin)/admin/layout.tsx","registry/new-york/block/admin-pages/app/(admin)/admin/loading.tsx","registry/new-york/block/admin-pages/config/site.ts"],
+      component: React.lazy(() => import("@/registry/new-york/block/admin-pages/app/(admin)/admin/[...not-found]/page.tsx")),
+      source: "__registry__/new-york/block/admin-pages/app/(admin)/admin/[...not-found]/page.tsx",
       category: "undefined",
       subcategory: "undefined",
       chunks: []
@@ -890,7 +901,7 @@ export const Index: Record<string, any> = {
       name: "components-auth",
       type: "registry:block",
       registryDependencies: ["alert","avatar","button","card","dropdown-menu","form","input","switch","tabs","toast","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/logo-icon.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/logo-theme.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/password-input.json"],
-      files: ["registry/default/block/components/auth/card/card-user-profile.tsx","registry/default/block/components/auth/dropdown/dropdown-user.tsx","registry/default/block/components/auth/form/account-form.tsx","registry/default/block/components/auth/form/forgot-password-form.tsx","registry/default/block/components/auth/form/form-auth.tsx","registry/default/block/components/auth/form/new-verification-form.tsx","registry/default/block/components/auth/form/reset-password-form.tsx","registry/default/block/components/auth/form/sign-in-form.tsx","registry/default/block/components/auth/form/sign-up-form.tsx","registry/default/block/components/auth/form/social-login.tsx","registry/default/block/components/auth/sidebar/sidebar-settings.tsx","registry/default/block/components/auth/wrapper/card-auth-wrapper.tsx","registry/default/block/components/layout/alert/alert-error.tsx","registry/default/block/components/layout/alert/alert-success.tsx","registry/default/block/components/layout/icon/icon.tsx","registry/default/block/lib/validation/auth.ts"],
+      files: ["registry/default/block/components/auth/card/card-user-profile.tsx","registry/default/block/components/auth/dropdown/dropdown-user.tsx","registry/default/block/components/auth/form/account-form.tsx","registry/default/block/components/auth/form/forgot-password-form.tsx","registry/default/block/components/auth/form/form-auth.tsx","registry/default/block/components/auth/form/new-verification-form.tsx","registry/default/block/components/auth/form/reset-password-form.tsx","registry/default/block/components/auth/form/sign-in-form.tsx","registry/default/block/components/auth/form/sign-up-form.tsx","registry/default/block/components/auth/form/social-login.tsx","registry/default/block/components/auth/sidebar/sidebar-settings.tsx","registry/default/block/components/layout/sidebar/inc/sidebar-nav-item.tsx","registry/default/block/auth-pages/types/sidebar.ts","registry/default/block/components/auth/wrapper/card-auth-wrapper.tsx","registry/default/block/components/layout/alert/alert-error.tsx","registry/default/block/components/layout/alert/alert-success.tsx","registry/default/block/components/layout/icon/icon.tsx","registry/default/block/lib/validation/auth.ts"],
       component: React.lazy(() => import("@/registry/default/block/components/auth/card/card-user-profile.tsx")),
       source: "__registry__/default/block/components/auth/card/card-user-profile.tsx",
       category: "undefined",
@@ -911,10 +922,21 @@ export const Index: Record<string, any> = {
     "auth-pages": {
       name: "auth-pages",
       type: "registry:block",
-      registryDependencies: ["https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/web-pages.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/components-auth.json"],
+      registryDependencies: ["separator","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/web-pages.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/components-auth.json"],
       files: ["registry/default/block/auth-pages/app/(web)/auth/error/page.tsx","registry/default/block/auth-pages/app/(web)/auth/forgot-password/page.tsx","registry/default/block/auth-pages/app/(web)/auth/new-verification/page.tsx","registry/default/block/auth-pages/app/(web)/auth/reset-password/page.tsx","registry/default/block/auth-pages/app/(web)/auth/sign-in/page.tsx","registry/default/block/auth-pages/app/(web)/auth/sign-up/success/page.tsx","registry/default/block/auth-pages/app/(web)/privacy-policy/page.tsx","registry/default/block/auth-pages/app/(web)/settings/template.tsx","registry/default/block/auth-pages/app/(web)/settings/account/page.tsx","registry/default/block/auth-pages/app/(web)/settings/profile/page.tsx","registry/default/block/auth-pages/app/(web)/terms/page.tsx","registry/default/block/auth-pages/components/layout/header/site-header.tsx"],
       component: React.lazy(() => import("@/registry/default/block/auth-pages/app/(web)/auth/error/page.tsx")),
       source: "__registry__/default/block/auth-pages/app/(web)/auth/error/page.tsx",
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "admin-pages": {
+      name: "admin-pages",
+      type: "registry:block",
+      registryDependencies: ["https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/auth-pages.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/admin-header.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/admin-sidebar.json"],
+      files: ["registry/default/block/admin-pages/app/(admin)/admin/[...not-found]/page.tsx","registry/default/block/admin-pages/app/(admin)/admin/dashboard/page.tsx","registry/default/block/admin-pages/app/(admin)/admin/users/list/page.tsx","registry/default/block/admin-pages/app/(admin)/admin/layout.tsx","registry/default/block/admin-pages/app/(admin)/admin/loading.tsx","registry/default/block/admin-pages/config/site.ts"],
+      component: React.lazy(() => import("@/registry/default/block/admin-pages/app/(admin)/admin/[...not-found]/page.tsx")),
+      source: "__registry__/default/block/admin-pages/app/(admin)/admin/[...not-found]/page.tsx",
       category: "undefined",
       subcategory: "undefined",
       chunks: []

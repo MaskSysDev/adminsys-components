@@ -2,6 +2,7 @@
   "name": "auth-pages",
   "type": "registry:block",
   "registryDependencies": [
+    "separator",
     "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/web-pages.json",
     "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/components-auth.json"
   ],
