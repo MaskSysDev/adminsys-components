@@ -670,6 +670,13 @@ export const blocks: Registry = [
         type: "registry:component",
         target: "components/layout/header/site-header.tsx",
       },
+
+      // Config
+      {
+        path: "block/auth-pages/config/site.ts",
+        type: "registry:page",
+        target: "config/site.ts",
+      },
     ],
   },
 
