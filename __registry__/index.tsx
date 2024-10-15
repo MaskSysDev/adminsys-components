@@ -173,7 +173,7 @@ export const Index: Record<string, any> = {
     "admin-header": {
       name: "admin-header",
       type: "registry:block",
-      registryDependencies: ["https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/container.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/toggle-theme.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/dropdown-user.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/sidebar.json"],
+      registryDependencies: ["https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/container.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/toggle-theme.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/sidebar.json"],
       files: ["registry/new-york/block/components/layout/header/admin-header.tsx"],
       component: React.lazy(() => import("@/registry/new-york/block/components/layout/header/admin-header.tsx")),
       source: "__registry__/new-york/block/components/layout/header/admin-header.tsx",
@@ -658,7 +658,7 @@ export const Index: Record<string, any> = {
     "admin-header": {
       name: "admin-header",
       type: "registry:block",
-      registryDependencies: ["https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/container.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/toggle-theme.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/dropdown-user.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/sidebar.json"],
+      registryDependencies: ["https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/container.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/toggle-theme.json","https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/sidebar.json"],
       files: ["registry/default/block/components/layout/header/admin-header.tsx"],
       component: React.lazy(() => import("@/registry/default/block/components/layout/header/admin-header.tsx")),
       source: "__registry__/default/block/components/layout/header/admin-header.tsx",
