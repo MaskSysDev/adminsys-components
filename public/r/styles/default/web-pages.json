@@ -25,19 +25,19 @@
     {
       "path": "block/web/app/(web)/[...not-found]/page.tsx",
       "content": "import { Metadata } from \"next\";\n\nimport { Container } from \"@/components/layout/container/container\";\nimport { NotFound } from \"@/components/layout/not-found/not-found\";\n\nexport const metadata: Metadata = {\n  title: \"NotFound\",\n  description: \"Description NotFound.\",\n};\n\nexport default function NotFoundPage() {\n  return (\n    <Container>\n      <NotFound labelAction=\"Go to Home\" href=\"/\" />\n    </Container>\n  );\n}\n",
-      "type": "registry:component",
+      "type": "registry:page",
       "target": "app/(web)/[...not-found]/page.tsx"
     },
     {
       "path": "block/web/app/(web)/about/page.tsx",
       "content": "import { Metadata } from \"next\";\n\nimport { Container } from \"@/components/layout/container/container\";\n\nimport { Typography } from \"@/components/ui/typography\";\n\nexport const metadata: Metadata = {\n  title: \"About\",\n  description: \"Description About.\",\n};\n\nexport default function AboutPage() {\n  return (\n    <Container className=\"py-4\">\n      <Typography.H1>About</Typography.H1>\n    </Container>\n  );\n}\n",
-      "type": "registry:component",
+      "type": "registry:page",
       "target": "app/(web)/about/page.tsx"
     },
     {
       "path": "block/web/app/(web)/contact/page.tsx",
       "content": "import { Metadata } from \"next\";\n\nimport { Container } from \"@/components/layout/container/container\";\nimport { ContactForm } from \"@/components/layout/form/contact-form\";\n\nimport { Card, CardContent } from \"@/components/ui/card\";\nimport { Typography } from \"@/components/ui/typography\";\n\nexport const metadata: Metadata = {\n  title: \"Contact\",\n  description: \"Description Contact.\",\n};\n\nexport default function ContactPage() {\n  return (\n    <Container className=\"py-4\">\n      <Typography.H1 className=\"text-center\">Contact</Typography.H1>\n      <Card className=\"mx-auto max-w-xl pt-4\">\n        <CardContent>\n          <ContactForm />\n        </CardContent>\n      </Card>\n    </Container>\n  );\n}\n",
-      "type": "registry:component",
+      "type": "registry:page",
       "target": "app/(web)/contact/page.tsx"
     },
     {
@@ -55,7 +55,7 @@
     {
       "path": "block/web/app/(web)/page.tsx",
       "content": "import { siteConfig } from \"@/config/site\";\n\nimport { Container } from \"@/components/layout/container/container\";\nimport { HeroSimple } from \"@/components/layout/hero/hero-simple\";\n\nexport default function HomePage() {\n  return (\n    <Container size=\"full\">\n      <HeroSimple hero={siteConfig.heroSimple} />\n    </Container>\n  );\n}\n",
-      "type": "registry:component",
+      "type": "registry:page",
       "target": "app/(web)/page.tsx"
     },
     {
@@ -65,9 +65,9 @@
       "target": "config/site.ts"
     },
     {
-      "path": "block/web/components/layout/header/site-header.tsx",
-      "content": "import Link from \"next/link\";\n\nimport { cn } from \"@/lib/utils\";\n\nimport { Container } from \"@/components/layout/container/container\";\nimport { Logo } from \"@/components/layout/logo/logo\";\nimport { NavMain } from \"@/components/layout/navbar/inc/nav-main\";\nimport { NavMobile } from \"@/components/layout/navbar/nav-mobile\";\nimport { ToggleTheme } from \"@/components/layout/toggle/toggle-theme\";\n\nimport { Button, buttonVariants } from \"@/components/ui/button\";\n\ntype SiteHeaderProps = {\n  siteHeader: {\n    name: string;\n    position?: string;\n    links: {\n      id: string;\n      label: string;\n      href: string;\n      disabled: boolean;\n    }[];\n  };\n};\n\nexport const SiteHeader = ({ siteHeader }: SiteHeaderProps) => {\n  return (\n    <header className=\"sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/95\">\n      <Container className=\"flex h-14 items-center justify-center\">\n        <div className=\"relative flex w-full items-center justify-between\">\n          {/* Left */}\n          <div className=\"flex items-center space-x-2\">\n            <Link\n              href=\"/\"\n              className={cn(\n                buttonVariants({\n                  variant: \"ghost\",\n                }),\n                \"flex items-center space-x-2 px-0 hover:bg-transparent\",\n              )}\n            >\n              <Logo />\n            </Link>\n          </div>\n\n          {/* Center */}\n          <div\n            className={cn(\"flex w-full items-center justify-start px-4\", {\n              \"justify-start\":\n                siteHeader.position === \"start\" ||\n                siteHeader.position === \"left\",\n              \"justify-center\": siteHeader.position === \"center\",\n              \"justify-end\":\n                siteHeader.position === \"end\" ||\n                siteHeader.position === \"right\",\n            })}\n          >\n            <NavMain navbar={siteHeader} className=\"hidden md:flex\" />\n          </div>\n\n          {/* Right */}\n          <div className=\"flex flex-1 items-center justify-end space-x-2\">\n            <Button size=\"sm\" asChild>\n              <Link href=\"/auth/sign-in\">Sign in</Link>\n            </Button>\n            <ToggleTheme className=\"hidden md:flex\" />\n            <NavMobile className=\"flex md:hidden\" />\n          </div>\n        </div>\n      </Container>\n    </header>\n  );\n};\n",
-      "type": "registry:page",
+      "path": "block/components/layout/header/site-header.tsx",
+      "content": "import Link from \"next/link\";\n\nimport { cn } from \"@/lib/utils\";\n\nimport { Container } from \"@/components/layout/container/container\";\nimport { Logo } from \"@/components/layout/logo/logo\";\nimport { NavMain } from \"@/components/layout/navbar/inc/nav-main\";\nimport { NavMobile } from \"@/components/layout/navbar/nav-mobile\";\nimport { ToggleTheme } from \"@/components/layout/toggle/toggle-theme\";\n\nimport { buttonVariants } from \"@/components/ui/button\";\n\ntype SiteHeaderProps = {\n  siteHeader: {\n    name: string;\n    position?: string;\n    links: {\n      id: string;\n      label: string;\n      href: string;\n      disabled: boolean;\n    }[];\n  };\n};\n\nexport const SiteHeader = ({ siteHeader }: SiteHeaderProps) => {\n  return (\n    <header className=\"sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/95\">\n      <Container className=\"flex h-14 items-center justify-center\">\n        <div className=\"relative flex w-full items-center justify-between\">\n          {/* Left */}\n          <div className=\"flex items-center space-x-2\">\n            <Link\n              href=\"/\"\n              className={cn(\n                buttonVariants({\n                  variant: \"ghost\",\n                }),\n                \"flex items-center space-x-2 px-0 hover:bg-transparent\",\n              )}\n            >\n              <Logo />\n            </Link>\n          </div>\n\n          {/* Center */}\n          <div\n            className={cn(\"flex w-full items-center justify-start px-4\", {\n              \"justify-start\":\n                siteHeader.position === \"start\" ||\n                siteHeader.position === \"left\",\n              \"justify-center\": siteHeader.position === \"center\",\n              \"justify-end\":\n                siteHeader.position === \"end\" ||\n                siteHeader.position === \"right\",\n            })}\n          >\n            <NavMain navbar={siteHeader} className=\"hidden md:flex\" />\n          </div>\n\n          {/* Right */}\n          <div className=\"flex flex-1 items-center justify-end space-x-2\">\n            <ToggleTheme className=\"hidden md:flex\" />\n            <NavMobile className=\"flex md:hidden\" />\n          </div>\n        </div>\n      </Container>\n    </header>\n  );\n};\n",
+      "type": "registry:component",
       "target": "components/layout/header/site-header.tsx"
     }
   ]

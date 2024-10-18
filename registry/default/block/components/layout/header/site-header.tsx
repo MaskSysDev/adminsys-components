@@ -8,7 +8,7 @@ import { NavMain } from "@/components/layout/navbar/inc/nav-main";
 import { NavMobile } from "@/components/layout/navbar/nav-mobile";
 import { ToggleTheme } from "@/components/layout/toggle/toggle-theme";
 
-import { Button, buttonVariants } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 
 type SiteHeaderProps = {
   siteHeader: {
@@ -60,9 +60,6 @@ export const SiteHeader = ({ siteHeader }: SiteHeaderProps) => {
 
           {/* Right */}
           <div className="flex flex-1 items-center justify-end space-x-2">
-            <Button size="sm" asChild>
-              <Link href="/auth/sign-in">Sign in</Link>
-            </Button>
             <ToggleTheme className="hidden md:flex" />
             <NavMobile className="flex md:hidden" />
           </div>

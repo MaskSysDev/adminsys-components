@@ -10,67 +10,67 @@
     {
       "path": "block/auth-pages/app/(web)/auth/error/page.tsx",
       "content": "import { Metadata } from \"next\";\nimport Link from \"next/link\";\n\nimport { TriangleAlertIcon } from \"lucide-react\";\n\nimport { Container } from \"@/components/layout/container/container\";\n\nimport { CardAuthWrapper } from \"@/components/auth/wrapper/card-auth-wrapper\";\nimport { Button } from \"@/components/ui/button\";\n\nexport const metadata: Metadata = {\n  title: \"AuthError\",\n  description: \"Description AuthError.\",\n};\n\nexport default function AuthErrorPage() {\n  return (\n    <Container className=\"flex items-center justify-center py-8 md:py-16\">\n      <CardAuthWrapper headerLabel=\"Oops! Something went wrong!\">\n        <div className=\"flex w-full flex-col items-center justify-center gap-4\">\n          <TriangleAlertIcon className=\"size-16 text-red-600\" />\n\n          <Button asChild variant=\"link\">\n            <Link href=\"/\">Back to Home</Link>\n          </Button>\n        </div>\n      </CardAuthWrapper>\n    </Container>\n  );\n}\n",
-      "type": "registry:component",
+      "type": "registry:page",
       "target": "app/(web)/auth/error/page.tsx"
     },
     {
       "path": "block/auth-pages/app/(web)/auth/forgot-password/page.tsx",
       "content": "import { Metadata } from \"next\";\n\nimport { Container } from \"@/components/layout/container/container\";\n\nimport { ForgotPasswordForm } from \"@/components/auth/form/forgot-password-form\";\nimport { CardAuthWrapper } from \"@/components/auth/wrapper/card-auth-wrapper\";\n\nexport const metadata: Metadata = {\n  title: \"ForgotPassword\",\n  description: \"Description ForgotPassword.\",\n};\n\nexport default function ForgotPasswordPage() {\n  return (\n    <Container className=\"flex items-center justify-center py-8 md:py-16\">\n      <CardAuthWrapper headerLabel=\"Forgot your password?\">\n        <ForgotPasswordForm />\n      </CardAuthWrapper>\n    </Container>\n  );\n}\n",
-      "type": "registry:component",
+      "type": "registry:page",
       "target": "app/(web)/auth/forgot-password/page.tsx"
     },
     {
       "path": "block/auth-pages/app/(web)/auth/new-verification/page.tsx",
       "content": "import { Metadata } from \"next\";\n\nimport { Container } from \"@/components/layout/container/container\";\n\nimport { NewVerificationForm } from \"@/components/auth/form/new-verification-form\";\nimport { CardAuthWrapper } from \"@/components/auth/wrapper/card-auth-wrapper\";\n\nexport const metadata: Metadata = {\n  title: \"NewVerification\",\n  description: \"Description NewVerification.\",\n};\n\nexport default function NewVerificationPage() {\n  return (\n    <Container className=\"flex items-center justify-center py-8 md:py-16\">\n      <CardAuthWrapper headerLabel=\"Confirming your verification\">\n        <NewVerificationForm />\n      </CardAuthWrapper>\n    </Container>\n  );\n}\n",
-      "type": "registry:component",
+      "type": "registry:page",
       "target": "app/(web)/auth/new-verification/page.tsx"
     },
     {
       "path": "block/auth-pages/app/(web)/auth/reset-password/page.tsx",
       "content": "import { Metadata } from \"next\";\n\nimport { Container } from \"@/components/layout/container/container\";\n\nimport { ResetPasswordForm } from \"@/components/auth/form/reset-password-form\";\nimport { CardAuthWrapper } from \"@/components/auth/wrapper/card-auth-wrapper\";\n\nexport const metadata: Metadata = {\n  title: \"ResetPassword\",\n  description: \"Description ResetPassword.\",\n};\n\nexport default function ResetPasswordPage() {\n  return (\n    <Container className=\"flex items-center justify-center py-8 md:py-16\">\n      <CardAuthWrapper headerLabel=\"Enter a new password\">\n        <ResetPasswordForm />\n      </CardAuthWrapper>\n    </Container>\n  );\n}\n",
-      "type": "registry:component",
+      "type": "registry:page",
       "target": "app/(web)/auth/reset-password/page.tsx"
     },
     {
       "path": "block/auth-pages/app/(web)/auth/sign-in/page.tsx",
       "content": "import { Metadata } from \"next\";\n\nimport { Container } from \"@/components/layout/container/container\";\n\nimport { FormAuth } from \"@/components/auth/form/form-auth\";\n\nexport const metadata: Metadata = {\n  title: \"SignIn\",\n  description: \"Description SignIn.\",\n};\n\nexport default function SignInPage() {\n  return (\n    <Container className=\"flex items-center justify-center py-8 md:py-16\">\n      <FormAuth />\n    </Container>\n  );\n}\n",
-      "type": "registry:component",
+      "type": "registry:page",
       "target": "app/(web)/auth/sign-in/page.tsx"
     },
     {
       "path": "block/auth-pages/app/(web)/auth/sign-up/success/page.tsx",
       "content": "import { Metadata } from \"next\";\n\nimport { Check } from \"lucide-react\";\n\nimport { Container } from \"@/components/layout/container/container\";\n\nimport { CardAuthWrapper } from \"@/components/auth/wrapper/card-auth-wrapper\";\n\nexport const metadata: Metadata = {\n  title: \"Success\",\n  description: \"Description Success\",\n};\n\nexport default function SuccessPage() {\n  return (\n    <Container className=\"flex items-center justify-center py-8 md:py-16\">\n      <CardAuthWrapper headerLabel=\"Confirmation email sent!\">\n        <div className=\"flex w-full items-center justify-center\">\n          <Check className=\"size-16 text-green-600\" />\n        </div>\n      </CardAuthWrapper>\n    </Container>\n  );\n}\n",
-      "type": "registry:component",
+      "type": "registry:page",
       "target": "app/(web)/auth/sign-up/success/page.tsx"
     },
     {
       "path": "block/auth-pages/app/(web)/privacy-policy/page.tsx",
       "content": "import { Metadata } from \"next\";\n\nimport { Typography } from \"@/components/ui/typography\";\n\nexport const metadata: Metadata = {\n  title: \"PrivacyPolicy\",\n  description: \"Description PrivacyPolicy.\",\n};\n\nexport default function PrivacyPolicyPage() {\n  return (\n    <div className=\"flex flex-1 justify-center\">\n      <section className=\"container p-2\">\n        <Typography.H1 className=\"text-2xl font-semibold lg:text-3xl\">\n          PrivacyPolicy\n        </Typography.H1>\n      </section>\n    </div>\n  );\n}\n",
-      "type": "registry:component",
+      "type": "registry:page",
       "target": "app/(web)/privacy-policy/page.tsx"
     },
     {
       "path": "block/auth-pages/app/(web)/settings/template.tsx",
       "content": "import { Metadata } from \"next\";\n\nimport { siteConfig } from \"@/config/site\";\n\nimport { Container } from \"@/components/layout/container/container\";\n\nimport { SidebarSettings } from \"@/components/auth/sidebar/sidebar-settings\";\nimport { Separator } from \"@/components/ui/separator\";\nimport { Typography } from \"@/components/ui/typography\";\n\nexport const metadata: Metadata = {\n  title: \"Forms\",\n  description: \"Advanced form example using react-hook-form and Zod.\",\n};\n\ninterface SettingsLayoutProps {\n  children: React.ReactNode;\n}\n\nexport default function SettingsLayout({ children }: SettingsLayoutProps) {\n  return (\n    <Container className=\"py-4\">\n      <Typography.H1>Account</Typography.H1>\n      <Typography.Lead>Manage your account.</Typography.Lead>\n\n      <Separator className=\"my-6\" />\n\n      <div className=\"flex flex-col space-y-8 lg:flex-row lg:space-x-12 lg:space-y-0\">\n        <aside className=\" space-y-4 lg:w-1/5\">\n          <SidebarSettings\n            items={siteConfig.sidebarAccount.content[0].linksSection}\n          />\n        </aside>\n        <div className=\"w-full flex-1\">{children}</div>\n      </div>\n    </Container>\n  );\n}\n",
-      "type": "registry:component",
+      "type": "registry:page",
       "target": "app/(web)/settings/template.tsx"
     },
     {
       "path": "block/auth-pages/app/(web)/settings/account/page.tsx",
       "content": "import { Metadata } from \"next\";\n\nimport { AccountForm } from \"@/components/auth/form/account-form\";\nimport { Separator } from \"@/components/ui/separator\";\nimport { Typography } from \"@/components/ui/typography\";\n\nexport const metadata: Metadata = {\n  title: \"Account\",\n  description: \"Description Account.\",\n};\n\nexport default function AccountPage() {\n  return (\n    <div className=\"space-y-6\">\n      <div>\n        <Typography.H3>Account</Typography.H3>\n        <Typography.Muted>Update your account settings.</Typography.Muted>\n      </div>\n      <Separator />\n      <AccountForm />\n    </div>\n  );\n}\n",
-      "type": "registry:component",
+      "type": "registry:page",
       "target": "app/(web)/settings/account/page.tsx"
     },
     {
       "path": "block/auth-pages/app/(web)/settings/profile/page.tsx",
       "content": "import { Metadata } from \"next\";\n\nimport UserProfile from \"@/components/auth/card/card-user-profile\";\n\nexport const metadata: Metadata = {\n  title: \"Profile\",\n  description: \"Description Profile.\",\n};\n\nexport default function ProfilePage() {\n  return <UserProfile />;\n}\n",
-      "type": "registry:component",
+      "type": "registry:page",
       "target": "app/(web)/settings/profile/page.tsx"
     },
     {
       "path": "block/auth-pages/app/(web)/terms/page.tsx",
       "content": "import { Metadata } from \"next\";\n\nimport { Typography } from \"@/components/ui/typography\";\n\nexport const metadata: Metadata = {\n  title: \"Terms\",\n  description: \"Description Terms.\",\n};\n\nexport default function TermsPage() {\n  return (\n    <div className=\"flex flex-1 justify-center\">\n      <section className=\"container p-2\">\n        <Typography.H1 className=\"text-2xl font-semibold lg:text-3xl\">\n          Terms\n        </Typography.H1>\n      </section>\n    </div>\n  );\n}\n",
-      "type": "registry:component",
+      "type": "registry:page",
       "target": "app/(web)/terms/page.tsx"
     },
     {

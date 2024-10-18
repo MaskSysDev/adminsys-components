@@ -9,7 +9,6 @@ import { AdminSidebar } from "@/components/layout/sidebar/admin-sidebar";
 
 import { ThemeProvider } from "@/components/provider/theme-provider";
 
-import { TailwindIndicator } from "@/components/tailwind-indicator";
 import { SidebarLayout } from "@/components/ui/sidebar";
 import { Toaster as ToasterSonner } from "@/components/ui/sonner";
 import { ToasterTheme } from "@/components/ui/toaster-theme";
@@ -139,7 +138,6 @@ export default async function RootLayout({
               </div>
             </div>
           </SidebarLayout>
-          <TailwindIndicator />
           <ToasterSonner />
           <ToasterTheme />
         </ThemeProvider>

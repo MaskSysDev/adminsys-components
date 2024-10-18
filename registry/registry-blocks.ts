@@ -481,7 +481,7 @@ export const blocks: Registry = [
       {
         path: "block/auth-pages/types/sidebar.ts",
         type: "registry:component",
-        target: "auth-pages/types/sidebar.ts",
+        target: "types/sidebar.ts",
       },
       {
         path: "block/components/auth/wrapper/card-auth-wrapper.tsx",
@@ -521,13 +521,13 @@ export const blocks: Registry = [
       "sonner",
       "toast",
 
-      // next themes
+      // Next Themes
       "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/next-themes.json",
 
       // Adminsys Theme
       "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/theme-adminsys.json",
 
-      // layout
+      // Components Layout
       "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/alert.json",
       "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/container.json",
       "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/site-footer.json",
@@ -540,25 +540,25 @@ export const blocks: Registry = [
       "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/nav-main.json",
       "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/not-found.json",
 
-      // Ui
+      // Components Ui
       "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/toaster-theme.json",
       "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/typography.json",
     ],
     files: [
-      // Pages
+      // Web Pages
       {
         path: "block/web/app/(web)/[...not-found]/page.tsx",
-        type: "registry:component",
+        type: "registry:page",
         target: "app/(web)/[...not-found]/page.tsx",
       },
       {
         path: "block/web/app/(web)/about/page.tsx",
-        type: "registry:component",
+        type: "registry:page",
         target: "app/(web)/about/page.tsx",
       },
       {
         path: "block/web/app/(web)/contact/page.tsx",
-        type: "registry:component",
+        type: "registry:page",
         target: "app/(web)/contact/page.tsx",
       },
       {
@@ -573,7 +573,7 @@ export const blocks: Registry = [
       },
       {
         path: "block/web/app/(web)/page.tsx",
-        type: "registry:component",
+        type: "registry:page",
         target: "app/(web)/page.tsx",
       },
 
@@ -586,8 +586,8 @@ export const blocks: Registry = [
 
       // Custom Components
       {
-        path: "block/web/components/layout/header/site-header.tsx",
-        type: "registry:page",
+        path: "block/components/layout/header/site-header.tsx",
+        type: "registry:component",
         target: "components/layout/header/site-header.tsx",
       },
     ],
@@ -608,60 +608,60 @@ export const blocks: Registry = [
       "https://raw.githubusercontent.com/MaskSysDev/adminsys-components/refs/heads/main/public/r/styles/default/components-auth.json",
     ],
     files: [
-      // Pages
+      // Auth Pages
       {
         path: "block/auth-pages/app/(web)/auth/error/page.tsx",
-        type: "registry:component",
+        type: "registry:page",
         target: "app/(web)/auth/error/page.tsx",
       },
       {
         path: "block/auth-pages/app/(web)/auth/forgot-password/page.tsx",
-        type: "registry:component",
+        type: "registry:page",
         target: "app/(web)/auth/forgot-password/page.tsx",
       },
       {
         path: "block/auth-pages/app/(web)/auth/new-verification/page.tsx",
-        type: "registry:component",
+        type: "registry:page",
         target: "app/(web)/auth/new-verification/page.tsx",
       },
       {
         path: "block/auth-pages/app/(web)/auth/reset-password/page.tsx",
-        type: "registry:component",
+        type: "registry:page",
         target: "app/(web)/auth/reset-password/page.tsx",
       },
       {
         path: "block/auth-pages/app/(web)/auth/sign-in/page.tsx",
-        type: "registry:component",
+        type: "registry:page",
         target: "app/(web)/auth/sign-in/page.tsx",
       },
       {
         path: "block/auth-pages/app/(web)/auth/sign-up/success/page.tsx",
-        type: "registry:component",
+        type: "registry:page",
         target: "app/(web)/auth/sign-up/success/page.tsx",
       },
       {
         path: "block/auth-pages/app/(web)/privacy-policy/page.tsx",
-        type: "registry:component",
+        type: "registry:page",
         target: "app/(web)/privacy-policy/page.tsx",
       },
       {
         path: "block/auth-pages/app/(web)/settings/template.tsx",
-        type: "registry:component",
+        type: "registry:page",
         target: "app/(web)/settings/template.tsx",
       },
       {
         path: "block/auth-pages/app/(web)/settings/account/page.tsx",
-        type: "registry:component",
+        type: "registry:page",
         target: "app/(web)/settings/account/page.tsx",
       },
       {
         path: "block/auth-pages/app/(web)/settings/profile/page.tsx",
-        type: "registry:component",
+        type: "registry:page",
         target: "app/(web)/settings/profile/page.tsx",
       },
       {
         path: "block/auth-pages/app/(web)/terms/page.tsx",
-        type: "registry:component",
+        type: "registry:page",
         target: "app/(web)/terms/page.tsx",
       },
       {

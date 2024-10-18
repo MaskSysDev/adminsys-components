@@ -96,7 +96,7 @@
       "path": "block/auth-pages/types/sidebar.ts",
       "content": "export type NavItemProps = {\n  label: string;\n  href: string;\n  path: string;\n  items: NavProps[];\n};\n\nexport type NavProps = {\n  label: string;\n  href: string;\n  path: string;\n};\n",
       "type": "registry:component",
-      "target": "auth-pages/types/sidebar.ts"
+      "target": "types/sidebar.ts"
     },
     {
       "path": "block/components/auth/wrapper/card-auth-wrapper.tsx",
